@@ -1,716 +1,304 @@
-%%% -*-BibTeX-*-
-%%% Do NOT edit. File created by BibTeX with style
-%%% ACM-Reference-Format-Journals [18-Jan-2012].
-
-\begin{thebibliography}{52}
-
-%%% ====================================================================
-%%% NOTE TO THE USER: you can override these defaults by providing
-%%% customized versions of any of these macros before the \bibliography
-%%% command.  Each of them MUST provide its own final punctuation,
-%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
-%%% do not use final punctuation, in order to avoid confusing it with
-%%% the Web address.
-%%%
-%%% To suppress output of a particular field, define its macro to expand
-%%% to an empty string, or better, \unskip, like this:
-%%%
-%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
-%%%
-%%% \def \showDOI #1{\unskip}           % plain TeX syntax
-%%%
-%%% ====================================================================
-
-\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
-\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
-\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
-\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
-\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
-\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
-\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
-\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
-\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
-% The following commands are used for tagged output and should be
-% invisible to TeX
-\providecommand\bibfield[2]{#2}
-\providecommand\bibinfo[2]{#2}
-\providecommand\natexlab[1]{#1}
-\providecommand\showeprint[2][]{arXiv:#2}
-
-\bibitem[\protect\citeauthoryear{??}{Gen}{[n.d.]}]%
-        {GeneralD60:online}
- \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{General Data Protection Regulation (GDPR) –
-  Official Legal Text}.
-\newblock \bibinfo{howpublished}{\url{https://gdpr-info.eu/}}.
-\newblock
-\newblock
-\shownote{(Accessed on 10/01/2021).}
-
-
-\bibitem[\protect\citeauthoryear{??}{tap}{[n.d.]}]%
-        {tapir:github}
- \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{{Github: UWSysLab/tapir}}.
-\newblock \bibinfo{howpublished}{\url{https://github.com/UWSysLab/tapir}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Abebe, Glasbergen, and Daudjee}{Abebe
-  et~al\mbox{.}}{2020a}]%
-        {abebe2020dynamast}
-\bibfield{author}{\bibinfo{person}{Michael Abebe}, \bibinfo{person}{Brad
-  Glasbergen}, {and} \bibinfo{person}{Khuzaima Daudjee}.}
-  \bibinfo{year}{2020}\natexlab{a}.
-\newblock \showarticletitle{DynaMast: Adaptive dynamic mastering for replicated
-  systems}. In \bibinfo{booktitle}{\emph{2020 IEEE 36th International
-  Conference on Data Engineering (ICDE)}}. IEEE, \bibinfo{pages}{1381--1392}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Abebe, Glasbergen, and Daudjee}{Abebe
-  et~al\mbox{.}}{2020b}]%
-        {abebe2020morphosys}
-\bibfield{author}{\bibinfo{person}{Michael Abebe}, \bibinfo{person}{Brad
-  Glasbergen}, {and} \bibinfo{person}{Khuzaima Daudjee}.}
-  \bibinfo{year}{2020}\natexlab{b}.
-\newblock \showarticletitle{MorphoSys: automatic physical design metamorphosis
-  for distributed database systems}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{13}, \bibinfo{number}{13} (\bibinfo{year}{2020}),
-  \bibinfo{pages}{3573--3587}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Anderson, Breitbart, Korth, and Wool}{Anderson
-  et~al\mbox{.}}{1998}]%
-        {anderson1998replication}
-\bibfield{author}{\bibinfo{person}{Todd Anderson}, \bibinfo{person}{Yuri
-  Breitbart}, \bibinfo{person}{Henry~F Korth}, {and} \bibinfo{person}{Avishai
-  Wool}.} \bibinfo{year}{1998}\natexlab{}.
-\newblock \showarticletitle{Replication, consistency, and practicality: are
-  these mutually exclusive?}. In \bibinfo{booktitle}{\emph{Proceedings of the
-  1998 ACM SIGMOD international conference on Management of data}}.
-  \bibinfo{pages}{484--495}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{AWS}{AWS}{[n.d.]}]%
-        {aws:region}
-\bibfield{author}{\bibinfo{person}{AWS}.} \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{{Regions, Availability Zones, and Local Zones}}.
-\newblock
-  \bibinfo{howpublished}{\url{https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Azure}{Azure}{[n.d.]}]%
-        {azure:region}
-\bibfield{author}{\bibinfo{person}{Azure}.} \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{{Regions and availability zones}}.
-\newblock
-  \bibinfo{howpublished}{\url{https://docs.microsoft.com/en-us/azure/availability-zones/az-overview}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Azure.}{Azure.}{[n.d.]}]%
-        {azure:latency}
-\bibfield{author}{\bibinfo{person}{Microsoft Azure.}}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{Azure network round-trip latency statistics}.
-\newblock
-  \bibinfo{howpublished}{\url{https://docs.microsoft.com/en-us/azure/networking/azure-network-latency}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Chen, Song, Jiang, Ruan, Li, Wang, Zhang,
-  Cheng, and Cui}{Chen et~al\mbox{.}}{2021a}]%
-        {dast:eurosys21}
-\bibfield{author}{\bibinfo{person}{Xusheng Chen}, \bibinfo{person}{Haoze Song},
-  \bibinfo{person}{Jianyu Jiang}, \bibinfo{person}{Chaoyi Ruan},
-  \bibinfo{person}{Cheng Li}, \bibinfo{person}{Sen Wang}, \bibinfo{person}{Gong
-  Zhang}, \bibinfo{person}{Reynold Cheng}, {and} \bibinfo{person}{Heming Cui}.}
-  \bibinfo{year}{2021}\natexlab{a}.
-\newblock \showarticletitle{Achieving low tail-latency and high scalability for
-  serializable transactions in edge computing}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the Sixteenth European Conference on
-  Computer Systems}}. \bibinfo{pages}{210--227}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Chen, Song, Jiang, Ruan, Li, Wang, Zhang,
-  Cheng, and Cui}{Chen et~al\mbox{.}}{2021b}]%
-        {chen2021achieving}
-\bibfield{author}{\bibinfo{person}{Xusheng Chen}, \bibinfo{person}{Haoze Song},
-  \bibinfo{person}{Jianyu Jiang}, \bibinfo{person}{Chaoyi Ruan},
-  \bibinfo{person}{Cheng Li}, \bibinfo{person}{Sen Wang}, \bibinfo{person}{Gong
-  Zhang}, \bibinfo{person}{Reynold Cheng}, {and} \bibinfo{person}{Heming Cui}.}
-  \bibinfo{year}{2021}\natexlab{b}.
-\newblock \showarticletitle{Achieving low tail-latency and high scalability for
-  serializable transactions in edge computing}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the Sixteenth European Conference on
-  Computer Systems}}. \bibinfo{pages}{210--227}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Choi, Michael, Li, Ports, and Li}{Choi
-  et~al\mbox{.}}{2023}]%
-        {choi2023hydra}
-\bibfield{author}{\bibinfo{person}{Inho Choi}, \bibinfo{person}{Ellis Michael},
-  \bibinfo{person}{Yunfan Li}, \bibinfo{person}{Dan~RK Ports}, {and}
-  \bibinfo{person}{Jialin Li}.} \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{Hydra:$\{$Serialization-Free$\}$ Network Ordering
-  for Strongly Consistent Distributed Applications}. In
-  \bibinfo{booktitle}{\emph{20th USENIX Symposium on Networked Systems Design
-  and Implementation (NSDI 23)}}. \bibinfo{pages}{293--320}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Cloud}{Cloud}{[n.d.]}]%
-        {huawei:region}
-\bibfield{author}{\bibinfo{person}{Huawei Cloud}.}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{{HUAWEI CLOUD Regions and Service Endpoints}}.
-\newblock
-  \bibinfo{howpublished}{\url{https://developer.huaweicloud.com/intl/en-us/endpoint}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Corbett, Dean, Epstein, Fikes, Frost, Furman,
-  Ghemawat, Gubarev, Heiser, Hochschild, Hsieh, Kanthak, Kogan, Li, Lloyd,
-  Melnik, Mwaura, Nagle, Quinlan, Rao, Rolig, Saito, Szymaniak, Taylor, Wang,
-  and Woodford}{Corbett et~al\mbox{.}}{2012}]%
-        {spanner:osdi12}
-\bibfield{author}{\bibinfo{person}{James~C. Corbett}, \bibinfo{person}{Jeffrey
-  Dean}, \bibinfo{person}{Michael Epstein}, \bibinfo{person}{Andrew Fikes},
-  \bibinfo{person}{Christopher Frost}, \bibinfo{person}{J.~J. Furman},
-  \bibinfo{person}{Sanjay Ghemawat}, \bibinfo{person}{Andrey Gubarev},
-  \bibinfo{person}{Christopher Heiser}, \bibinfo{person}{Peter Hochschild},
-  \bibinfo{person}{Wilson Hsieh}, \bibinfo{person}{Sebastian Kanthak},
-  \bibinfo{person}{Eugene Kogan}, \bibinfo{person}{Hongyi Li},
-  \bibinfo{person}{Alexander Lloyd}, \bibinfo{person}{Sergey Melnik},
-  \bibinfo{person}{David Mwaura}, \bibinfo{person}{David Nagle},
-  \bibinfo{person}{Sean Quinlan}, \bibinfo{person}{Rajesh Rao},
-  \bibinfo{person}{Lindsay Rolig}, \bibinfo{person}{Yasushi Saito},
-  \bibinfo{person}{Michal Szymaniak}, \bibinfo{person}{Christopher Taylor},
-  \bibinfo{person}{Ruth Wang}, {and} \bibinfo{person}{Dale Woodford}.}
-  \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Spanner: Google's Globally-distributed Database}.
-  In \bibinfo{booktitle}{\emph{Proceedings of the Tenth Symposium on Operating
-  Systems Design and Implementation (OSDI '12)}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{COUNCIL}{COUNCIL}{2014}]%
-        {tpcc}
-\bibfield{author}{\bibinfo{person}{THE TRANSACTION~PROCESSING COUNCIL}.}
-  \bibinfo{year}{2014}\natexlab{}.
-\newblock \bibinfo{title}{{TPC-C}}.
-\newblock \bibinfo{howpublished}{\url{http://www.tpc.org/tpcc/}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Curino, Jones, Zhang, and Madden}{Curino
-  et~al\mbox{.}}{2010}]%
-        {curino2010schism}
-\bibfield{author}{\bibinfo{person}{Carlo Curino}, \bibinfo{person}{Evan
-  Philip~Charles Jones}, \bibinfo{person}{Yang Zhang}, {and}
-  \bibinfo{person}{Samuel~R Madden}.} \bibinfo{year}{2010}\natexlab{}.
-\newblock \showarticletitle{Schism: a workload-driven approach to database
-  replication and partitioning}.
-\newblock  (\bibinfo{year}{2010}).
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Daudjee and Salem}{Daudjee and Salem}{2004}]%
-        {daudjee2004lazy}
-\bibfield{author}{\bibinfo{person}{Khuzaima Daudjee} {and}
-  \bibinfo{person}{Kenneth Salem}.} \bibinfo{year}{2004}\natexlab{}.
-\newblock \showarticletitle{Lazy database replication with ordering
-  guarantees}. In \bibinfo{booktitle}{\emph{Proceedings. 20th International
-  Conference on Data Engineering}}. IEEE, \bibinfo{pages}{424--435}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Daudjee and Salem}{Daudjee and Salem}{2006}]%
-        {daudjee2006lazy}
-\bibfield{author}{\bibinfo{person}{Khuzaima Daudjee} {and}
-  \bibinfo{person}{Kenneth Salem}.} \bibinfo{year}{2006}\natexlab{}.
-\newblock \showarticletitle{Lazy database replication with snapshot isolation}.
-  In \bibinfo{booktitle}{\emph{Proceedings of the 32nd international conference
-  on Very large data bases}}. \bibinfo{pages}{715--726}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Fan and Golab}{Fan and Golab}{2019}]%
-        {ov:vldb19}
-\bibfield{author}{\bibinfo{person}{Hua Fan} {and} \bibinfo{person}{Wojciech
-  Golab}.} \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{Ocean vista: gossip-based visibility control for
-  speedy geo-distributed transactions}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{12} (\bibinfo{year}{2019}), \bibinfo{pages}{1471--1484}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Fekete, Liarokapis, O'Neil, O'Neil, and
-  Shasha}{Fekete et~al\mbox{.}}{2005}]%
-        {fekete2005making}
-\bibfield{author}{\bibinfo{person}{Alan Fekete}, \bibinfo{person}{Dimitrios
-  Liarokapis}, \bibinfo{person}{Elizabeth O'Neil}, \bibinfo{person}{Patrick
-  O'Neil}, {and} \bibinfo{person}{Dennis Shasha}.}
-  \bibinfo{year}{2005}\natexlab{}.
-\newblock \showarticletitle{Making snapshot isolation serializable}.
-\newblock \bibinfo{journal}{\emph{ACM Transactions on Database Systems (TODS)}}
-  \bibinfo{volume}{30}, \bibinfo{number}{2} (\bibinfo{year}{2005}),
-  \bibinfo{pages}{492--528}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Gao, Dahlin, Nayate, Zheng, and Iyengar}{Gao
-  et~al\mbox{.}}{2003}]%
-        {gao2003application}
-\bibfield{author}{\bibinfo{person}{Lei Gao}, \bibinfo{person}{Mike Dahlin},
-  \bibinfo{person}{Amol Nayate}, \bibinfo{person}{Jiandan Zheng}, {and}
-  \bibinfo{person}{Arun Iyengar}.} \bibinfo{year}{2003}\natexlab{}.
-\newblock \showarticletitle{Application specific data replication for edge
-  services}. In \bibinfo{booktitle}{\emph{Proceedings of the 12th international
-  conference on World Wide Web}}. \bibinfo{pages}{449--460}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Helt, Burke, Levy, and Lloyd}{Helt
-  et~al\mbox{.}}{2021}]%
-        {rss}
-\bibfield{author}{\bibinfo{person}{Jeffrey Helt}, \bibinfo{person}{Matthew
-  Burke}, \bibinfo{person}{Amit Levy}, {and} \bibinfo{person}{Wyatt Lloyd}.}
-  \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{Regular Sequential Serializability and Regular
-  Sequential Consistency}. In \bibinfo{booktitle}{\emph{Proceedings of the ACM
-  SIGOPS 28th Symposium on Operating Systems Principles}}.
-  \bibinfo{pages}{163--179}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Hubert}{Hubert}{[n.d.]}]%
-        {linux:tc}
-\bibfield{author}{\bibinfo{person}{Bert Hubert}.}
-  \bibinfo{year}{[n.d.]}\natexlab{}.
-\newblock \bibinfo{title}{tc(8), Linux manual page}.
-\newblock
-  \bibinfo{howpublished}{\url{https://man7.org/linux/man-pages/man8/tc.8.html}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Kraska, Hentschel, Alonso, and
-  Kossmann}{Kraska et~al\mbox{.}}{2009}]%
-        {kraska2009consistency}
-\bibfield{author}{\bibinfo{person}{Tim Kraska}, \bibinfo{person}{Martin
-  Hentschel}, \bibinfo{person}{Gustavo Alonso}, {and} \bibinfo{person}{Donald
-  Kossmann}.} \bibinfo{year}{2009}\natexlab{}.
-\newblock \showarticletitle{Consistency rationing in the cloud: Pay only when
-  it matters}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{2}, \bibinfo{number}{1} (\bibinfo{year}{2009}),
-  \bibinfo{pages}{253--264}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Kraska, Pang, Franklin, Madden, and
-  Fekete}{Kraska et~al\mbox{.}}{2013}]%
-        {mdcc:eurosys13}
-\bibfield{author}{\bibinfo{person}{Tim Kraska}, \bibinfo{person}{Gene Pang},
-  \bibinfo{person}{Michael~J Franklin}, \bibinfo{person}{Samuel Madden}, {and}
-  \bibinfo{person}{Alan Fekete}.} \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{MDCC: Multi-data center consistency}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the 8th ACM European Conference on
-  Computer Systems}}. \bibinfo{pages}{113--126}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Lamport}{Lamport}{2019}]%
-        {lamport2019time}
-\bibfield{author}{\bibinfo{person}{Leslie Lamport}.}
-  \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{Time, clocks, and the ordering of events in a
-  distributed system}.
-\newblock In \bibinfo{booktitle}{\emph{Concurrency: the Works of Leslie
-  Lamport}}. \bibinfo{pages}{179--196}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Li, Zuo, Bai, and Zhang}{Li
-  et~al\mbox{.}}{2021}]%
-        {li20211pipe}
-\bibfield{author}{\bibinfo{person}{Bojie Li}, \bibinfo{person}{Gefei Zuo},
-  \bibinfo{person}{Wei Bai}, {and} \bibinfo{person}{Lintao Zhang}.}
-  \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{1pipe: Scalable total order communication in data
-  center networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 2021 ACM
-  SIGCOMM 2021 Conference}}. \bibinfo{pages}{78--92}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Li, Porto, Clement, Gehrke, Pregui{\c{c}}a,
-  and Rodrigues}{Li et~al\mbox{.}}{2012}]%
-        {li2012making}
-\bibfield{author}{\bibinfo{person}{Cheng Li}, \bibinfo{person}{Daniel Porto},
-  \bibinfo{person}{Allen Clement}, \bibinfo{person}{Johannes Gehrke},
-  \bibinfo{person}{Nuno Pregui{\c{c}}a}, {and} \bibinfo{person}{Rodrigo
-  Rodrigues}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Making $\{$Geo-Replicated$\}$ systems fast as
-  possible, consistent when necessary}. In \bibinfo{booktitle}{\emph{10th
-  USENIX Symposium on Operating Systems Design and Implementation (OSDI 12)}}.
-  \bibinfo{pages}{265--278}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Li, Pregui{\c{c}}a, and Rodrigues}{Li
-  et~al\mbox{.}}{2018}]%
-        {li2018fine}
-\bibfield{author}{\bibinfo{person}{Cheng Li}, \bibinfo{person}{Nuno
-  Pregui{\c{c}}a}, {and} \bibinfo{person}{Rodrigo Rodrigues}.}
-  \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{Fine-grained consistency for geo-replicated
-  systems}. In \bibinfo{booktitle}{\emph{2018 USENIX Annual Technical
-  Conference (USENIX ATC 18)}}. \bibinfo{pages}{359--372}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Lu, Hodsdon, Ngo, Mu, and Lloyd}{Lu
-  et~al\mbox{.}}{2016}]%
-        {lu2016snow}
-\bibfield{author}{\bibinfo{person}{Haonan Lu}, \bibinfo{person}{Christopher
-  Hodsdon}, \bibinfo{person}{Khiem Ngo}, \bibinfo{person}{Shuai Mu}, {and}
-  \bibinfo{person}{Wyatt Lloyd}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{The $\{$SNOW$\}$ Theorem and
-  $\{$Latency-Optimal$\}$$\{$Read-Only$\}$ Transactions}. In
-  \bibinfo{booktitle}{\emph{12th USENIX Symposium on Operating Systems Design
-  and Implementation (OSDI 16)}}. \bibinfo{pages}{135--150}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Lu, Mu, Sen, and Lloyd}{Lu
-  et~al\mbox{.}}{2023}]%
-        {lu2023ncc}
-\bibfield{author}{\bibinfo{person}{Haonan Lu}, \bibinfo{person}{Shuai Mu},
-  \bibinfo{person}{Siddhartha Sen}, {and} \bibinfo{person}{Wyatt Lloyd}.}
-  \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{NCC: Natural Concurrency Control for Strictly
-  Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall}.
-\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2305.14270}}
-  (\bibinfo{year}{2023}).
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Milano and Myers}{Milano and Myers}{2018}]%
-        {milano2018mixt}
-\bibfield{author}{\bibinfo{person}{Mae Milano} {and} \bibinfo{person}{Andrew~C
-  Myers}.} \bibinfo{year}{2018}\natexlab{}.
-\newblock \showarticletitle{MixT: A language for mixing consistency in
-  geodistributed transactions}.
-\newblock \bibinfo{journal}{\emph{ACM SIGPLAN Notices}} \bibinfo{volume}{53},
-  \bibinfo{number}{4} (\bibinfo{year}{2018}), \bibinfo{pages}{226--241}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Moraru, Andersen, and Kaminsky}{Moraru
-  et~al\mbox{.}}{2013}]%
-        {epaxos:sosp13}
-\bibfield{author}{\bibinfo{person}{Iulian Moraru}, \bibinfo{person}{David~G.
-  Andersen}, {and} \bibinfo{person}{Michael Kaminsky}.}
-  \bibinfo{year}{2013}\natexlab{}.
-\newblock \showarticletitle{There is More Consensus in Egalitarian
-  Parliaments}. In \bibinfo{booktitle}{\emph{Proceedings of the 13th ACM
-  Symposium on Operating Systems Principles (SOSP '91)}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Mu, Nelson, Lloyd, and Li}{Mu
-  et~al\mbox{.}}{2016}]%
-        {janus:osdi16}
-\bibfield{author}{\bibinfo{person}{Shuai Mu}, \bibinfo{person}{Lamont Nelson},
-  \bibinfo{person}{Wyatt Lloyd}, {and} \bibinfo{person}{Jinyang Li}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Consolidating concurrency control and consensus for
-  commits under conflicts}. In \bibinfo{booktitle}{\emph{12th {USENIX}
-  Symposium on Operating Systems Design and Implementation ({OSDI} 16)}}.
-  \bibinfo{pages}{517--532}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Nguyen, Miller, and Abadi}{Nguyen
-  et~al\mbox{.}}{2023}]%
-        {nguyen2023detock}
-\bibfield{author}{\bibinfo{person}{Cuong~DT Nguyen}, \bibinfo{person}{Johann~K
-  Miller}, {and} \bibinfo{person}{Daniel~J Abadi}.}
-  \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{Detock: High Performance Multi-region Transactions
-  at Scale}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Management of
-  Data}} \bibinfo{volume}{1}, \bibinfo{number}{2} (\bibinfo{year}{2023}),
-  \bibinfo{pages}{1--27}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Papadimitriou}{Papadimitriou}{1979}]%
-        {papadimitriou1979serializability}
-\bibfield{author}{\bibinfo{person}{Christos~H Papadimitriou}.}
-  \bibinfo{year}{1979}\natexlab{}.
-\newblock \showarticletitle{The serializability of concurrent database
-  updates}.
-\newblock \bibinfo{journal}{\emph{Journal of the ACM (JACM)}}
-  \bibinfo{volume}{26}, \bibinfo{number}{4} (\bibinfo{year}{1979}),
-  \bibinfo{pages}{631--653}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Pavlo, Curino, and Zdonik}{Pavlo
-  et~al\mbox{.}}{2012}]%
-        {pavlo2012skew}
-\bibfield{author}{\bibinfo{person}{Andrew Pavlo}, \bibinfo{person}{Carlo
-  Curino}, {and} \bibinfo{person}{Stanley Zdonik}.}
-  \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Skew-aware automatic database partitioning in
-  shared-nothing, parallel OLTP systems}. In
-  \bibinfo{booktitle}{\emph{Proceedings of the 2012 ACM SIGMOD International
-  Conference on Management of Data}}. \bibinfo{pages}{61--72}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Qi, Chen, Jiang, Jiang, Shen, Zhao, Wang,
-  Zhang, Chen, Au, and Cui}{Qi et~al\mbox{.}}{2021}]%
-        {bidl:sosp21}
-\bibfield{author}{\bibinfo{person}{Ji Qi}, \bibinfo{person}{Xusheng Chen},
-  \bibinfo{person}{Yunpeng Jiang}, \bibinfo{person}{Jianyu Jiang},
-  \bibinfo{person}{Tianxiang Shen}, \bibinfo{person}{Shixiong Zhao},
-  \bibinfo{person}{Sen Wang}, \bibinfo{person}{Gong Zhang}, \bibinfo{person}{Li
-  Chen}, \bibinfo{person}{Man~Ho Au}, {and} \bibinfo{person}{Heming Cui}.}
-  \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{BIDL: A High-throughput, Low-latency Permissioned
-  Blockchain Framework for Datacenter Networks}. In
-  \bibinfo{booktitle}{\emph{The 28th ACM Symposium on Operating Systems
-  Principles}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Ren, Li, and Abadi}{Ren et~al\mbox{.}}{2019}]%
-        {slog:vldb19}
-\bibfield{author}{\bibinfo{person}{Kun Ren}, \bibinfo{person}{Dennis Li}, {and}
-  \bibinfo{person}{Daniel~J Abadi}.} \bibinfo{year}{2019}\natexlab{}.
-\newblock \showarticletitle{SLOG: serializable, low-latency, geo-replicated
-  transactions}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{12} (\bibinfo{year}{2019}), \bibinfo{pages}{1747--1761}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Schiper, Sutra, and Pedone}{Schiper
-  et~al\mbox{.}}{2010}]%
-        {schiper2010p}
-\bibfield{author}{\bibinfo{person}{Nicolas Schiper}, \bibinfo{person}{Pierre
-  Sutra}, {and} \bibinfo{person}{Fernando Pedone}.}
-  \bibinfo{year}{2010}\natexlab{}.
-\newblock \showarticletitle{P-store: Genuine partial replication in wide area
-  networks}. In \bibinfo{booktitle}{\emph{2010 29th IEEE Symposium on Reliable
-  Distributed Systems}}. IEEE, \bibinfo{pages}{214--224}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Taft, Sharif, Matei, VanBenschoten, Lewis,
-  Grieger, Niemi, Woods, Birzin, Poss, et~al\mbox{.}}{Taft
-  et~al\mbox{.}}{2020}]%
-        {taft2020cockroachdb}
-\bibfield{author}{\bibinfo{person}{Rebecca Taft}, \bibinfo{person}{Irfan
-  Sharif}, \bibinfo{person}{Andrei Matei}, \bibinfo{person}{Nathan
-  VanBenschoten}, \bibinfo{person}{Jordan Lewis}, \bibinfo{person}{Tobias
-  Grieger}, \bibinfo{person}{Kai Niemi}, \bibinfo{person}{Andy Woods},
-  \bibinfo{person}{Anne Birzin}, \bibinfo{person}{Raphael Poss},
-  {et~al\mbox{.}}} \bibinfo{year}{2020}\natexlab{}.
-\newblock \showarticletitle{Cockroachdb: The resilient geo-distributed sql
-  database}. In \bibinfo{booktitle}{\emph{Proceedings of the 2020 ACM SIGMOD
-  International Conference on Management of Data}}.
-  \bibinfo{pages}{1493--1509}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Thomson, Diamond, Weng, Ren, Shao, and
-  Abadi}{Thomson et~al\mbox{.}}{2012}]%
-        {calvin}
-\bibfield{author}{\bibinfo{person}{Alexander Thomson},
-  \bibinfo{person}{Thaddeus Diamond}, \bibinfo{person}{Shu-Chun Weng},
-  \bibinfo{person}{Kun Ren}, \bibinfo{person}{Philip Shao}, {and}
-  \bibinfo{person}{Daniel~J. Abadi}.} \bibinfo{year}{2012}\natexlab{}.
-\newblock \showarticletitle{Calvin: Fast Distributed Transactions for
-  Partitioned Database Systems}. In \bibinfo{booktitle}{\emph{Proceedings of
-  the 2012 ACM SIGMOD International Conference on Management of Data}}
-  (Scottsdale, Arizona, USA) \emph{(\bibinfo{series}{SIGMOD '12})}.
-  \bibinfo{publisher}{Association for Computing Machinery},
-  \bibinfo{address}{New York, NY, USA}, \bibinfo{pages}{1–12}.
-\newblock
-\showISBNx{9781450312479}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/2213836.2213838}
-\showDOI{\tempurl}
-
-
-\bibitem[\protect\citeauthoryear{Thomson, Diamond, Weng, Ren, Shao, and
-  Abadi}{Thomson et~al\mbox{.}}{2014}]%
-        {calvin:sigmod12}
-\bibfield{author}{\bibinfo{person}{Alexander Thomson},
-  \bibinfo{person}{Thaddeus Diamond}, \bibinfo{person}{Shu-Chun Weng},
-  \bibinfo{person}{Kun Ren}, \bibinfo{person}{Philip Shao}, {and}
-  \bibinfo{person}{Daniel~J. Abadi}.} \bibinfo{year}{2014}\natexlab{}.
-\newblock \showarticletitle{Fast Distributed Transactions and Strongly
-  Consistent Replication for OLTP Database Systems}. In
-  \bibinfo{booktitle}{\emph{SIGMOD '12: Proceedings of the 2012 ACM SIGMOD
-  international conference on Management of data}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{VanBenschoten, Ajmani, Gartner, Matei, Shah,
-  Sharif, Shraer, Storm, Taft, Tan, et~al\mbox{.}}{VanBenschoten
-  et~al\mbox{.}}{2022}]%
-        {vanbenschoten2022enabling}
-\bibfield{author}{\bibinfo{person}{Nathan VanBenschoten}, \bibinfo{person}{Arul
-  Ajmani}, \bibinfo{person}{Marcus Gartner}, \bibinfo{person}{Andrei Matei},
-  \bibinfo{person}{Aayush Shah}, \bibinfo{person}{Irfan Sharif},
-  \bibinfo{person}{Alexander Shraer}, \bibinfo{person}{Adam Storm},
-  \bibinfo{person}{Rebecca Taft}, \bibinfo{person}{Oliver Tan},
-  {et~al\mbox{.}}} \bibinfo{year}{2022}\natexlab{}.
-\newblock \showarticletitle{Enabling the next generation of multi-region
-  applications with cockroachdb}. In \bibinfo{booktitle}{\emph{Proceedings of
-  the 2022 International Conference on Management of Data}}.
-  \bibinfo{pages}{2312--2325}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Viotti and Vukoli{\'c}}{Viotti and
-  Vukoli{\'c}}{2016}]%
-        {viotti2016consistency}
-\bibfield{author}{\bibinfo{person}{Paolo Viotti} {and} \bibinfo{person}{Marko
-  Vukoli{\'c}}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{Consistency in non-transactional distributed
-  storage systems}.
-\newblock \bibinfo{journal}{\emph{ACM Computing Surveys (CSUR)}}
-  \bibinfo{volume}{49}, \bibinfo{number}{1} (\bibinfo{year}{2016}),
-  \bibinfo{pages}{1--34}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Wang, Li, Ma, Huo, Yan, Feng, and Xu}{Wang
-  et~al\mbox{.}}{2021}]%
-        {wang2021autogr}
-\bibfield{author}{\bibinfo{person}{Jiawei Wang}, \bibinfo{person}{Cheng Li},
-  \bibinfo{person}{Kai Ma}, \bibinfo{person}{Jingze Huo}, \bibinfo{person}{Feng
-  Yan}, \bibinfo{person}{Xinyu Feng}, {and} \bibinfo{person}{Yinlong Xu}.}
-  \bibinfo{year}{2021}\natexlab{}.
-\newblock \showarticletitle{AUTOGR: automated geo-replication with fast system
-  performance and preserved application semantics}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{14}, \bibinfo{number}{9} (\bibinfo{year}{2021}),
-  \bibinfo{pages}{1517--1530}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Webb, Snoeren, and Yocum}{Webb
-  et~al\mbox{.}}{2011}]%
-        {webb2011topology}
-\bibfield{author}{\bibinfo{person}{Kevin~C Webb}, \bibinfo{person}{Alex~C
-  Snoeren}, {and} \bibinfo{person}{Kenneth Yocum}.}
-  \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{Topology switching for data center networks}. In
-  \bibinfo{booktitle}{\emph{Workshop on Hot Topics in Management of Internet,
-  Cloud, and Enterprise Networks and Services (Hot-ICE 11)}}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Yang, You, and Gu}{Yang et~al\mbox{.}}{2017}]%
-        {yang2017hierarchical}
-\bibfield{author}{\bibinfo{person}{Yingyi Yang}, \bibinfo{person}{Yi You},
-  {and} \bibinfo{person}{Bochuan Gu}.} \bibinfo{year}{2017}\natexlab{}.
-\newblock \showarticletitle{A Hierarchical Framework with Consistency Trade-off
-  Strategies for Big Data Management}. In \bibinfo{booktitle}{\emph{2017 IEEE
+% Generated by IEEEtran.bst, version: 1.14 (2015/08/26)
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{#1}
+\csname url@samestyle\endcsname
+\providecommand{\newblock}{\relax}
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\BIBentrySTDinterwordspacing}{\spaceskip=0pt\relax}
+\providecommand{\BIBentryALTinterwordstretchfactor}{4}
+\providecommand{\BIBentryALTinterwordspacing}{\spaceskip=\fontdimen2\font plus
+\BIBentryALTinterwordstretchfactor\fontdimen3\font minus
+  \fontdimen4\font\relax}
+\providecommand{\BIBforeignlanguage}[2]{{%
+\expandafter\ifx\csname l@#1\endcsname\relax
+\typeout{** WARNING: IEEEtran.bst: No hyphenation pattern has been}%
+\typeout{** loaded for the language `#1'. Using the pattern for}%
+\typeout{** the default language instead.}%
+\else
+\language=\csname l@#1\endcsname
+\fi
+#2}}
+\providecommand{\BIBdecl}{\relax}
+\BIBdecl
+
+\bibitem{aws:region}
+AWS, ``{Regions, Availability Zones, and Local Zones},''
+  \url{https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html}.
+
+\bibitem{azure:region}
+Azure, ``{Regions and availability zones},''
+  \url{https://docs.microsoft.com/en-us/azure/availability-zones/az-overview}.
+
+\bibitem{huawei:region}
+H.~Cloud, ``{HUAWEI CLOUD Regions and Service Endpoints},''
+  \url{https://developer.huaweicloud.com/intl/en-us/endpoint}.
+
+\bibitem{dast:eurosys21}
+X.~Chen, H.~Song, J.~Jiang, C.~Ruan, C.~Li, S.~Wang, G.~Zhang, R.~Cheng, and
+  H.~Cui, ``Achieving low tail-latency and high scalability for serializable
+  transactions in edge computing,'' in \emph{Proceedings of the Sixteenth
+  European Conference on Computer Systems}, 2021, pp. 210--227.
+
+\bibitem{ov:vldb19}
+H.~Fan and W.~Golab, ``Ocean vista: gossip-based visibility control for speedy
+  geo-distributed transactions,'' \emph{Proceedings of the VLDB Endowment},
+  vol.~12, pp. 1471--1484, 2019.
+
+\bibitem{taft2020cockroachdb}
+R.~Taft, I.~Sharif, A.~Matei, N.~VanBenschoten, J.~Lewis, T.~Grieger, K.~Niemi,
+  A.~Woods, A.~Birzin, R.~Poss \emph{et~al.}, ``Cockroachdb: The resilient
+  geo-distributed sql database,'' in \emph{Proceedings of the 2020 ACM SIGMOD
+  International Conference on Management of Data}, 2020, pp. 1493--1509.
+
+\bibitem{vanbenschoten2022enabling}
+N.~VanBenschoten, A.~Ajmani, M.~Gartner, A.~Matei, A.~Shah, I.~Sharif,
+  A.~Shraer, A.~Storm, R.~Taft, O.~Tan \emph{et~al.}, ``Enabling the next
+  generation of multi-region applications with cockroachdb,'' in
+  \emph{Proceedings of the 2022 International Conference on Management of
+  Data}, 2022, pp. 2312--2325.
+
+\bibitem{zhang2018building}
+I.~Zhang, N.~K. Sharma, A.~Szekeres, A.~Krishnamurthy, and D.~R. Ports,
+  ``Building consistent transactions with inconsistent replication,'' \emph{ACM
+  Transactions on Computer Systems (TOCS)}, vol.~35, no.~4, pp. 1--37, 2018.
+
+\bibitem{GeneralD60:online}
+``General data protection regulation (gdpr) – official legal text,''
+  \url{https://gdpr-info.eu/}, (Accessed on 10/01/2021).
+
+\bibitem{nguyen2023detock}
+C.~D. Nguyen, J.~K. Miller, and D.~J. Abadi, ``Detock: High performance
+  multi-region transactions at scale,'' \emph{Proceedings of the ACM on
+  Management of Data}, vol.~1, no.~2, pp. 1--27, 2023.
+
+\bibitem{slog:vldb19}
+K.~Ren, D.~Li, and D.~J. Abadi, ``Slog: serializable, low-latency,
+  geo-replicated transactions,'' \emph{Proceedings of the VLDB Endowment},
+  vol.~12, pp. 1747--1761, 2019.
+
+\bibitem{calvin}
+\BIBentryALTinterwordspacing
+A.~Thomson, T.~Diamond, S.-C. Weng, K.~Ren, P.~Shao, and D.~J. Abadi, ``Calvin:
+  Fast distributed transactions for partitioned database systems,'' in
+  \emph{Proceedings of the 2012 ACM SIGMOD International Conference on
+  Management of Data}, ser. SIGMOD '12.\hskip 1em plus 0.5em minus 0.4em\relax
+  New York, NY, USA: Association for Computing Machinery, 2012, p. 1–12.
+  [Online]. Available: \url{https://doi.org/10.1145/2213836.2213838}
+\BIBentrySTDinterwordspacing
+
+\bibitem{janus:osdi16}
+S.~Mu, L.~Nelson, W.~Lloyd, and J.~Li, ``Consolidating concurrency control and
+  consensus for commits under conflicts,'' in \emph{12th {USENIX} Symposium on
+  Operating Systems Design and Implementation ({OSDI} 16)}, 2016, pp. 517--532.
+
+\bibitem{chen2021achieving}
+X.~Chen, H.~Song, J.~Jiang, C.~Ruan, C.~Li, S.~Wang, G.~Zhang, R.~Cheng, and
+  H.~Cui, ``Achieving low tail-latency and high scalability for serializable
+  transactions in edge computing,'' in \emph{Proceedings of the Sixteenth
+  European Conference on Computer Systems}, 2021, pp. 210--227.
+
+\bibitem{papadimitriou1979serializability}
+C.~H. Papadimitriou, ``The serializability of concurrent database updates,''
+  \emph{Journal of the ACM (JACM)}, vol.~26, no.~4, pp. 631--653, 1979.
+
+\bibitem{daudjee2006lazy}
+K.~Daudjee and K.~Salem, ``Lazy database replication with snapshot isolation,''
+  in \emph{Proceedings of the 32nd international conference on Very large data
+  bases}, 2006, pp. 715--726.
+
+\bibitem{spanner:osdi12}
+J.~C. Corbett, J.~Dean, M.~Epstein, A.~Fikes, C.~Frost, J.~J. Furman,
+  S.~Ghemawat, A.~Gubarev, C.~Heiser, P.~Hochschild, W.~Hsieh, S.~Kanthak,
+  E.~Kogan, H.~Li, A.~Lloyd, S.~Melnik, D.~Mwaura, D.~Nagle, S.~Quinlan,
+  R.~Rao, L.~Rolig, Y.~Saito, M.~Szymaniak, C.~Taylor, R.~Wang, and
+  D.~Woodford, ``Spanner: Google's globally-distributed database,'' in
+  \emph{Proceedings of the Tenth Symposium on Operating Systems Design and
+  Implementation (OSDI '12)}, Oct. 2012.
+
+\bibitem{lu2023ncc}
+H.~Lu, S.~Mu, S.~Sen, and W.~Lloyd, ``Ncc: Natural concurrency control for
+  strictly serializable datastores by avoiding the timestamp-inversion
+  pitfall,'' \emph{arXiv preprint arXiv:2305.14270}, 2023.
+
+\bibitem{calvin:sigmod12}
+A.~Thomson, T.~Diamond, S.-C. Weng, K.~Ren, P.~Shao, and D.~J. Abadi, ``Fast
+  distributed transactions and strongly consistent replication for oltp
+  database systems,'' in \emph{SIGMOD '12: Proceedings of the 2012 ACM SIGMOD
+  international conference on Management of data}, May 2014.
+
+\bibitem{epaxos:sosp13}
+I.~Moraru, D.~G. Andersen, and M.~Kaminsky, ``There is more consensus in
+  egalitarian parliaments,'' in \emph{Proceedings of the 13th ACM Symposium on
+  Operating Systems Principles (SOSP '91)}, Nov. 2013.
+
+\bibitem{zhang2023redt}
+Q.~Zhang, J.~Li, H.~Zhao, Q.~Xu, W.~Lu, J.~Xiao, F.~Han, C.~Yang, and X.~Du,
+  ``Efficient distributed transaction processing in heterogeneous networks,''
+  \emph{Proceedings of the VLDB Endowment}, vol.~16, no.~6, pp. 1372--1385,
+  2023.
+
+\bibitem{tapir:tocs}
+\BIBentryALTinterwordspacing
+I.~Zhang, N.~K. Sharma, A.~Szekeres, A.~Krishnamurthy, and D.~R.~K. Ports,
+  ``\BIBforeignlanguage{en}{Building {Consistent} {Transactions} with
+  {Inconsistent} {Replication}},'' \emph{\BIBforeignlanguage{en}{ACM Trans.
+  Comput. Syst.}}, vol.~35, no.~4, pp. 1--37, Dec. 2018. [Online]. Available:
+  \url{http://dl.acm.org/citation.cfm?doid=3297862.3269981}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mdcc:eurosys13}
+T.~Kraska, G.~Pang, M.~J. Franklin, S.~Madden, and A.~Fekete, ``Mdcc:
+  Multi-data center consistency,'' in \emph{Proceedings of the 8th ACM European
+  Conference on Computer Systems}, 2013, pp. 113--126.
+
+\bibitem{rss}
+J.~Helt, M.~Burke, A.~Levy, and W.~Lloyd, ``Regular sequential serializability
+  and regular sequential consistency,'' in \emph{Proceedings of the ACM SIGOPS
+  28th Symposium on Operating Systems Principles}, 2021, pp. 163--179.
+
+\bibitem{tpcc}
+T.~T.~P. COUNCIL, ``{TPC-C},'' \url{http://www.tpc.org/tpcc/}, 2014.
+
+\bibitem{lamport2019time}
+L.~Lamport, ``Time, clocks, and the ordering of events in a distributed
+  system,'' in \emph{Concurrency: the Works of Leslie Lamport}, 2019, pp.
+  179--196.
+
+\bibitem{viotti2016consistency}
+P.~Viotti and M.~Vukoli{\'c}, ``Consistency in non-transactional distributed
+  storage systems,'' \emph{ACM Computing Surveys (CSUR)}, vol.~49, no.~1, pp.
+  1--34, 2016.
+
+\bibitem{tapir:github}
+``{Github: UWSysLab/tapir},'' \url{https://github.com/UWSysLab/tapir}.
+
+\bibitem{linux:tc}
+B.~Hubert, ``tc(8), linux manual page,''
+  \url{https://man7.org/linux/man-pages/man8/tc.8.html}.
+
+\bibitem{azure:latency}
+M.~Azure., ``Azure network round-trip latency statistics,''
+  \url{https://docs.microsoft.com/en-us/azure/networking/azure-network-latency}.
+
+\bibitem{daudjee2004lazy}
+K.~Daudjee and K.~Salem, ``Lazy database replication with ordering
+  guarantees,'' in \emph{Proceedings. 20th International Conference on Data
+  Engineering}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2004, pp.
+  424--435.
+
+\bibitem{lu2016snow}
+H.~Lu, C.~Hodsdon, K.~Ngo, S.~Mu, and W.~Lloyd, ``The $\{$SNOW$\}$ theorem and
+  $\{$Latency-Optimal$\}$$\{$Read-Only$\}$ transactions,'' in \emph{12th USENIX
+  Symposium on Operating Systems Design and Implementation (OSDI 16)}, 2016,
+  pp. 135--150.
+
+\bibitem{fekete2005making}
+A.~Fekete, D.~Liarokapis, E.~O'Neil, P.~O'Neil, and D.~Shasha, ``Making
+  snapshot isolation serializable,'' \emph{ACM Transactions on Database Systems
+  (TODS)}, vol.~30, no.~2, pp. 492--528, 2005.
+
+\bibitem{anderson1998replication}
+T.~Anderson, Y.~Breitbart, H.~F. Korth, and A.~Wool, ``Replication,
+  consistency, and practicality: are these mutually exclusive?'' in
+  \emph{Proceedings of the 1998 ACM SIGMOD international conference on
+  Management of data}, 1998, pp. 484--495.
+
+\bibitem{ye2023polaris}
+C.~Ye, W.-C. Hwang, K.~Chen, and X.~Yu, ``Polaris: Enabling transaction
+  priority in optimistic concurrency control,'' \emph{Proceedings of the ACM on
+  Management of Data}, vol.~1, no.~1, pp. 1--24, 2023.
+
+\bibitem{milano2018mixt}
+M.~Milano and A.~C. Myers, ``Mixt: A language for mixing consistency in
+  geodistributed transactions,'' \emph{ACM SIGPLAN Notices}, vol.~53, no.~4,
+  pp. 226--241, 2018.
+
+\bibitem{li2012making}
+C.~Li, D.~Porto, A.~Clement, J.~Gehrke, N.~Pregui{\c{c}}a, and R.~Rodrigues,
+  ``Making $\{$Geo-Replicated$\}$ systems fast as possible, consistent when
+  necessary,'' in \emph{10th USENIX Symposium on Operating Systems Design and
+  Implementation (OSDI 12)}, 2012, pp. 265--278.
+
+\bibitem{wang2021autogr}
+J.~Wang, C.~Li, K.~Ma, J.~Huo, F.~Yan, X.~Feng, and Y.~Xu, ``Autogr: automated
+  geo-replication with fast system performance and preserved application
+  semantics,'' \emph{Proceedings of the VLDB Endowment}, vol.~14, no.~9, pp.
+  1517--1530, 2021.
+
+\bibitem{yang2017hierarchical}
+Y.~Yang, Y.~You, and B.~Gu, ``A hierarchical framework with consistency
+  trade-off strategies for big data management,'' in \emph{2017 IEEE
   International Conference on Computational Science and Engineering (CSE) and
-  IEEE International Conference on Embedded and Ubiquitous Computing (EUC)}},
-  Vol.~\bibinfo{volume}{1}. IEEE, \bibinfo{pages}{183--190}.
-\newblock
+  IEEE International Conference on Embedded and Ubiquitous Computing (EUC)},
+  vol.~1.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2017, pp. 183--190.
 
+\bibitem{li2018fine}
+C.~Li, N.~Pregui{\c{c}}a, and R.~Rodrigues, ``Fine-grained consistency for
+  geo-replicated systems,'' in \emph{2018 USENIX Annual Technical Conference
+  (USENIX ATC 18)}, 2018, pp. 359--372.
 
-\bibitem[\protect\citeauthoryear{Ye, Hwang, Chen, and Yu}{Ye
-  et~al\mbox{.}}{2023}]%
-        {ye2023polaris}
-\bibfield{author}{\bibinfo{person}{Chenhao Ye}, \bibinfo{person}{Wuh-Chwen
-  Hwang}, \bibinfo{person}{Keren Chen}, {and} \bibinfo{person}{Xiangyao Yu}.}
-  \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{Polaris: Enabling Transaction Priority in
-  Optimistic Concurrency Control}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the ACM on Management of
-  Data}} \bibinfo{volume}{1}, \bibinfo{number}{1} (\bibinfo{year}{2023}),
-  \bibinfo{pages}{1--24}.
-\newblock
+\bibitem{gao2003application}
+L.~Gao, M.~Dahlin, A.~Nayate, J.~Zheng, and A.~Iyengar, ``Application specific
+  data replication for edge services,'' in \emph{Proceedings of the 12th
+  international conference on World Wide Web}, 2003, pp. 449--460.
 
+\bibitem{kraska2009consistency}
+T.~Kraska, M.~Hentschel, G.~Alonso, and D.~Kossmann, ``Consistency rationing in
+  the cloud: Pay only when it matters,'' \emph{Proceedings of the VLDB
+  Endowment}, vol.~2, no.~1, pp. 253--264, 2009.
 
-\bibitem[\protect\citeauthoryear{Zamanian, Binnig, and Salama}{Zamanian
-  et~al\mbox{.}}{2015}]%
-        {zamanian2015locality}
-\bibfield{author}{\bibinfo{person}{Erfan Zamanian}, \bibinfo{person}{Carsten
-  Binnig}, {and} \bibinfo{person}{Abdallah Salama}.}
-  \bibinfo{year}{2015}\natexlab{}.
-\newblock \showarticletitle{Locality-aware partitioning in parallel database
-  systems}. In \bibinfo{booktitle}{\emph{Proceedings of the 2015 ACM SIGMOD
-  International Conference on Management of Data}}. \bibinfo{pages}{17--30}.
-\newblock
+\bibitem{webb2011topology}
+K.~C. Webb, A.~C. Snoeren, and K.~Yocum, ``Topology switching for data center
+  networks,'' in \emph{Workshop on Hot Topics in Management of Internet, Cloud,
+  and Enterprise Networks and Services (Hot-ICE 11)}, 2011.
 
+\bibitem{bidl:sosp21}
+J.~Qi, X.~Chen, Y.~Jiang, J.~Jiang, T.~Shen, S.~Zhao, S.~Wang, G.~Zhang,
+  L.~Chen, M.~H. Au, and H.~Cui, ``Bidl: A high-throughput, low-latency
+  permissioned blockchain framework for datacenter networks,'' in \emph{The
+  28th ACM Symposium on Operating Systems Principles}, 2021.
 
-\bibitem[\protect\citeauthoryear{Zhang, Sharma, Szekeres, Krishnamurthy, and
-  Ports}{Zhang et~al\mbox{.}}{2018a}]%
-        {zhang2018building}
-\bibfield{author}{\bibinfo{person}{Irene Zhang}, \bibinfo{person}{Naveen~Kr
-  Sharma}, \bibinfo{person}{Adriana Szekeres}, \bibinfo{person}{Arvind
-  Krishnamurthy}, {and} \bibinfo{person}{Dan~RK Ports}.}
-  \bibinfo{year}{2018}\natexlab{a}.
-\newblock \showarticletitle{Building consistent transactions with inconsistent
-  replication}.
-\newblock \bibinfo{journal}{\emph{ACM Transactions on Computer Systems (TOCS)}}
-  \bibinfo{volume}{35}, \bibinfo{number}{4} (\bibinfo{year}{2018}),
-  \bibinfo{pages}{1--37}.
-\newblock
+\bibitem{li20211pipe}
+B.~Li, G.~Zuo, W.~Bai, and L.~Zhang, ``1pipe: Scalable total order
+  communication in data center networks,'' in \emph{Proceedings of the 2021 ACM
+  SIGCOMM 2021 Conference}, 2021, pp. 78--92.
 
+\bibitem{choi2023hydra}
+I.~Choi, E.~Michael, Y.~Li, D.~R. Ports, and J.~Li,
+  ``Hydra:$\{$Serialization-Free$\}$ network ordering for strongly consistent
+  distributed applications,'' in \emph{20th USENIX Symposium on Networked
+  Systems Design and Implementation (NSDI 23)}, 2023, pp. 293--320.
 
-\bibitem[\protect\citeauthoryear{Zhang, Sharma, Szekeres, Krishnamurthy, and
-  Ports}{Zhang et~al\mbox{.}}{2018b}]%
-        {tapir:tocs}
-\bibfield{author}{\bibinfo{person}{Irene Zhang}, \bibinfo{person}{Naveen~Kr.
-  Sharma}, \bibinfo{person}{Adriana Szekeres}, \bibinfo{person}{Arvind
-  Krishnamurthy}, {and} \bibinfo{person}{Dan R.~K. Ports}.}
-  \bibinfo{year}{2018}\natexlab{b}.
-\newblock \showarticletitle{Building {Consistent} {Transactions} with
-  {Inconsistent} {Replication}}.
-\newblock \bibinfo{journal}{\emph{ACM Trans. Comput. Syst.}}
-  \bibinfo{volume}{35}, \bibinfo{number}{4} (\bibinfo{date}{Dec.}
-  \bibinfo{year}{2018}), \bibinfo{pages}{1--37}.
-\newblock
-\showISSN{07342071}
-\urldef\tempurl%
-\url{https://doi.org/10.1145/3269981}
-\showDOI{\tempurl}
+\bibitem{abebe2020dynamast}
+M.~Abebe, B.~Glasbergen, and K.~Daudjee, ``Dynamast: Adaptive dynamic mastering
+  for replicated systems,'' in \emph{2020 IEEE 36th International Conference on
+  Data Engineering (ICDE)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2020,
+  pp. 1381--1392.
 
+\bibitem{abebe2020morphosys}
+------, ``Morphosys: automatic physical design metamorphosis for distributed
+  database systems,'' \emph{Proceedings of the VLDB Endowment}, vol.~13,
+  no.~13, pp. 3573--3587, 2020.
 
-\bibitem[\protect\citeauthoryear{Zhang, Li, Zhao, Xu, Lu, Xiao, Han, Yang, and
-  Du}{Zhang et~al\mbox{.}}{2023}]%
-        {zhang2023redt}
-\bibfield{author}{\bibinfo{person}{Qian Zhang}, \bibinfo{person}{Jingyao Li},
-  \bibinfo{person}{Hongyao Zhao}, \bibinfo{person}{Quanqing Xu},
-  \bibinfo{person}{Wei Lu}, \bibinfo{person}{Jinliang Xiao},
-  \bibinfo{person}{Fusheng Han}, \bibinfo{person}{Chuanhui Yang}, {and}
-  \bibinfo{person}{Xiaoyong Du}.} \bibinfo{year}{2023}\natexlab{}.
-\newblock \showarticletitle{Efficient Distributed Transaction Processing in
-  Heterogeneous Networks}.
-\newblock \bibinfo{journal}{\emph{Proceedings of the VLDB Endowment}}
-  \bibinfo{volume}{16}, \bibinfo{number}{6} (\bibinfo{year}{2023}),
-  \bibinfo{pages}{1372--1385}.
-\newblock
+\bibitem{curino2010schism}
+C.~Curino, E.~P.~C. Jones, Y.~Zhang, and S.~R. Madden, ``Schism: a
+  workload-driven approach to database replication and partitioning,'' 2010.
 
+\bibitem{pavlo2012skew}
+A.~Pavlo, C.~Curino, and S.~Zdonik, ``Skew-aware automatic database
+  partitioning in shared-nothing, parallel oltp systems,'' in \emph{Proceedings
+  of the 2012 ACM SIGMOD International Conference on Management of Data}, 2012,
+  pp. 61--72.
+
+\bibitem{zamanian2015locality}
+E.~Zamanian, C.~Binnig, and A.~Salama, ``Locality-aware partitioning in
+  parallel database systems,'' in \emph{Proceedings of the 2015 ACM SIGMOD
+  International Conference on Management of Data}, 2015, pp. 17--30.
+
+\bibitem{schiper2010p}
+N.~Schiper, P.~Sutra, and F.~Pedone, ``P-store: Genuine partial replication in
+  wide area networks,'' in \emph{2010 29th IEEE Symposium on Reliable
+  Distributed Systems}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2010, pp.
+  214--224.
 
 \end{thebibliography}

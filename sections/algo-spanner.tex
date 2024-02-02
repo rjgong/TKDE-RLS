@@ -34,7 +34,7 @@
       \texttt{write\_set} $\gets \emptyset$ \\
       txnType $\gets$ IRT  \Comment{Start a new transaction as IRT.}\\
        \TouchedR $\gets \emptyset$  \Comment{Regions involved in the transaction.} \\
-  \LeftComment{Execute the transaction commands, which triggers the events:}\\
+  \LeftComment{Execute transaction commands, which triggers events:}\\
   \Event{$read (\texttt{key}$)}{
     
     $\texttt{value} = find\_record(\texttt{key})$ \\
