@@ -1,0 +1,271 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{aws:region}
+\citation{azure:region}
+\citation{huawei:region}
+\citation{dast:eurosys21,ov:vldb19,taft2020cockroachdb,vanbenschoten2022enabling,zhang2018building}
+\citation{GeneralD60:online}
+\citation{aws:region}
+\citation{ov:vldb19,nguyen2023detock,slog:vldb19,calvin,janus:osdi16}
+\citation{nguyen2023detock}
+\citation{nguyen2023detock,chen2021achieving,ov:vldb19}
+\providecommand \oddpage@label [2]{}
+\@writefile{toc}{\contentsline {section}{Abstract}{1}{section*.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\newlabel{sec:intro}{{1}{1}{Introduction}{section.1}{}}
+\citation{papadimitriou1979serializability}
+\citation{daudjee2006lazy}
+\citation{spanner:osdi12,lu2023ncc}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces This diagram presents a typical deployment for multi-region databases. The database is partitioned into multiple data shards spanning over multiple regions. Each shard includes a primary replica and several secondary replicas. Intra-region communications are much faster than inter-region communications.\relax }}{2}{figure.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:intro}{{1}{2}{This diagram presents a typical deployment for multi-region databases. The database is partitioned into multiple data shards spanning over multiple regions. Each shard includes a primary replica and several secondary replicas. Intra-region communications are much faster than inter-region communications.\relax }{figure.caption.3}{}}
+\citation{spanner:osdi12}
+\citation{calvin:sigmod12}
+\citation{slog:vldb19}
+\citation{nguyen2023detock}
+\citation{janus:osdi16}
+\citation{epaxos:sosp13}
+\citation{ov:vldb19}
+\citation{taft2020cockroachdb}
+\citation{zhang2023redt}
+\citation{tapir:tocs}
+\citation{mdcc:eurosys13}
+\citation{tapir:tocs}
+\citation{zhang2023redt}
+\citation{calvin:sigmod12}
+\citation{slog:vldb19}
+\citation{nguyen2023detock}
+\citation{ov:vldb19}
+\citation{epaxos:sosp13}
+\citation{mdcc:eurosys13}
+\citation{janus:osdi16}
+\citation{ov:vldb19,chen2021achieving}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Impact of CRT ratio on the throughput of the state-of-the-art geo-distributed transaction systems.\relax }}{3}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:crt}{{2}{3}{Impact of CRT ratio on the throughput of the state-of-the-art geo-distributed transaction systems.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Background and Motivation}{3}{section.2}\protected@file@percent }
+\newlabel{sec:background}{{2}{3}{Background and Motivation}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Multi-region Databases}{3}{subsection.2.1}\protected@file@percent }
+\newlabel{sec:background:deployment}{{2.1}{3}{Multi-region Databases}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Geo-distributed Transaction Protocols}{3}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:background:geo}{{2.2}{3}{Geo-distributed Transaction Protocols}{subsection.2.2}{}}
+\citation{aws:region}
+\citation{rss}
+\citation{nguyen2023detock}
+\citation{tpcc}
+\citation{slog:vldb19,calvin:sigmod12,mdcc:eurosys13,epaxos:sosp13,nguyen2023detock}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces This table summarizes the state-of-the-art geo-distributed transaction systems in the literature. These existing systems either block IRTs or enforce the IRTs to abort when the IRTs conflict with an ongoing CRT.\relax }}{4}{table.caption.4}\protected@file@percent }
+\newlabel{tab:compare}{{1}{4}{This table summarizes the state-of-the-art geo-distributed transaction systems in the literature. These existing systems either block IRTs or enforce the IRTs to abort when the IRTs conflict with an ongoing CRT.\relax }{table.caption.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Region-linearizable Serializability}{4}{section.3}\protected@file@percent }
+\newlabel{sec:model}{{3}{4}{Region-linearizable Serializability}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Definition of RLS}{4}{subsection.3.1}\protected@file@percent }
+\newlabel{sec:model:def}{{3.1}{4}{Definition of RLS}{subsection.3.1}{}}
+\citation{lamport2019time}
+\citation{viotti2016consistency}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Preliminaries and notations for RLS.\relax }}{5}{table.caption.6}\protected@file@percent }
+\newlabel{tab:model}{{2}{5}{Preliminaries and notations for RLS.\relax }{table.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Performance Issues in Strict Serilizability}{5}{subsection.3.2}\protected@file@percent }
+\newlabel{sec:rls:issue}{{3.2}{5}{Performance Issues in Strict Serilizability}{subsection.3.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Practical Implications}{5}{subsection.3.3}\protected@file@percent }
+\newlabel{sec:rls:practical}{{3.3}{5}{Practical Implications}{subsection.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces This diagram shows how Spanner orders a CRT using 2PL and commits it using 2PC in a multi-region deployment. Replicas are removed for readability.\relax }}{6}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:spanner}{{3}{6}{This diagram shows how Spanner orders a CRT using 2PL and commits it using 2PC in a multi-region deployment. Replicas are removed for readability.\relax }{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Spanner\xspace  and Spanner-RLS\xspace  }{6}{section.4}\protected@file@percent }
+\newlabel{sec:spanner}{{4}{6}{\spanner and \spannerxx }{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Protocols and Implementations}{6}{subsection.4.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces This diagram shows how Spanner-RLS orders a CRT using a variant of 2PL and commits it using 2PC.\relax }}{6}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:spannerrls}{{4}{6}{This diagram shows how Spanner-RLS orders a CRT using a variant of 2PL and commits it using 2PC.\relax }{figure.caption.8}{}}
+\citation{rss}
+\citation{tapir:github}
+\citation{linux:tc}
+\citation{azure:latency}
+\pgfsyspdfmark {pgfid4}{5950668}{39313689}
+\pgfsyspdfmark {pgfid5}{5039718}{32986184}
+\pgfsyspdfmark {pgfid6}{5039718}{32986184}
+\pgfsyspdfmark {pgfid7}{5039718}{25927954}
+\pgfsyspdfmark {pgfid8}{5039718}{19515255}
+\pgfsyspdfmark {pgfid9}{5039718}{19515255}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Algorithm of Spanner-RLS\xspace  \relax }}{7}{algocf.1}\protected@file@percent }
+\newlabel{algo2}{{1}{7}{Protocols and Implementations}{algocf.1}{}}
+\newlabel{fig:spanner:overview:abort}{{5a}{7}{\small Overview\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:spanner:overview:abort}{{a}{7}{\small Overview\relax }{figure.caption.10}{}}
+\newlabel{fig:spanner:overview:abort:breakdown}{{5b}{7}{\small Abort Rate.\relax }{figure.caption.10}{}}
+\newlabel{sub@fig:spanner:overview:abort:breakdown}{{b}{7}{\small Abort Rate.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Overall performance and abort rate of Spanner and Spannner-RLS on YCSB-T (default setting) using \texttt  {NO\_WAIT}.\relax }}{7}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:eval:spanner:overall:abort}{{5}{7}{Overall performance and abort rate of Spanner and Spannner-RLS on YCSB-T (default setting) using \texttt {NO\_WAIT}.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Evaluation and Discussion}{7}{subsection.4.2}\protected@file@percent }
+\newlabel{sec:spanner:eval}{{4.2}{7}{Evaluation and Discussion}{subsection.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.1}Experimental Setups}{7}{subsubsection.4.2.1}\protected@file@percent }
+\newlabel{fig:spanner:overview:wait}{{6a}{8}{\small Overview\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:spanner:overview:wait}{{a}{8}{\small Overview\relax }{figure.caption.11}{}}
+\newlabel{fig:spanner:overview:wait:breakdown}{{6b}{8}{\small Tail latency.\relax }{figure.caption.11}{}}
+\newlabel{sub@fig:spanner:overview:wait:breakdown}{{b}{8}{\small Tail latency.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Overall performance and latency of Spanner and Spanner-RLS on YCSB-T (default setting) using \texttt  {WAIT\_DIE}.\relax }}{8}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:eval:spanner:overall:wait}{{6}{8}{Overall performance and latency of Spanner and Spanner-RLS on YCSB-T (default setting) using \texttt {WAIT\_DIE}.\relax }{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.2}Performance Overview}{8}{subsubsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.3}Impact of Concurrency}{8}{subsubsection.4.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.4}Impact of CRT Ratio}{8}{subsubsection.4.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.5}Impact of Cross-Region RTT}{8}{subsubsection.4.2.5}\protected@file@percent }
+\citation{zhang2023redt}
+\citation{taft2020cockroachdb}
+\newlabel{fig:spanner:concurrency:abort}{{7a}{9}{\small Impact of Concurrency\relax }{figure.caption.12}{}}
+\newlabel{sub@fig:spanner:concurrency:abort}{{a}{9}{\small Impact of Concurrency\relax }{figure.caption.12}{}}
+\newlabel{fig:spanner:crt:abort}{{7b}{9}{\small Impact of CRT\relax }{figure.caption.12}{}}
+\newlabel{sub@fig:spanner:crt:abort}{{b}{9}{\small Impact of CRT\relax }{figure.caption.12}{}}
+\newlabel{fig:spanner:rtt:abort}{{7c}{9}{\small Impact of RTT\relax }{figure.caption.12}{}}
+\newlabel{sub@fig:spanner:rtt:abort}{{c}{9}{\small Impact of RTT\relax }{figure.caption.12}{}}
+\newlabel{fig:spanner:zipf:abort}{{7d}{9}{\small Impact of Conflicts\relax }{figure.caption.12}{}}
+\newlabel{sub@fig:spanner:zipf:abort}{{d}{9}{\small Impact of Conflicts\relax }{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Performance of Spanner\xspace  and Spanner-RLS\xspace  on YCSB-T with different experimental parameters using \texttt  {NO\_WAIT}.\relax }}{9}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:eval:spanner:abort}{{7}{9}{Performance of \spanner and \spannerxx on YCSB-T with different experimental parameters using \texttt {NO\_WAIT}.\relax }{figure.caption.12}{}}
+\newlabel{fig:spanner:concurrency:wait}{{8a}{9}{\small Impact of Concurrency\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:spanner:concurrency:wait}{{a}{9}{\small Impact of Concurrency\relax }{figure.caption.13}{}}
+\newlabel{fig:spanner:crt:wait}{{8b}{9}{\small Impact of CRT\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:spanner:crt:wait}{{b}{9}{\small Impact of CRT\relax }{figure.caption.13}{}}
+\newlabel{fig:spanner:rtt:wait}{{8c}{9}{\small Impact of RTT\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:spanner:rtt:wait}{{c}{9}{\small Impact of RTT\relax }{figure.caption.13}{}}
+\newlabel{fig:spanner:zipf:wait}{{8d}{9}{\small Impact of Conflicts\relax }{figure.caption.13}{}}
+\newlabel{sub@fig:spanner:zipf:wait}{{d}{9}{\small Impact of Conflicts\relax }{figure.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Performance of Spanner\xspace  and Spanner-RLS\xspace  on YCSB-T with different experimental parameters using \texttt  {WAIT\_DIE}.\relax }}{9}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:eval:spanner:wait}{{8}{9}{Performance of \spanner and \spannerxx on YCSB-T with different experimental parameters using \texttt {WAIT\_DIE}.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.2.6}Impact of Contention}{9}{subsubsection.4.2.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Takeaways}{9}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}CRDB\xspace  and CRDB-RLS\xspace  }{9}{section.5}\protected@file@percent }
+\newlabel{sec:crdb}{{5}{9}{\crdb and \crdbxx }{section.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Protocols and Implementations}{9}{subsection.5.1}\protected@file@percent }
+\citation{taft2020cockroachdb}
+\pgfsyspdfmark {pgfid10}{6861618}{38002969}
+\pgfsyspdfmark {pgfid11}{6861618}{34473854}
+\pgfsyspdfmark {pgfid12}{6861618}{34473854}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Algorithm of CRDB-RLS\xspace  Coordinator\relax }}{10}{algocf.2}\protected@file@percent }
+\newlabel{algo4}{{2}{10}{Protocols and Implementations}{algocf.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Performance Comparison on Micro Workload.\relax }}{10}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:eval:kv}{{9}{10}{Performance Comparison on Micro Workload.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Performance Comparison on YCSB-T (skewed).\relax }}{10}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:crdb:eval:ycsb}{{10}{10}{Performance Comparison on YCSB-T (skewed).\relax }{figure.caption.16}{}}
+\citation{papadimitriou1979serializability}
+\citation{rss}
+\citation{taft2020cockroachdb}
+\citation{daudjee2004lazy,lu2016snow}
+\citation{fekete2005making}
+\citation{viotti2016consistency}
+\citation{anderson1998replication}
+\citation{papadimitriou1979serializability}
+\citation{rss}
+\citation{taft2020cockroachdb}
+\citation{daudjee2004lazy,lu2016snow}
+\citation{fekete2005making}
+\citation{viotti2016consistency}
+\citation{anderson1998replication}
+\citation{taft2020cockroachdb}
+\citation{ye2023polaris}
+\citation{milano2018mixt,li2012making,wang2021autogr,yang2017hierarchical,li2018fine,gao2003application,kraska2009consistency,mdcc:eurosys13}
+\citation{milano2018mixt}
+\citation{li2012making}
+\citation{wang2021autogr}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Evaluation and Discussion}{11}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.1}Performance on Micro Workload}{11}{subsubsection.5.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2}Performance on YCSB-T}{11}{subsubsection.5.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}Takeaways.}{11}{subsection.5.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Related Works}{11}{section.6}\protected@file@percent }
+\newlabel{sec:related}{{6}{11}{Related Works}{section.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1}Proximal Consistency Models}{11}{subsection.6.1}\protected@file@percent }
+\newlabel{sec:rls:compare}{{6.1}{11}{Proximal Consistency Models}{subsection.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2}Transaction Priority}{11}{subsection.6.2}\protected@file@percent }
+\newlabel{sec:related:priority}{{6.2}{11}{Transaction Priority}{subsection.6.2}{}}
+\citation{zhang2023redt,webb2011topology}
+\citation{huawei:region}
+\citation{bidl:sosp21,epaxos:sosp13,li20211pipe,choi2023hydra}
+\citation{abebe2020dynamast,abebe2020morphosys,curino2010schism,pavlo2012skew,zamanian2015locality}
+\citation{taft2020cockroachdb,dast:eurosys21,schiper2010p}
+\newlabel{fig:rls_ss}{{11a}{12}{Allowed by \xxcons but disallowed by SS, RSS.\relax }{figure.caption.17}{}}
+\newlabel{sub@fig:rls_ss}{{a}{12}{Allowed by \xxcons but disallowed by SS, RSS.\relax }{figure.caption.17}{}}
+\newlabel{fig:rls_rss}{{11b}{12}{Allowed by RSS but disallowed by \xxcons .\relax }{figure.caption.17}{}}
+\newlabel{sub@fig:rls_rss}{{b}{12}{Allowed by RSS but disallowed by \xxcons .\relax }{figure.caption.17}{}}
+\newlabel{fig:rls_crdb}{{11c}{12}{Allowed by \crdb but disallowed by \xxcons \relax }{figure.caption.17}{}}
+\newlabel{sub@fig:rls_crdb}{{c}{12}{Allowed by \crdb but disallowed by \xxcons \relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Comparison of RLS\xspace  with proximal levels of consistency models.\relax }}{12}{figure.caption.17}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces This diagram shows how RLS compared to its proximal consistency models: SS\nonbreakingspace \citep  {papadimitriou1979serializability}, RSS\nonbreakingspace \citep  {rss}, SKL\nonbreakingspace \citep  {taft2020cockroachdb}, PoS\nonbreakingspace \citep  {daudjee2004lazy, lu2016snow}, SSI\nonbreakingspace \citep  {fekete2005making}, serializability\nonbreakingspace \citep  {viotti2016consistency}, and SI\nonbreakingspace \citep  {anderson1998replication}. We highlight all those serializable consistency models in grey.\relax }}{12}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:model}{{12}{12}{This diagram shows how RLS compared to its proximal consistency models: SS~\cite {papadimitriou1979serializability}, RSS~\cite {rss}, SKL~\cite {taft2020cockroachdb}, PoS~\cite {daudjee2004lazy, lu2016snow}, SSI~\cite {fekete2005making}, serializability~\cite {viotti2016consistency}, and SI~\cite {anderson1998replication}. We highlight all those serializable consistency models in grey.\relax }{figure.caption.18}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3}Mixed Consistency Models}{12}{subsection.6.3}\protected@file@percent }
+\newlabel{sec:related:mixed}{{6.3}{12}{Mixed Consistency Models}{subsection.6.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future Works}{12}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{12}{section.8}\protected@file@percent }
+\newlabel{sec:conclusion}{{8}{12}{Conclusion}{section.8}{}}
+\bibstyle{ACM-Reference-Format}
+\bibdata{bib/database,bib/biblio,bib/blockchain,bib/edge,bib/htap}
+\bibcite{GeneralD60:online}{{1}{[n.d.]}{{Gen}}{{??}}}
+\bibcite{tapir:github}{{2}{[n.d.]}{{tap}}{{??}}}
+\bibcite{abebe2020dynamast}{{3}{2020a}{{Abebe et~al\mbox  {.}}}{{Abebe, Glasbergen, and Daudjee}}}
+\bibcite{abebe2020morphosys}{{4}{2020b}{{Abebe et~al\mbox  {.}}}{{Abebe, Glasbergen, and Daudjee}}}
+\bibcite{anderson1998replication}{{5}{1998}{{Anderson et~al\mbox  {.}}}{{Anderson, Breitbart, Korth, and Wool}}}
+\bibcite{aws:region}{{6}{[n.d.]}{{AWS}}{{AWS}}}
+\bibcite{azure:region}{{7}{[n.d.]}{{Azure}}{{Azure}}}
+\bibcite{azure:latency}{{8}{[n.d.]}{{Azure.}}{{Azure.}}}
+\bibcite{dast:eurosys21}{{9}{2021a}{{Chen et~al\mbox  {.}}}{{Chen, Song, Jiang, Ruan, Li, Wang, Zhang, Cheng, and Cui}}}
+\bibcite{chen2021achieving}{{10}{2021b}{{Chen et~al\mbox  {.}}}{{Chen, Song, Jiang, Ruan, Li, Wang, Zhang, Cheng, and Cui}}}
+\bibcite{choi2023hydra}{{11}{2023}{{Choi et~al\mbox  {.}}}{{Choi, Michael, Li, Ports, and Li}}}
+\bibcite{huawei:region}{{12}{[n.d.]}{{Cloud}}{{Cloud}}}
+\bibcite{spanner:osdi12}{{13}{2012}{{Corbett et~al\mbox  {.}}}{{Corbett, Dean, Epstein, Fikes, Frost, Furman, Ghemawat, Gubarev, Heiser, Hochschild, Hsieh, Kanthak, Kogan, Li, Lloyd, Melnik, Mwaura, Nagle, Quinlan, Rao, Rolig, Saito, Szymaniak, Taylor, Wang, and Woodford}}}
+\bibcite{tpcc}{{14}{2014}{{COUNCIL}}{{COUNCIL}}}
+\bibcite{curino2010schism}{{15}{2010}{{Curino et~al\mbox  {.}}}{{Curino, Jones, Zhang, and Madden}}}
+\bibcite{daudjee2004lazy}{{16}{2004}{{Daudjee and Salem}}{{Daudjee and Salem}}}
+\bibcite{daudjee2006lazy}{{17}{2006}{{Daudjee and Salem}}{{Daudjee and Salem}}}
+\bibcite{ov:vldb19}{{18}{2019}{{Fan and Golab}}{{Fan and Golab}}}
+\bibcite{fekete2005making}{{19}{2005}{{Fekete et~al\mbox  {.}}}{{Fekete, Liarokapis, O'Neil, O'Neil, and Shasha}}}
+\bibcite{gao2003application}{{20}{2003}{{Gao et~al\mbox  {.}}}{{Gao, Dahlin, Nayate, Zheng, and Iyengar}}}
+\bibcite{rss}{{21}{2021}{{Helt et~al\mbox  {.}}}{{Helt, Burke, Levy, and Lloyd}}}
+\bibcite{linux:tc}{{22}{[n.d.]}{{Hubert}}{{Hubert}}}
+\bibcite{kraska2009consistency}{{23}{2009}{{Kraska et~al\mbox  {.}}}{{Kraska, Hentschel, Alonso, and Kossmann}}}
+\bibcite{mdcc:eurosys13}{{24}{2013}{{Kraska et~al\mbox  {.}}}{{Kraska, Pang, Franklin, Madden, and Fekete}}}
+\bibcite{lamport2019time}{{25}{2019}{{Lamport}}{{Lamport}}}
+\bibcite{li20211pipe}{{26}{2021}{{Li et~al\mbox  {.}}}{{Li, Zuo, Bai, and Zhang}}}
+\bibcite{li2012making}{{27}{2012}{{Li et~al\mbox  {.}}}{{Li, Porto, Clement, Gehrke, Pregui{\c {c}}a, and Rodrigues}}}
+\bibcite{li2018fine}{{28}{2018}{{Li et~al\mbox  {.}}}{{Li, Pregui{\c {c}}a, and Rodrigues}}}
+\bibcite{lu2016snow}{{29}{2016}{{Lu et~al\mbox  {.}}}{{Lu, Hodsdon, Ngo, Mu, and Lloyd}}}
+\bibcite{lu2023ncc}{{30}{2023}{{Lu et~al\mbox  {.}}}{{Lu, Mu, Sen, and Lloyd}}}
+\bibcite{milano2018mixt}{{31}{2018}{{Milano and Myers}}{{Milano and Myers}}}
+\bibcite{epaxos:sosp13}{{32}{2013}{{Moraru et~al\mbox  {.}}}{{Moraru, Andersen, and Kaminsky}}}
+\bibcite{janus:osdi16}{{33}{2016}{{Mu et~al\mbox  {.}}}{{Mu, Nelson, Lloyd, and Li}}}
+\bibcite{nguyen2023detock}{{34}{2023}{{Nguyen et~al\mbox  {.}}}{{Nguyen, Miller, and Abadi}}}
+\bibcite{papadimitriou1979serializability}{{35}{1979}{{Papadimitriou}}{{Papadimitriou}}}
+\bibcite{pavlo2012skew}{{36}{2012}{{Pavlo et~al\mbox  {.}}}{{Pavlo, Curino, and Zdonik}}}
+\bibcite{bidl:sosp21}{{37}{2021}{{Qi et~al\mbox  {.}}}{{Qi, Chen, Jiang, Jiang, Shen, Zhao, Wang, Zhang, Chen, Au, and Cui}}}
+\bibcite{slog:vldb19}{{38}{2019}{{Ren et~al\mbox  {.}}}{{Ren, Li, and Abadi}}}
+\bibcite{schiper2010p}{{39}{2010}{{Schiper et~al\mbox  {.}}}{{Schiper, Sutra, and Pedone}}}
+\bibcite{taft2020cockroachdb}{{40}{2020}{{Taft et~al\mbox  {.}}}{{Taft, Sharif, Matei, VanBenschoten, Lewis, Grieger, Niemi, Woods, Birzin, Poss, et~al\mbox  {.}}}}
+\bibcite{calvin}{{41}{2012}{{Thomson et~al\mbox  {.}}}{{Thomson, Diamond, Weng, Ren, Shao, and Abadi}}}
+\bibcite{calvin:sigmod12}{{42}{2014}{{Thomson et~al\mbox  {.}}}{{Thomson, Diamond, Weng, Ren, Shao, and Abadi}}}
+\bibcite{vanbenschoten2022enabling}{{43}{2022}{{VanBenschoten et~al\mbox  {.}}}{{VanBenschoten, Ajmani, Gartner, Matei, Shah, Sharif, Shraer, Storm, Taft, Tan, et~al\mbox  {.}}}}
+\bibcite{viotti2016consistency}{{44}{2016}{{Viotti and Vukoli{\'c}}}{{Viotti and Vukoli{\'c}}}}
+\bibcite{wang2021autogr}{{45}{2021}{{Wang et~al\mbox  {.}}}{{Wang, Li, Ma, Huo, Yan, Feng, and Xu}}}
+\bibcite{webb2011topology}{{46}{2011}{{Webb et~al\mbox  {.}}}{{Webb, Snoeren, and Yocum}}}
+\bibcite{yang2017hierarchical}{{47}{2017}{{Yang et~al\mbox  {.}}}{{Yang, You, and Gu}}}
+\bibcite{ye2023polaris}{{48}{2023}{{Ye et~al\mbox  {.}}}{{Ye, Hwang, Chen, and Yu}}}
+\bibcite{zamanian2015locality}{{49}{2015}{{Zamanian et~al\mbox  {.}}}{{Zamanian, Binnig, and Salama}}}
+\@writefile{toc}{\contentsline {section}{References}{13}{section*.20}\protected@file@percent }
+\bibcite{zhang2018building}{{50}{2018a}{{Zhang et~al\mbox  {.}}}{{Zhang, Sharma, Szekeres, Krishnamurthy, and Ports}}}
+\bibcite{tapir:tocs}{{51}{2018b}{{Zhang et~al\mbox  {.}}}{{Zhang, Sharma, Szekeres, Krishnamurthy, and Ports}}}
+\bibcite{zhang2023redt}{{52}{2023}{{Zhang et~al\mbox  {.}}}{{Zhang, Li, Zhao, Xu, Lu, Xiao, Han, Yang, and Du}}}
+\newlabel{tocindent-1}{0pt}
+\newlabel{tocindent0}{0pt}
+\newlabel{tocindent1}{4.185pt}
+\newlabel{tocindent2}{10.34999pt}
+\newlabel{tocindent3}{18.198pt}
+\newlabel{TotPages}{{14}{14}{}{page.14}{}}
+\gdef \@abspage@last{14}

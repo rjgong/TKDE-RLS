@@ -1,0 +1,125 @@
+\section{Region-linearizable Serializability}\label{sec:model}
+
+In this section, we formally define our new consistency model: Region-linearizable Serializability (RLS), which is specially tailored for the database systems that are deployed in near-client computing facilities (e.g., Regions~\cite{aws:region} in AWS). For comparisons with other serializable consistency models, we refer readers to \chref{sec:rls:compare}.
+
+\subsection{Definition of RLS}\label{sec:model:def}
+
+For clarity, we adopted the formalism from existing works~\cite{rss}. \tab{tab:model} summarizes the notations used in our definition, which will be further illustrated later.
+Without loss of generality, we consider an OLTP service (either a relational database or a transactional key-value store) handling data objects identified by unique keys. We use $\mathcal{K}$ to represent the global key spaces. $\mathcal{K}$ is divided into multiple disjoint \textit{shards} to facilitate transaction processing across many nodes (servers), which is common in multi-region deployed data-intensive applications.
+
+\vspace{2pt}
+\noindent\textbf{Shard Groups (e.g., grouped by regions)}. Grouping 
+semantics is one of the foremost distinctions of \xxcons compared to other serializable consistency models. Specifically, \xxcons divides data shards into disjoint groups and 
+ensures linearizability (i.e., the strongest consistency) for intra-group operations. For inter-group operations, RLS provides regular serializability.
+
+Note that grouping and sharding construct a two-level division of 
+the global key space ($\mathcal{K}$): the OLTP service has many disjoint groups,
+and each group contains a number of (not necessarily equivalent) disjoint 
+shards. This division serves different purposes; sharding is for horizontally scaling the 
+service to run on many servers, and the division policy 
+is usually for reducing the ratio of cross-shard transactions to achieve 
+high efficiency~\cite{nguyen2023detock}.
+On the other hand, grouping is a consistency strategy where cross-group external ordering requirements are typically less important. Such semantics are usually related and directed by geo-distributed (multi-region) deployments. 
+
+We regard this two-level framework as essential because it efficiently bridges the division based on application semantics (e.g., the data items grouped by warehouse ID in TPC-C~\cite{tpcc}) and division based on deployment topology (e.g., the data shards grouped by regions in geo-distributed deployments).
+
+\vspace{2pt}
+\noindent\textbf{Transactions and Operations}. Clients interact with the OLTP service through transactions. Each transaction comprises several single-key read or single-key write \textit{operations}. Formally, each transaction $T$ is a tuple $(\Sigma_T, \xrightarrow{to})$, where $\Sigma_T$ is the set of operations in $T$, and $\xrightarrow{to}$ is a total order on $\Sigma_T$. Each operation is either a read (denoted as $o_1 = r(k_1, v_1)$) or a write (denoted as $o_2 = w(k_2, v_2)$). We use $\mathcal{R}_T = \{k | r(k, v) \in \Sigma_T\}$ to denote $T$'s read set and $\mathcal{W}_T = \{k | w(k, v)\} \in \Sigma_T\}$ as $T$'s write set. 
+
+It should be noted that RLS, as a consistency model, does not essentially require the read and write set of each transaction to be determined upfront, which is a common but restrictive assumption in existing deterministic databases~\cite{slog:vldb19,calvin:sigmod12,mdcc:eurosys13,epaxos:sosp13, nguyen2023detock}. Essentially, RLS supports general transaction semantics (to be illustrated in our example system: Spanner-RLS, \chref{sec:spanner}). In RLS, we consider a general transaction $T_1 = \{r(x, n), w(n, v)\}$ that reads the value of key $x$ as the key for the write operation, where  $\mathcal{W}_{T1}$ can not be obtained before execution.
+
+\begin{table}[]
+    \vspace{5pt}
+    \small
+    \renewcommand\arraystretch{1.35}
+    \setlength{\tabcolsep}{1.25pt}
+    \begin{tabular}{|c|c|l|}
+    \hline
+    \multirow{3}{*}{Ops}    
+    & $o$  & Database operation, e.g., read, write, insert, scan.               \\ \cline{2-3}
+    & $r(k, v)$  & Read the value $v$ using key $k$               \\ \cline{2-3}                   
+          & $w(k, v)$ & Write value $v$ for key $k$       \\ \hline
+
+    \multirow{4}{*}{Txns}    
+    & ${T}$  & Txn consists of operations ($\Sigma_T$) with order ($\xrightarrow{to}$)               \\ \cline{2-3}
+    & $\mathcal{R}_{T}$  & Read Set of Transaction T                \\ \cline{2-3}                   
+          & $\mathcal{W}_{T}$ & Write Set of Transaction T          \\ \cline{2-3}
+          & $\mathcal{G}_T$  & The set of all shard groups relevant to $T$                      \\ \hline
+    \multirow{2}{*}{Data}  & $\mathcal{K}$    &  Global Key Space                      \\ \cline{2-3} 
+                             & $g$   & A shard group contains multiple shards                      \\ \hline
+    \multirow{6}{*}{\makecell{Order}}
+                
+                                        & $\mathcal{H}_i$   & Transaction history on $node_i$, $\mathcal{H}_i =$ $(\mathcal{E}_i, {po}_{i}, {\tau}_i)$                            \\ \cline{2-3} 
+                              & $\mathcal{H}$   & Transaction history of the whole system, $\mathcal{H} =$ $\bigcup \mathcal{H}_i$                            \\ \cline{2-3} 
+                              & $\mathcal{S}$   & Totally ordered serializable schedule for all txns                           \\  \cline{2-3} 
+                              & $\xrightarrow{rb}$   & Real-time order imposed by runtime execution                           \\  \cline{2-3} 
+  
+                              &  $\xrightarrow{so}$    & Oreder for operations in   $\mathcal{S}$                                      \\ \cline{2-3} 
+                              &   $<_S$   &  Oreder for transactions in   $\mathcal{S}$               \\ \hline
+    \end{tabular}
+    \vspace{2pt}
+    \caption{Preliminaries and notations for RLS.}\label{tab:model}
+    \vspace{-5pt}
+    \end{table}
+
+\vspace{2pt}
+\noindent\textbf{Conflicts and Relevance.}
+We say two transactions conflict with each other if they access the same key, and at least one of the two accesses is ``write'' (which is known as read-write conflicts and write-write conflicts in other papers). We say a transaction $T$ is relevant to shard group $g$ if $T$ accesses at least one key owned by $g$, and we use $\mathcal{G}_T$ to represent the set of all groups relevant to $T$. Formally, $$\mathcal{G}_T = \{g\ |\ \exists k: k \in g \land k \in (\mathcal{W}_T \cup \mathcal{R}_T)\}$$
+
+\vspace{2pt}
+\noindent\textbf{History and Equivalence.} A history of a data $node_i$ ($server_i$) is an associative triple $\mathcal{H}_i =$ $(\mathcal{E}_i, {po}_{i}, {\tau}_i)$, where $\mathcal{E}$ is a set of operations; $po$ is a partial ordering on $\mathcal{E}$ into processes; and $\tau$ divides $\mathcal{E}$ into transactions. We say two histories ($\mathcal{H}_1$ and $\mathcal{H}_2$) are equivalent if they have the same $\mathcal{E}$, $po$, and $\tau$. Intuitively, two equivalent histories have the same sequence of operations for each client process and thus are indistinguishable inside the database. 
+
+\vspace{2pt}
+\noindent\textbf{Real-time order.} An order of transactions is usually considered as a set of \textit{return before} relations~\cite{lamport2019time}. In our paper, we say a transaction $T_1$ precedes another transaction $T_2$ if $T_1$ finishes (commits) before $T_2$ starts (i.e., arrives at the database system), denoted as $T_1 \xrightarrow{rb} T_2$.
+
+\vspace{5pt}
+
+\noindent\textbf{\textit{Definition of \xxcons}}. We then define RLS using the notations above. We say that an OLTP service ensures \xxcons, if for all execution histories, $\mathcal{H} =$ $\bigcup \mathcal{H}_i$, are equivalent to a serial schedule $\mathcal{S}$ and the following three properties hold for $\mathcal{S}$.
+
+
+\begin{itemize}[leftmargin=*, itemsep=1.5pt]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parsep}{0pt}
+    \setlength{\parskip}{0pt}
+\item \textit{\underline{Serializability.}} There exists serial schedule $\mathcal{S}$ with total ordering $so$ on $\mathcal{E}$ such that \circled{1}
+$S$ is equivalent to $H$; and \circled{2} no two transactions overlap in $so$, i.e., either 
+    \vspace{2pt}
+$$o_1 \xrightarrow{so} o_2,  \forall o_1 \in T_1, \forall o_2 \in T_2$$ or 
+$$o_2 \xrightarrow{so} o_1,  \forall o_1 \in T_1, \forall o_2 \in T_2$$
+    \vspace{2pt}
+Therefore, the property \circled{2} infers that $\xrightarrow{so}$ defines a total order $<_S$ among all transactions.
+
+    \vspace{2pt}
+\item \textit{\underline{No Stale Reads.}} Formally, for any two transactions $T_1$ and $T_2$
+
+$$ \mathcal{W}_T \cap (\mathcal{W}_T \cup \mathcal{R}_T) \neq \emptyset \land T_1 \xrightarrow{rb} T_2 \implies T_1 <_S T_2$$
+
+    \vspace{2pt}
+\item \textit{\underline{Real-time Ordering inside all Shard Groups.}} Formally,
+$$\mathcal{G}_{T_1} \cap \mathcal{G}_{T_2} \neq \emptyset \land T_1 \xrightarrow{rb} T_2 \implies T_1 <_S T_2$$
+\end{itemize}
+
+
+
+
+\subsection{Performance Issues in Strict Serilizability}\label{sec:rls:issue}
+
+Strict serializability (SS), the most substantial consistency level for distributed databases, ensures that a replicated distributed database works as a single node that executes all client transactions serially. The serial order respects the real-time relations (i.e., the ``return before'' relation in \chref{sec:model:def}) among all client transactions. 
+
+However, the strong guarantees of SS always come up with high-performance costs, especially when deployed in a multi-region environment. This has led both academia and industry to seek weaker consistency models. For example, numerous new consistency models were proposed in recent years (see \chref{sec:rls:compare}), and almost all industrial systems do not provide SS by default.
+
+\subsection{Practical Implications}\label{sec:rls:practical}
+
+In essence, the guarantee of SS is considered excessive for many multi-region application scenarios. Specifically, ensuring a real-time relation between transactions pertains to external (out-of-band) causal relations among transactions. 
+Since a system is unaware of external relations, SS regards \textit{all} pairs of transactions without overlapping lifetime as potentially causally related and pertains to their ordering, albeit most transactions are independent. 
+ 
+\xxcons ensures the ``no stale reads'' property for all transactions, effectively preventing most application-level anomalies~\cite{viotti2016consistency}. Additionally, \xxcons enforces real-time ordering among transactions accessing interleaved regions (i.e., conflict IRTs and CRTs), including transaction ordering requirements inferred by transitivity. Compared to SS, the only anomalies in \xxcons may arise from the potential disruption of real-time ordering among transactions happening independently within non-overlapping regions. 
+
+We argue that such anomalies do not compromise the correctness of multi-region databases for two primary reasons. First, multi-region databases optimally leverage data access locality to assign shards to regions (see \chref{sec:background:deployment}). Typically, each region manages (e.g., being the leader of) shards containing data of nearby clients, making two transactions accessing non-overlapped regions causally unrelated. Thus, prioritizing their real-time order will not introduce application-level anomalies. 
+
+
+Second, the time window for breaking causal relations is narrow. \xxcons necessitates ``no stale reads'' for all transactions, whether intra-region or cross-region. To sever the causal relationship between two transactions, external communication must conclude faster than a transaction's lifetime. 
+Specifically, consider two transactions $T_2$, $T_3$ accessing non-overlapped regions, where $T_2 \xrightarrow{rb} T_3$. If anomalies were present, it would imply the existence of another transaction $T_1$ accessing both $T_2$ and $T_3$'s regions, leading to a final serial order of $T_3 <_S T_1 <_S T_2$ (as depicted in \fig{fig:rls_ss}). However, as \xxcons also mandates ``no stale reads'', $T_1$ must be concurrent with $T_2$ and $T_3$, implying that the external causal relation must conclude within $T_1$'s lifetime. 
+
+
+Therefore, \xxcons possesses the unique potential to significantly enhance the scalability and latency of multi-region databases while maintaining correctness and programmability. \xxcons stands out as the pioneering consistency model that takes into account real-world deployments and the inherent locality feature of data.

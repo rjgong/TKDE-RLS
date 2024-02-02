@@ -1,0 +1,135 @@
+\documentclass[lettersize,journal]{IEEEtran}
+
+% \PassOptionsToPackage{table}{xcolor}
+\usepackage{microtype}
+\usepackage{flushend}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{color, colortbl}
+\usepackage{makecell}
+\usepackage{multirow}
+% \usepackage[table]{xcolor}
+\usepackage{xstring}
+\usepackage{amsmath}
+
+\usepackage{pifont}
+\newcommand{\tick}{\ding{51}}%
+\newcommand{\cross}{\ding{55}}%
+\usepackage{makecell}
+\usepackage{textcomp}
+\usepackage[normalem]{ulem}
+\usepackage{array}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{stfloats}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+
+
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+\hypersetup{
+colorlinks=true,
+linkcolor=black
+}
+\hypersetup{hidelinks} 
+
+\usetikzlibrary{fit,calc}
+%define a marking command
+\newcommand*{\tikzmk}[1]{\tikz[remember picture,overlay,] \node (#1) {};\ignorespaces}
+%define a boxing command, argument = colour of box
+\newcommand{\boxit}[1]{\tikz[remember picture,overlay]{\node[xshift=-15pt,yshift=0.5pt,fill=#1,opacity=.25,fit={(A)($(B)+(.9\linewidth,.8\baselineskip)$)}] {};}\ignorespaces}
+\setlist{itemsep=1pt, topsep=3pt}
+
+
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle, fill=black, text=white, inner sep=.5pt] (char) {#1};}}
+
+\definecolor{darkblue}{rgb}{0.0, 0.0, 0.55}
+\definecolor{darkred}{rgb}{0.55, 0.0, 0.0}
+\newcommand{\github}[0]{{\color{darkred}\href{http://www.github.com/hku-systems/dast}{\url{github.com/hku-systems/dast}}}}
+
+\newcommand\fig[1]{\hyperref[#1]{\color{darkred} Figure~\ref{#1}}}
+\newcommand\chref[1]{\hyperref[#1]{\color{darkred}\S\ref{#1}}}
+\newcommand\tab[1]{\hyperref[#1]{\color{darkred} Table~\ref{#1}}}
+\newcommand{\algo}[1]{\hyperref[#1]{\color{darkred} Algorithm~\ref{#1}}}
+\newcommand{\algoline}[2]{\hyperref[#2]{\color{darkred}Line~\ref{#2}}}
+
+\newcommand{\crdb}[0]{CRDB\xspace}
+\newcommand{\dast}[0]{\textsc{Dast}\xspace}
+\newcommand{\crdbxx}[0]{CRDB-RLS\xspace}
+\newcommand{\spxx}[0]{Spanner-RLS\xspace}
+\newcommand{\slog}[0]{Slog\xspace}
+\newcommand{\slogxx}[0]{Slog-RLS\xspace}
+\newcommand{\Janus}[0]{Janus\xspace}
+
+\newcommand{\spanner}[0]{Spanner\xspace}
+\newcommand{\spannerxx}[0]{Spanner-RLS\xspace}
+
+\renewcommand\v[1]{\mbox{\fontfamily{lmtt}\selectfont{#1}}}
+
+\newcommand{\xxcons}[0]{RLS\xspace}
+\newcommand{\conflict}[0]{\cdot}
+
+% algorithm
+\usepackage[ruled,linesnumbered,vlined,boxed]{algorithm2e}
+\usepackage[noend]{algpseudocode}
+\usepackage{setspace}
+\algnewcommand{\LeftComment}[1]{\(\triangleright\) #1}
+\setlength{\algomargin}{1em}
+\SetVlineSkip{0.05em}
+
+\newcommand\vldbdoi{XX.XX/XXX.XX}
+\newcommand\vldbpages{XXX-XXX}
+% issue-specific
+\newcommand\vldbvolume{14}
+\newcommand\vldbissue{1}
+\newcommand\vldbyear{2020}
+% should be fine as it is
+\newcommand\vldbauthors{\authors}
+\newcommand\vldbtitle{\shorttitle} 
+% leave empty if no availability url should be set
+\newcommand\vldbavailabilityurl{URL_TO_YOUR_ARTIFACTS}
+% whether page numbers should be shown or not, use 'plain' for review versions, 'empty' for camera ready
+\newcommand\vldbpagestyle{plain}  
+
+\begin{document}
+    
+
+\title{Region-Linearizable Serializability: A Practical Consistency Model for  Multi-Region Distributed Transactions}
+
+\author{Ruijie Gong, Haoze Song, Xusheng Chen, Sen Wang, Heming Cui}
+
+
+
+
+\maketitle
+
+
+\begin{abstract}
+    \input{sections/0-abst.tex}
+\end{abstract}
+
+\input{sections/1-intro.tex}
+
+\input{sections/2-motivation.tex}
+
+\input{sections/3-model.tex}
+
+\input{sections/4-spanner.tex}
+
+\input{sections/6-crdb.tex}
+
+\input{sections/8-related.tex}
+
+\input{sections/7-lesson.tex}
+
+\input{sections/9-conclusion.tex}
+
+
+\bibliographystyle{IEEEtran}
+\bibliography{bib/database,bib/biblio,bib/blockchain,bib/edge,bib/htap}
+\end{document}

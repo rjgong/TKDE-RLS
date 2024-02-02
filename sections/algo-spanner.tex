@@ -1,0 +1,140 @@
+\SetKwProg{Fn}{function}{:}{}
+
+\SetKwFunction{Coordsp}{Coord-\spxx}
+\SetKwFunction{FgetPreLock}{getCrossLock}
+\SetKwFunction{FsetPreLock}{setCrossLock}
+\SetKwFunction{FgetLock}{getInLock}
+\SetKwFunction{FsetLock}{setInLock}
+\SetKwFunction{FsendPrepareOK}{sendPrepareOK}
+\SetKwFunction{FsendRetry}{sendRetry}
+\SetKwFunction{FsendCommitted}{sendCommitted}
+
+\SetKwData{DKey}{key}
+\SetKwData{DTxn}{txn}
+\SetKwData{PreLock}{crossLock}
+\SetKwData{Lock}{inLock}
+
+\SetKwData{UNLOCKED}{unLock}
+\SetKwData{RLock}{readLock}
+\SetKwData{WLock}{writeLock}
+\SetKwData{RWLock}{readWriteLock}
+\SetKwData{PreLockHolder}{crossLockHolder}
+\SetKwData{LockHolder}{inLockHolder}
+\SetKwProg{Event}{Event}{}{end}
+\SetKwData{TouchedR}{touchedRegions}
+
+\SetKwData{DRegion}{r}
+
+
+\begin{algorithm}[t]
+	\setstretch{1}
+	\small 
+  	\Fn{Execution phase}{
+      \texttt{read\_set} \&  
+      \texttt{write\_set} $\gets \emptyset$ \\
+      txnType $\gets$ IRT  \Comment{Start a new transaction as IRT.}\\
+       \TouchedR $\gets \emptyset$  \Comment{Regions involved in the transaction.} \\
+  \LeftComment{Execute the transaction commands, which triggers the events:}\\
+  \Event{$read (\texttt{key}$)}{
+    
+    $\texttt{value} = find\_record(\texttt{key})$ \\
+    $\texttt{read\_set}.append(\texttt{key})$ \\
+    \tikzmk{A}
+    \TouchedR $\gets$ \TouchedR $\cup$ \texttt{key.region} \\
+    \If{$	\lvert \TouchedR 	\rvert \geq 2$}{
+      txnType $\gets$ CRT \\
+       $Release\_IRT\_Read\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{read\_set} \\
+       $CRT\_Read\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{read\_set} \\
+    }
+    \uIf{txnType == IRT}{
+      $IRT\_Read\_Lock(key)$ \\
+    }
+    \Else(){
+      $CRT\_Read\_Lock(key)$
+    }
+  }
+
+  \tikzmk{B} \boxit{blue}
+  \Event{write (\texttt{key}, \texttt{value}) \Comment{Writes are only buffered }}{
+       $\texttt{write\_set}.append(\text{\textless}\texttt{key}, \texttt{value}\text{\textgreater})$ \\
+       $Execute \ Line \ 9 \sim 13$ \\
+  }
+
+  }
+  \renewcommand{\boxit}[1]{\tikz[remember picture,overlay]{\node[xshift=-1.5pt,yshift=0.5pt,fill=#1,opacity=.25,fit={(A)($(B)+(.9\linewidth,.8\baselineskip)$)}] {};}\ignorespaces} 
+
+  \Fn{Commit phase}{
+      \uIf{txnType == IRT} {
+        $IRT\_Write\_Lock(k)$ $for$ $all$ $k$ $\in$ \texttt{write\_set}  \\
+        wait for all \texttt{ACK}s from $storage$ \Comment{Abort if fail} \\ 
+        $Commit(txn)$ \\
+        $Release\_IRT\_Read\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{read\_set} \\
+        $Release\_IRT\_Write\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{write\_set} \\
+      }
+
+      \tikzmk{A} 
+      \Else(){
+        $CRT\_Write\_Lock(k)$ $for$ $all$ $k$ $\in$ \texttt{write\_set}  \\
+        wait for all \texttt{ACK}s from $storage$ \Comment{Abort if fail} \\ 
+        Send Commit to $txn$ $managers$ $in$ $r$, $r$ $\in$  \TouchedR  \\
+        \LeftComment{Each transaction manager commits the transaction as IRT} \\
+        wait for all \texttt{ACK}s from the $txn$ $managers$ \Comment{Abort if fail} \\ 
+        $Commit(txn)$ \\
+        $Release\_CRT\_Read\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{read\_set} \\
+        $Release\_CRT\_Write\_Lock(k)$ $for$ $all$ $k$ $\in$  \texttt{write\_set} \\
+      } \tikzmk{B} \boxit{blue}}
+	% \Fn{\Coordsp-\texttt{InRegion-Txn}}{
+  %       \For{$\forall \DKey \in \DTxn.readSet$}{
+  %         \PreLock $\gets$ \FgetPreLock(\DKey) \\
+  %         \Switch{\PreLock}{
+  %           \Case{\UNLOCKED}{}
+  %           \Case{\RLock}{
+  %             \PreLockHolder{\DKey} $\gets$ \PreLockHolder{\DKey} $\cup$ \{\DTxn\} \\
+  %             \FsetPreLock{\DKey, \RLock} \\
+  %             \textbf{break} \\
+  %           }
+  %           \Case{\WLock}{}
+  %           \Case{\RWLock}{
+  %             \If{$\DTxn \notin \PreLockHolder{\DKey}$}{
+  %               \FsendRetry(\DTxn) \\
+  %             } 
+  %             \Else(){
+  %               \FsetPreLock{\DKey, \RWLock} \\
+  %             }
+  %             \textbf{break} \\
+  %           }
+  %         }
+  %       }
+  %       \For{$\forall \DKey \in \DTxn.writeSet$}{
+  %         \PreLock $\gets$ \FgetPreLock(\DKey) \\
+  %         \Switch{\PreLock}{
+  %           \Case{\UNLOCKED}{
+  %             \PreLockHolder{\DKey} $\gets$ \PreLockHolder{\DKey} $\cup$ \{\DTxn\} \\
+  %             \FsetPreLock{\DKey, \WLock} \\
+  %             \textbf{break} \\
+  %           }
+  %           \Case{\RLock}{
+  %             \If{$\DTxn \notin \PreLockHolder{\DKey}$}{
+  %               \FsendRetry(\DTxn) \\
+  %             }
+  %             \Else(){
+  %               \FsetPreLock{\DKey, \RWLock} \\
+  %             }
+  %             \textbf{break} \\
+  %           }
+  %           \Case{\WLock}{}
+  %           \Case{\RWLock}{
+  %             \If{$\DTxn \notin \PreLockHolder{\DKey}$}{
+  %               \FsendRetry(\DTxn) \\
+  %             }
+  %             \textbf{break} \\
+  %           }
+  %         }
+  %       }
+  %       \FsendPrepareOK(\DTxn)
+      % }
+\caption{Algorithm of \spxx}\label{algo2}
+  \end{algorithm}
+% \fi
+
+\renewcommand{\boxit}[1]{\tikz[remember picture,overlay]{\node[xshift=-30pt,yshift=0.5pt,fill=#1,opacity=.25,fit={(A)($(B)+(.9\linewidth,.8\baselineskip)$)}] {};}\ignorespaces}

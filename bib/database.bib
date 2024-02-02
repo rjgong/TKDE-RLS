@@ -1,0 +1,2862 @@
+
+@article{viotti2016consistency,
+  title={Consistency in non-transactional distributed storage systems},
+  author={Viotti, Paolo and Vukoli{\'c}, Marko},
+  journal={ACM Computing Surveys (CSUR)},
+  volume={49},
+  number={1},
+  pages={1--34},
+  year={2016},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{rizvi_canopus_2017,
+	address = {Incheon, Republic of Korea},
+	title = {Canopus: {A} {Scalable} and {iscassively} {Parallel} {Consensus} {Protocol}},
+	isbn = {978-1-4503-5422-6},
+	shorttitle = {Canopus},
+	url = {http://dl.acm.org/citation.cfm?doid=3143361.3143394},
+	doi = {10.1145/3143361.3143394},
+	abstract = {Achieving consensus among a set of distributed entities (or participants) is a fundamental problem at the heart of many distributed systems. A critical problem with most consensus protocols is that they do not scale well. As the number of participants trying to achieve consensus increases, increasing network trafﬁc can quickly overwhelm the network from topology-oblivious broadcasts, or a central coordinator for centralized consensus protocols. Thus, either achieving strong consensus is restricted to a handful of participants, or developers must resort to weaker models of consensus.},
+	language = {en},
+	urldate = {2020-01-06},
+	booktitle = {Proceedings of the 13th {International} {Conference} on emerging {Networking} {EXperiments} and {Technologies} - {CoNEXT} '17},
+	publisher = {ACM Press},
+	author = {Rizvi, Sajjad and Wong, Bernard and Keshav, Srinivasan},
+	year = {2017},
+	keywords = {Anatomy, Regional, Attribute–value pair, Centralized computing, Data center, Distributed computing, Entity, Network topology, Network traffic control, Parallel computing, Plug compatible, Protocols documentation, Prototype, Scalability, Throughput, Workload},
+	pages = {426--438},
+	file = {Canopus - A Scalable and Massively Parallel Consensus Protocol2017_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Canopus - A Scalable and Massively Parallel Consensus Protocol2017_.pdf:application/pdf;Canopus - A Scalable and Massively Parallel Consensus Protocol2017_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Canopus - A Scalable and Massively Parallel Consensus Protocol2017_2.pdf:application/pdf}
+}
+
+@inproceedings{yan_carousel_2018,
+	address = {Houston, TX, USA},
+	title = {Carousel: {Low}-{Latency} {Transaction} {Processing} for {Globally}-{Distributed} {Data}},
+	isbn = {978-1-4503-4703-7},
+	shorttitle = {Carousel},
+	url = {http://dl.acm.org/citation.cfm?doid=3183713.3196912},
+	doi = {10.1145/3183713.3196912},
+	abstract = {The trend towards global applications and services has created an increasing demand for transaction processing on globally-distributed data. Many database systems, such as Spanner and CockroachDB, support distributed transactions but require a large number of widearea network roundtrips to commit each transaction and ensure the transaction’s state is durably replicated across multiple datacenters. This can significantly increase transaction completion time, resulting in developers replacing database-level transactions with their own error-prone application-level solutions.},
+	language = {en},
+	urldate = {2020-01-12},
+	booktitle = {Proceedings of the 2018 {International} {Conference} on {Management} of {Data} - {SIGMOD} '18},
+	publisher = {ACM Press},
+	author = {Yan, Xinan and Yang, Linguan and Zhang, Hongbo and Lin, Xiayue Charles and Wong, Bernard and Salem, Kenneth and Brecht, Tim},
+	year = {2018},
+	pages = {231--243},
+	file = {Carousel - Low-Latency Transaction Processing for Globally-Distributed Data2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Carousel - Low-Latency Transaction Processing for Globally-Distributed Data2018_.pdf:application/pdf}
+}
+
+@article{tapir:tocs,
+	title = {Building {Consistent} {Transactions} with {Inconsistent} {Replication}},
+	volume = {35},
+	issn = {07342071},
+	url = {http://dl.acm.org/citation.cfm?doid=3297862.3269981},
+	doi = {10.1145/3269981},
+	language = {en},
+	number = {4},
+	urldate = {2020-01-13},
+	journal = {ACM Trans. Comput. Syst.},
+	author = {Zhang, Irene and Sharma, Naveen Kr. and Szekeres, Adriana and Krishnamurthy, Arvind and Ports, Dan R. K.},
+	month = dec,
+	year = {2018},
+	pages = {1--37},
+	file = {Building Consistent Transactions with Inconsistent Replication2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Building Consistent Transactions with Inconsistent Replication2018_.pdf:application/pdf}
+}
+
+@article{whittaker_interactive_2018,
+	title = {Interactive checks for coordination avoidance},
+	volume = {12},
+	issn = {21508097},
+	url = {http://dl.acm.org/citation.cfm?doid=3275536.3300966},
+	doi = {10.14778/3275536.3275538},
+	abstract = {Strongly consistent distributed systems are easy to reason about but face fundamental limitations in availability and performance. Weakly consistent systems can be implemented with very high performance but place a burden on the application developer to reason about complex interleavings of execution. Invariant conﬂuence provides a formal framework for understanding when we can get the best of both worlds. An invariant conﬂuent object can be eﬃciently replicated with no coordination needed to preserve its invariants. However, actually determining whether or not an object is invariant conﬂuent is challenging.},
+	language = {en},
+	number = {1},
+	urldate = {2020-01-13},
+	journal = {Proc. VLDB Endow.},
+	author = {Whittaker, Michael and Hellerstein, Joseph M.},
+	month = sep,
+	year = {2018},
+	pages = {14--27},
+	file = {Interactive checks for coordination avoidance2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Interactive checks for coordination avoidance2018_.pdf:application/pdf}
+}
+
+@article{zhu_logless_2019,
+	title = {Logless one-phase commit made possible for highly-available datastores},
+	issn = {0926-8782, 1573-7578},
+	url = {http://link.springer.com/10.1007/s10619-019-07261-2},
+	doi = {10.1007/s10619-019-07261-2},
+	abstract = {Highly-available datastores are widely deployed for Internet-based applications. However, many Internet-based applications are not contented with the simple data access interface provided by highly-available datastores. Distributed transaction support is demanded by applications such as massive online payment used by Alipay, Paypal or Baidu Wallet. Current solutions to distributed transaction can spend more than half of the whole transaction processing time in distributed commit. The culprits are the multiple write-ahead logging steps and communication roundtrips in the commit process. This paper presents the HACommit protocol, a logless one-phase commit protocol for highly-available datastores. HACommit has transaction participants vote for a commit before the client decides to commit or abort the transaction; in comparison, the state-of-the-art practice for distributed commit is to have the client decide before participants vote. The change enables the removal of both the participant’s write-ahead logging and the coordinator’s write-ahead logging steps in the distributed commit process; it also makes possible that, after the client initiates the transaction commit, the transaction data is visible to other transactions within one communication roundtrip time (i.e., one phase). In the evaluation with extensive experiments, HACommit outperforms recent atomic commit solutions for highly-available datastores under different workloads. In the best case, HACommit can commit in one ﬁfth of the time the widely-used two-phase commit (2PC) does.},
+	language = {en},
+	urldate = {2020-01-13},
+	journal = {Distrib Parallel Databases},
+	author = {Zhu, Yuqing and Yu, Philip S. and Yi, Guolei and Guo, Mengying and Ma, Wenlong and Liu, Jianxun and Bao, Yungang},
+	month = feb,
+	year = {2019},
+	file = {Logless one-phase commit made possible for highly-available datastores2019_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Logless one-phase commit made possible for highly-available datastores2019_.pdf:application/pdf}
+}
+
+@inproceedings{szekeres_meerkat_2019,
+	title = {Meerkat: {Multicore}-{Scalable} {Replicated} {Transactions} {Following} the {Zero}-{Coordination} {Principle}},
+	shorttitle = {Meerkat},
+	abstract = {Traditionally, the high cost of network communication between servers has hidden the impact of cross-core coordination in replicated systems. However, new technologies, like kernelbypass networking and faster network links, have exposed hidden bottlenecks in distributed systems. This paper explores how to build multicore-scalable, replicated storage systems. We introduce a new guideline for their design, called the Zero-Coordination Principle. We use this principle to design a new multicore-scalable, in-memory, replicated, key-value store, called Meerkat. Unlike existing systems, Meerkat eliminates all cross-core and cross-replica coordination, both of which pose a scalability bottleneck. Our experiments found that Meerkat is able to scale up to 80 hyper-threads and execute 8.3 million transactions per second. Meerkat represents an improvement of 12× on state-of-the art, fault-tolerant, in-memory, transactional storage systems built using leader-based replication and a shared},
+	author = {Szekeres, Adriana and Sharma, Naveen and Krishnamurthy, Arvind and Zhang, Irene},
+	year = {2019},
+	file = {Meerkat - Multicore-Scalable Replicated Transactions Following the2019_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Meerkat - Multicore-Scalable Replicated Transactions Following the2019_.pdf:application/pdf}
+}
+
+@article{huang_impact_2018,
+	title = {The {Impact} of {Timestamp} {Granularity} in {Optimistic} {Concurrency} {Control}},
+	url = {http://arxiv.org/abs/1811.04967},
+	abstract = {Optimistic concurrency control (OCC) can exploit the strengths of parallel hardware to provide excellent performance for uncontended transactions, and is popular in high-performance in-memory databases and transactional systems. But at high contention levels, OCC is susceptible to frequent aborts, leading to wasted work and degraded performance. Contention managers, mixed optimistic/pessimistic concurrency control algorithms, and novel optimistic-inspired concurrency control algorithms, such as TicToc, aim to address this problem, but these mechanisms introduce sometimes-high overheads of their own. We show that in real-world benchmarks, traditional OCC can outperform these alternative mechanisms by simply adding fine-grained version timestamps (using different timestamps for disjoint components of each record). With fine-grained timestamps, OCC gets 1.14x TicToc's throughput in TPC-C at 128 cores (previous work reported TicToc having 1.8x higher throughput than OCC at 80 hyperthreads). Our study shows that timestamp granularity has a greater impact than previously thought on the performance of transaction processing systems, and should not be overlooked in the push for faster concurrency control schemes.},
+	urldate = {2020-01-14},
+	journal = {arXiv:1811.04967 [cs]},
+	author = {Huang, Yihe and Bai, Hao and Kohler, Eddie and Liskov, Barbara and Shrira, Liuba},
+	month = nov,
+	year = {2018},
+	note = {arXiv: 1811.04967},
+	keywords = {Computer Science - Databases},
+	file = {arXiv.org Snapshot:C\:\\Users\\micha\\Zotero\\storage\\T9IWQ2DG\\1811.html:text/html;The Impact of Timestamp Granularity in Optimistic Concurrency Control2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\The Impact of Timestamp Granularity in Optimistic Concurrency Control2018_.pdf:application/pdf}
+}
+
+@inproceedings{yu_tictoc_2016,
+	address = {San Francisco, California, USA},
+	title = {{TicToc}: {Time} {Traveling} {Optimistic} {Concurrency} {Control}},
+	isbn = {978-1-4503-3531-7},
+	shorttitle = {{TicToc}},
+	url = {http://dl.acm.org/citation.cfm?doid=2882903.2882935},
+	doi = {10.1145/2882903.2882935},
+	abstract = {Concurrency control for on-line transaction processing (OLTP) database management systems (DBMSs) is a nasty game. Achieving higher performance on emerging many-core systems is difﬁcult. Previous research has shown that timestamp management is the key scalability bottleneck in concurrency control algorithms. This prevents the system from scaling to large numbers of cores.},
+	language = {en},
+	urldate = {2020-01-14},
+	booktitle = {Proceedings of the 2016 {International} {Conference} on {Management} of {Data} - {SIGMOD} '16},
+	publisher = {ACM Press},
+	author = {Yu, Xiangyao and Pavlo, Andrew and Sanchez, Daniel and Devadas, Srinivas},
+	year = {2016},
+	pages = {1629--1642},
+	file = {TicToc - Time Traveling Optimistic Concurrency Control2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\TicToc - Time Traveling Optimistic Concurrency Control2016_.pdf:application/pdf}
+}
+
+@inproceedings{su_bringing_2017,
+	address = {Chicago, Illinois, USA},
+	title = {Bringing {Modular} {Concurrency} {Control} to the {Next} {Level}},
+	isbn = {978-1-4503-4197-4},
+	url = {http://dl.acm.org/citation.cfm?doid=3035918.3064031},
+	doi = {10.1145/3035918.3064031},
+	abstract = {This paper presents Tebaldi, a distributed key-value store that explores new ways to harness the performance opportunity of combining different specialized concurrency control mechanisms (CCs) within the same database. Tebaldi partitions conﬂicts at a ﬁne granularity and matches them to specialized CCs within a hierarchical framework that is modular, extensible, and able to support a wide variety of concurrency control techniques, from single-version to multiversion and from lock-based to timestamp-based. When running the TPC-C benchmark, Tebaldi yields more than 20× the throughput of the basic two-phase locking protocol, and over 3.7× the throughput of Callas, a recent system that, like Tebaldi, aims to combine different CCs.},
+	language = {en},
+	urldate = {2020-01-15},
+	booktitle = {Proceedings of the 2017 {ACM} {International} {Conference} on {Management} of {Data} - {SIGMOD} '17},
+	publisher = {ACM Press},
+	author = {Su, Chunzhi and Crooks, Natacha and Ding, Cong and Alvisi, Lorenzo and Xie, Chao},
+	year = {2017},
+	pages = {283--297},
+	file = {Bringing Modular Concurrency Control to the Next Level2017_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Bringing Modular Concurrency Control to the Next Level2017_.pdf:application/pdf}
+}
+
+@inproceedings{chiu_comparing_1997,
+	address = {Geneva, Switzerland},
+	title = {Comparing two-phase locking and optimistic concurrency control protocols in multiprocessor real-time databases},
+	isbn = {978-0-8186-8096-0},
+	url = {http://ieeexplore.ieee.org/document/637965/},
+	doi = {10.1109/WPDRTS.1997.637965},
+	abstract = {Previous studies (e.g., [5]) have shown that optimistic concurrency control (OCC) generally performs better than lock-based protocols in disk-based real-time database systems (RTDBS). In this paper we compare the two concurrency control protocols in both disk-based and memory-resident multiprocessor RTDBS. Based on their performance characteristics, a new lock-based protocol, called Two Phase Locking - Lock Write All (2PL-LW), is proposed. The results of our Performance evaluation experiments show that different characteristics of the two environments indeed have great impact on the protocols’ performance. We identify such system characteristics and show that our new lock-based protocols, 2PL-LW, is better than OCC in meeting transaction deadlines in both diskbased and memory-residentRTDBS.},
+	language = {en},
+	urldate = {2020-01-16},
+	booktitle = {Proceedings of 5th {International} {Workshop} on {Parallel} and {Distributed} {Real}-{Time} {Systems} and 3rd {Workshop} on {Object}-{Oriented} {Real}-{Time} {Systems}},
+	publisher = {IEEE Comput. Soc},
+	author = {Chiu, A. and {Ben Kao} and {Kam-yiu Lam}},
+	year = {1997},
+	pages = {141--148},
+	file = {Comparing two-phase locking and optimistic concurrency control protocols in.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Comparing two-phase locking and optimistic concurrency control protocols in.pdf:application/pdf}
+}
+
+@incollection{keller_gossip-based_2006,
+	address = {Berlin, Heidelberg},
+	title = {Gossip-{Based} {Clock} {Synchronization} for {Large} {Decentralized} {Systems}},
+	volume = {3996},
+	isbn = {978-3-540-34739-2 978-3-540-34740-8},
+	url = {http://link.springer.com/10.1007/11767886_3},
+	abstract = {Numerous large-scale decentralized systems assume loosely synchronized clocks. Existing time protocols have not been designed for deployment in such systems, since they are complex and require manual conﬁguration. We present the Gossiping Time Protocol (GTP), a completely self-managing epidemic time synchronization algorithm for peer-to-peer networks. In GTP, each node synchronizes its time by gossiping with other nodes. The decisions regarding sample evaluation and gossiping frequency are purely local, yet they result in consistent behavior of the whole system. Large-scale experimental evaluation of a 64,500-node network emulated on 65 machines indicates high scalability and reasonable accuracy of GTP.},
+	language = {en},
+	urldate = {2020-01-20},
+	booktitle = {Self-{Managed} {Networks}, {Systems}, and {Services}},
+	publisher = {Springer Berlin Heidelberg},
+	author = {Iwanicki, Konrad and van Steen, Maarten and Voulgaris, Spyros},
+	editor = {Keller, Alexander and Martin-Flatin, Jean-Philippe},
+	year = {2006},
+	doi = {10.1007/11767886_3},
+	pages = {28--42},
+	file = {Gossip-Based Clock Synchronization for Large Decentralized Systems.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Time Sync\\Gossip-Based Clock Synchronization for Large Decentralized Systems.pdf:application/pdf}
+}
+
+@inproceedings{li_sparkle_2019,
+	address = {Portland, OR, USA},
+	title = {Sparkle: {Speculative} {Deterministic} {Concurrency} {Control} for {Partially} {Replicated} {Transactional} {Stores}},
+	isbn = {978-1-72810-057-9},
+	shorttitle = {Sparkle},
+	url = {https://ieeexplore.ieee.org/document/8809555/},
+	doi = {10.1109/DSN.2019.00029},
+	abstract = {Modern transactional platforms strive to jointly ensure ACID consistency and high scalability. In order to pursue these antagonistic goals, several recent systems have revisited the classical State Machine Replication (SMR) approach in order to support sharding of application state across multiple data partitions and partial replication. By promoting and exploiting locality principles, these systems, which we call Partially Replicated State Machines (PRSMs), can achieve scalability levels unparalleled by classic SMR. Yet, existing PRSM systems suffer from two major limitations: 1) they rely on a single thread to execute or serialize transactions within a partition, thus failing to fully untap the parallelism of multi-core architectures, and/or 2) they rely on the ability to accurately predict the data items to be accessed by transactions, which is non-trivial for complex applications.},
+	language = {en},
+	urldate = {2020-02-25},
+	booktitle = {2019 49th {Annual} {IEEE}/{IFIP} {International} {Conference} on {Dependable} {Systems} and {Networks} ({DSN})},
+	publisher = {IEEE},
+	author = {Li, Zhongmiao and Romano, Paolo and Van Roy, Peter},
+	month = jun,
+	year = {2019},
+	pages = {164--175},
+	file = {Sparkle - Speculative Deterministic Concurrency Control for Partially Replicated2019_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Sparkle - Speculative Deterministic Concurrency Control for Partially Replicated2019_.pdf:application/pdf}
+}
+
+
+
+
+@inproceedings{shamis_fast_2019,
+	address = {Amsterdam, Netherlands},
+	title = {Fast {General} {Distributed} {Transactions} with {Opacity}},
+	isbn = {978-1-4503-5643-5},
+	url = {http://dl.acm.org/citation.cfm?doid=3299869.3300069},
+	doi = {10.1145/3299869.3300069},
+	abstract = {Transactions can simplify distributed applications by hiding data distribution, concurrency, and failures from the application developer. Ideally the developer would see the abstraction of a single large machine that runs transactions sequentially and never fails. This requires the transactional subsystem to provide opacity (strict serializability for both committed and aborted transactions), as well as transparent fault tolerance with high availability. As even the best abstractions are unlikely to be used if they perform poorly, the system must also provide high performance. Existing distributed transactional designs either weaken this abstraction or are not designed for the best performance within a data center. This paper extends the design of FaRM — which provides strict serializability only for committed transactions — to provide opacity while maintaining FaRM’s high throughput, low latency, and high availability within a modern data center. It uses timestamp ordering based on real time with clocks synchronized to within tens of microseconds across a cluster, and a failover protocol to ensure correctness across clock master failures. FaRM with opacity can commit 5.4 million neworder transactions per second when running the TPC-C transaction mix on 90 machines with 3-way replication.},
+	language = {en},
+	urldate = {2020-04-19},
+	booktitle = {Proceedings of the 2019 {International} {Conference} on {Management} of {Data}  - {SIGMOD} '19},
+	publisher = {ACM Press},
+	author = {Shamis, Alex and Renzelmann, Matthew and Novakovic, Stanko and Chatzopoulos, Georgios and Dragojević, Aleksandar and Narayanan, Dushyanth and Castro, Miguel},
+	year = {2019},
+	pages = {433--448},
+	file = {Shamis 等。 - 2019 - Fast General Distributed Transactions with Opacity.pdf:C\:\\Users\\micha\\Zotero\\storage\\9QPBKEKR\\Shamis 等。 - 2019 - Fast General Distributed Transactions with Opacity.pdf:application/pdf}
+}
+
+@article{ding_improving_2018,
+	title = {Improving optimistic concurrency control through transaction batching and operation reordering},
+	volume = {12},
+	issn = {21508097},
+	url = {http://dl.acm.org/citation.cfm?doid=3282495.3302540},
+	doi = {10.14778/3282495.3282502},
+	abstract = {OLTP systems can often improve throughput by batching transactions and processing them as a group. Batching has been used for optimizations such as message packing and group commits; however, there is little research on the beneﬁts of a holistic approach to batching across a transaction’s entire life cycle.},
+	language = {en},
+	number = {2},
+	urldate = {2020-04-20},
+	journal = {Proc. VLDB Endow.},
+	author = {Ding, Bailu and Kot, Lucja and Gehrke, Johannes},
+	month = oct,
+	year = {2018},
+	pages = {169--182},
+	file = {Ding et al. - 2018 - Improving optimistic concurrency control through t.pdf:C\:\\Users\\micha\\Zotero\\storage\\Y3NZJ8PW\\Ding et al. - 2018 - Improving optimistic concurrency control through t.pdf:application/pdf;Improving optimistic concurrency control through transaction batching and2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\Improving optimistic concurrency control through transaction batching and2018_.pdf:application/pdf}
+}
+
+@article{mahmoud_maat_2014,
+	title = {{MaaT}: effective and scalable coordination of distributed transactions in the cloud},
+	volume = {7},
+	issn = {2150-8097},
+	shorttitle = {{MaaT}},
+	url = {http://dl.acm.org/doi/10.14778/2732269.2732270},
+	doi = {10.14778/2732269.2732270},
+	abstract = {The past decade has witnessed an increasing adoption of cloud database technology, which provides better scalability, availability, and fault-tolerance via transparent partitioning and replication, and automatic load balancing and fail-over. However, only a small number of cloud databases provide strong consistency guarantees for distributed transactions, despite decades of research on distributed transaction processing, due to practical challenges that arise in the cloud setting, where failures are the norm, and human administration is minimal. For example, dealing with locks left by transactions initiated by failed machines, and determining a multi-programming level that avoids thrashing without under-utilizing available resources, are some of the challenges that arise when using lock-based transaction processing mechanisms in the cloud context. Even in the case of optimistic concurrency control, most proposals in the literature deal with distributed validation but still require the database to acquire locks during two-phase commit when installing updates of a single transaction on multiple machines. Very little theoretical work has been done to entirely eliminate the need for locking in distributed transactions, including locks acquired during two-phase commit. In this paper, we re-design optimistic concurrency control to eliminate any need for locking even for atomic commitment, while handling the practical issues in earlier theoretical work related to this problem. We conduct an extensive experimental study to evaluate our approach against lock-based methods under various setups and workloads, and demonstrate that our approach provides many practical advantages in the cloud context.},
+	language = {en},
+	number = {5},
+	urldate = {2020-04-20},
+	journal = {Proc. VLDB Endow.},
+	author = {Mahmoud, Hatem A. and Arora, Vaibhav and Nawab, Faisal and Agrawal, Divyakant and El Abbadi, Amr},
+	month = jan,
+	year = {2014},
+	pages = {329--340},
+	file = {MaaT - effective and scalable coordination of distributed transactions in the2014_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\MaaT - effective and scalable coordination of distributed transactions in the2014_.pdf:application/pdf}
+}
+
+@inproceedings{arora_dynamic_2018,
+	title = {Dynamic {Timestamp} {Allocation} for {Reducing} {Transaction} {Aborts}},
+	doi = {10.1109/CLOUD.2018.00041},
+	abstract = {CockroachDB is an open-source database, providing transactional access to data in a distributed setting. CockroachDB employs a multi-version timestamp ordering protocol to provide serializability. This provides a simple mechanism to enforce serializability, but the static timestamp allocation scheme can lead to a high number of aborts under contention. We aim to reduce the aborts for transactional workloads by integrating a dynamic timestamp ordering based concurrency control scheme in CockroachDB. Dynamic timestamp ordering scheme tries to reduce the number of aborts by allocating timestamps dynamically based on the conflicts of accessed data items. This gives a transaction higher chance to fit on a logically serializable timeline, especially in workloads with high contention.},
+	booktitle = {2018 {IEEE} 11th {International} {Conference} on {Cloud} {Computing} ({CLOUD})},
+	author = {Arora, Vaibhav and Babu, Ravi Kumar Suresh and Maiyya, Sujaya and Agrawal, Divyakant and El Abbadi, Amr and Xue, Xun and ., Zhiyanan and ., Zhujianfeng},
+	month = jul,
+	year = {2018},
+	note = {ISSN: 2159-6190},
+	keywords = {Throughput, Cloud databases, CockroachDB, concurrency control, Concurrency control, Concurrency Control, concurrency control scheme, database management systems, Distributed Database, Distributed databases, distributed setting, Dynamic scheduling, dynamic timestamp allocation, Dynamic Timestamp allocation, dynamic timestamp ordering scheme, High Contention, logically serializable timeline, multiversion timestamp, Open source software, open-source database, protocols, Protocols, Resource management, static timestamp allocation scheme, transaction abort reduction, transaction aborts, transaction processing, transactional workloads, Transactions},
+	pages = {269--276},
+	file = {Dynamic Timestamp Allocation for Reducing Transaction Aborts2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\Dynamic Timestamp Allocation for Reducing Transaction Aborts2018_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\H8I2WI7W\\8457809.html:text/html}
+}
+
+@article{yuan_bcc_2016,
+	title = {{BCC}: reducing false aborts in optimistic concurrency control with low cost for in-memory databases},
+	volume = {9},
+	issn = {2150-8097},
+	shorttitle = {{BCC}},
+	url = {http://dl.acm.org/doi/10.14778/2904121.2904126},
+	doi = {10.14778/2904121.2904126},
+	abstract = {The Optimistic Concurrency Control (OCC) method has been commonly used for in-memory databases to ensure transaction serializability — a transaction will be aborted if its read set has been changed during execution. This simple criterion to abort transactions causes a large proportion of false positives, leading to excessive transaction aborts. Transactions aborted false-positively (i.e. false aborts) waste system resources and can signiﬁcantly degrade system throughput (as much as 3.68x based on our experiments) when data contention is intensive.},
+	language = {en},
+	number = {6},
+	urldate = {2020-04-21},
+	journal = {Proc. VLDB Endow.},
+	author = {Yuan, Yuan and Wang, Kaibo and Lee, Rubao and Ding, Xiaoning and Xing, Jing and Blanas, Spyros and Zhang, Xiaodong},
+	month = jan,
+	year = {2016},
+	pages = {504--515},
+	file = {BCC - reducing false aborts in optimistic concurrency control with low cost for2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\BCC - reducing false aborts in optimistic concurrency control with low cost for2016_.pdf:application/pdf;p504-yuan.pdf:C\:\\Users\\micha\\Zotero\\storage\\JCYWGB7W\\p504-yuan.pdf:application/pdf}
+}
+
+@article{wang_efficiently_2017,
+	title = {Efficiently making (almost) any concurrency control mechanism serializable},
+	volume = {26},
+	issn = {1066-8888, 0949-877X},
+	url = {http://link.springer.com/10.1007/s00778-017-0463-8},
+	doi = {10.1007/s00778-017-0463-8},
+	language = {en},
+	number = {4},
+	urldate = {2020-04-22},
+	journal = {The VLDB Journal},
+	author = {Wang, Tianzheng and Johnson, Ryan and Fekete, Alan and Pandis, Ippokratis},
+	month = aug,
+	year = {2017},
+	pages = {537--562},
+	file = {Efficiently making (almost) any concurrency control mechanism serializable2017_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\OCC\\Efficiently making (almost) any concurrency control mechanism serializable2017_.pdf:application/pdf}
+}
+
+@article{didona_distributed_2018,
+	title = {Distributed {Transactions}: {Dissecting} the {Nightmare}},
+	shorttitle = {Distributed {Transactions}},
+	url = {http://arxiv.org/abs/1803.06341},
+	abstract = {Many distributed storage systems are transactional and a lot of work has been devoted to optimizing their performance, especially the performance of read-only transactions that are considered the most frequent in practice. Yet, the results obtained so far are rather disappointing, and some of the design decisions seem contrived. This paper contributes to explaining this state of affairs by proving intrinsic limitations of transactional storage systems, even those that need not ensure strong consistency but only causality. We first consider general storage systems where some transactions are read-only and some also involve write operations. We show that even read-only transactions cannot be "fast": their operations cannot be executed within one round-trip message exchange between a client seeking an object and the server storing it. We then consider systems (as sometimes implemented today) where all transactions are read-only, i.e., updates are performed as individual operations outside transactions. In this case, read-only transactions can indeed be "fast", but we prove that they need to be "visible". They induce inherent updates on the servers, which in turn impact their overall performance.},
+	urldate = {2020-04-22},
+	journal = {arXiv:1803.06341 [cs]},
+	author = {Didona, Diego and Guerraoui, Rachid and Wang, Jingjing and Zwaenepoel, Willy},
+	month = mar,
+	year = {2018},
+	note = {arXiv: 1803.06341},
+	keywords = {Computer Science - Distributed, Parallel, and Cluster Computing},
+	file = {arXiv.org Snapshot:C\:\\Users\\micha\\Zotero\\storage\\T4CUMUZE\\1803.html:text/html;Distributed Transactions - Dissecting the Nightmare2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Geo\\Distributed Transactions - Dissecting the Nightmare2018_.pdf:application/pdf}
+}
+
+@inproceedings{ailijiang_dissecting_2019,
+	address = {Amsterdam, Netherlands},
+	title = {Dissecting the {Performance} of {Strongly}-{Consistent} {Replication} {Protocols}},
+	isbn = {978-1-4503-5643-5},
+	url = {http://dl.acm.org/citation.cfm?doid=3299869.3319893},
+	doi = {10.1145/3299869.3319893},
+	abstract = {Many distributed databases employ consensus protocols to ensure that data is replicated in a strongly-consistent manner on multiple machines despite failures and concurrency. Unfortunately, these protocols show widely varying performance under different network, workload, and deployment conditions, and no previous study offers a comprehensive dissection and comparison of their performance. To fill this gap, we study single-leader, multi-leader, hierarchical multi-leader, and leaderless (opportunistic leader) consensus protocols, and present a comprehensive evaluation of their performance in local area networks (LANs) and wide area networks (WANs). We take a two-pronged systematic approach. We present an analytic modeling of the protocols using queuing theory and show simulations under varying controlled parameters. To cross-validate the analytic model, we also present empirical results from our prototyping and evaluation framework, Paxi. We distill our findings to simple throughput and latency formulas over the most significant parameters. These formulas enable the developers to decide which category of protocols would be most suitable under given deployment conditions.},
+	language = {en},
+	urldate = {2020-04-22},
+	booktitle = {Proceedings of the 2019 {International} {Conference} on {Management} of {Data}  - {SIGMOD} '19},
+	publisher = {ACM Press},
+	author = {Ailijiang, Ailidani and Charapko, Aleksey and Demirbas, Murat},
+	year = {2019},
+	pages = {1696--1710},
+	file = {Ailijiang et al. - 2019 - Dissecting the Performance of Strongly-Consistent .pdf:C\:\\Users\\micha\\Zotero\\storage\\UMUV565D\\Ailijiang et al. - 2019 - Dissecting the Performance of Strongly-Consistent .pdf:application/pdf}
+}
+
+@inproceedings{singh_wedgedb_2019,
+	address = {Santa Cruz, CA, USA},
+	title = {{WedgeDB}: {Transaction} {Processing} for {Edge} {Databases}},
+	isbn = {978-1-4503-6973-2},
+	shorttitle = {{WedgeDB}},
+	url = {http://dl.acm.org/citation.cfm?doid=3357223.3365444},
+	doi = {10.1145/3357223.3365444},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {Proceedings of the {ACM} {Symposium} on {Cloud} {Computing}  - {SoCC} '19},
+	publisher = {ACM Press},
+	author = {Singh, Abhishek A. and Nawab, Faisal},
+	year = {2019},
+	pages = {482--482},
+	file = {WedgeDB - Transaction Processing for Edge Databases2019_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\WedgeDB - Transaction Processing for Edge Databases2019_.pdf:application/pdf}
+}
+
+@article{enes_state-machine_2020,
+	title = {State-{Machine} {Replication} for {Planet}-{Scale} {Systems}},
+	abstract = {Online applications now routinely replicate their data at multiple sites around the world. In this paper we present Atlas, the first state-machine replication protocol tailored for such planet-scale systems. Atlas does not rely on a distinguished leader, so clients enjoy the same quality of service independently of their geographical locations. Furthermore, clientperceived latency improves as we add sites closer to clients. To achieve this, Atlas minimizes the size of its quorums using an observation that concurrent data center failures are rare. It also processes a high percentage of accesses in a single round trip, even when these conflict. We experimentally demonstrate that Atlas consistently outperforms state-of-the-art protocols in planet-scale scenarios. In particular, Atlas is up to two times faster than Flexible Paxos with identical failure assumptions, and more than doubles the performance of Egalitarian Paxos in the YCSB benchmark.},
+	language = {en},
+	author = {Enes, Vitor and Baquero, Carlos and Rezende, Tuanir França and Gotsman, Alexey and Perrin, Matthieu and Sutra, Pierre},
+	year = {2020},
+	pages = {15},
+	file = {State-Machine Replication for Planet-Scale Systems2020_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\State-Machine Replication for Planet-Scale Systems2020_.pdf:application/pdf}
+}
+
+@inproceedings{charapko_adapting_2018,
+	address = {Seattle, WA, USA},
+	title = {Adapting to {Access} {Locality} via {Live} {Data} {Migration} in {Globally} {Distributed} {Datastores}},
+	isbn = {978-1-5386-5035-6},
+	url = {https://ieeexplore.ieee.org/document/8622565/},
+	doi = {10.1109/BigData.2018.8622565},
+	abstract = {Storing data close to where it is used improves the performance of cloud applications. However, data access patterns change dynamically over time. Many datastores statically shard data making locality-adaptation difﬁcult, and some provide limited capability for controlling the data-placement or migration. This leads to increased latency, reduced throughput, and expensive operations. To address this problem, we investigate the requirements for live data-migration and design four datamigration polices. Our policies use heuristics to determine the optimal data placement based on the access locality in the workload and load-balancing constraints. We show that even simple heuristics can be effective, and the topology-aware policies demonstrate overall better results with up to 70\% latency improvement in medium locality workloads and nearly 95\% improvement in workloads exhibiting very strong single-region access locality.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {2018 {IEEE} {International} {Conference} on {Big} {Data} ({Big} {Data})},
+	publisher = {IEEE},
+	author = {Charapko, Aleksey and Ailijiang, Ailidani and Demirbas, Murat},
+	month = dec,
+	year = {2018},
+	pages = {3321--3330},
+	file = {Adapting to Access Locality via Live Data Migration in Globally Distributed2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Adapting to Access Locality via Live Data Migration in Globally Distributed2018_.pdf:application/pdf}
+}
+
+@article{maiyya_efcient_nodate,
+	title = {Efﬁcient, {Consistent} and {Secure} {Global}-{Scale} {Data} {Management}},
+	abstract = {Processing and analyzing data is becoming increasingly ubiquitous and is the driving force behind the sustained growth of Internet applications and the emergence of Big Data Analytics. These applications typically adopt the cloud model where they are hosted in a single datacenter. This introduces a fundamental limitation: communication to a centralized datacenter incurs signiﬁcant latencies. The utilization of edge nodes is inevitable for the future success and growth of many emerging low latency and mobile applications. In this talk, we will explore various technologies that aim to facilitate building global-scale and edge-aware data management systems. These approaches are based on Geo-replication, where data is replicated across geographic locations to be closer to users, and Edge-awareness, where applications are deployed on edge locations to bypass the last-mile infrastructure. We propose novel consensus approaches that manage access to partitioned data across globally-distributed datacenters and edge nodes. The main objective is to reduce the latency of serving user requests, while ensuring fault-tolerance and adapting gracefully to mobility. In addition to failures, data centers are constantly exposed to an increasing number of nontrivial adversarial threats. Traditional cryptographic methods either limit the functionality of the data, or signiﬁcantly increase retrieval costs. We will highlight some novel approaches that ensure efﬁcient privacy preserving access to data in the Cloud.},
+	language = {en},
+	author = {Maiyya, Sujaya and Nawab, Faisal and Sahin, Cetin and Zakhary, Victor and Agrawal, Divyakant and Abbadi, Amr El},
+	pages = {2},
+	file = {Efﬁcient, Consistent and Secure Global-Scale Data Management.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Efﬁcient, Consistent and Secure Global-Scale Data Management.pdf:application/pdf}
+}
+
+@article{abebe_dynamast_nodate,
+	title = {{DynaMast}: {Adaptive} {Dynamic} {Mastering} for {Replicated} {Systems}},
+	abstract = {Single-master replicated database systems strive to be scalable by ofﬂoading reads to replica nodes. However, singlemaster systems suffer from the performance bottleneck of all updates executing at a single site. Multi-master replicated systems distribute updates among sites but incur costly coordination for multi-site transactions. We present DynaMast, a lazily replicated, multi-master database system that guarantees one-site transaction execution while effectively distributing both reads and updates among multiple sites. DynaMast beneﬁts from these advantages by dynamically transferring the mastership of data, or remastering, among sites using a lightweight metadata-based protocol. DynaMast leverages remastering to adaptively place master copies to balance load and minimize future remastering. Using benchmark workloads, we demonstrate that DynaMast delivers superior performance over existing replicated database system architectures.},
+	language = {en},
+	author = {Abebe, Michael and Glasbergen, Brad and Daudjee, Khuzaima},
+	pages = {18},
+	file = {DynaMast - Adaptive Dynamic Mastering for Replicated Systems.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\DynaMast - Adaptive Dynamic Mastering for Replicated Systems.pdf:application/pdf}
+}
+
+@inproceedings{lin_enhancing_2007,
+	title = {Enhancing {Edge} {Computing} with {Database} {Replication}},
+	doi = {10.1109/SRDS.2007.10},
+	abstract = {As the use of the Internet continues to grow explosively, edge computing has emerged as an important technique for delivering Web content over the Internet. Edge computing moves data and computation closer to end-users for fast local access and better load distribution. Current approaches use caching, which does not work well with highly dynamic data. In this paper, we propose a different approach to enhance edge computing. Our approach lies in a wide area data replication protocol that enables the delivery of dynamic content with full consistency guarantees and with all the benefits of edge computing, such as low latency and high scalability. What is more, the proposed solution is fully transparent to the applications that are brought to the edge. Our extensive evaluations in a real wide area network using TPC-W show promising results.},
+	booktitle = {2007 26th {IEEE} {International} {Symposium} on {Reliable} {Distributed} {Systems} ({SRDS} 2007)},
+	author = {Lin, Yi and Kemme, Bettina and Patino-Martinez, Marta and Jimenez-Peris, Ricardo},
+	month = oct,
+	year = {2007},
+	note = {ISSN: 1060-9857},
+	keywords = {Distributed computing, Scalability, database management systems, Computer networks, content management, database replication, Delay, edge computing, Internet, Middleware, Network servers, Transaction databases, Web content delivery, Web server, wide area data replication protocol, Wide area networks},
+	pages = {45--54},
+	file = {Enhancing Edge Computing with Database Replication2007_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Enhancing Edge Computing with Database Replication2007_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\X35LRJFQ\\4365683.html:text/html}
+}
+
+@inproceedings{huang_dtc_2016,
+	title = {{DTC}: {A} {Dynamic} {Transaction} {Chopping} {Technique} for {Geo}-replicated {Storage} {Systems}},
+	shorttitle = {{DTC}},
+	doi = {10.1109/SRDS.2016.026},
+	abstract = {Large Web applications usually require replicating data across geo-distributed datacenters to achieve high locality, durability and availability. However, maintaining strong consistency in geo-replicated systems usually suffers from long latency due to costly coordination across datacenters. Among others, transaction chopping is an effective and efficient approach to cope with such a challenge. In this paper, we propose DTC (Dynamic Transaction Chopping), a novel technique that chops transactions and checks their conflicts in a dynamic and automatic way, during application execution. DTC mainly consists of two parts: a dynamic chopper that chops transaction dynamically according to data partition scheme, and a conflict detection algorithm for determining the safety of the dynamic chopping. Compared with existing transaction chopping technique for geo-replicated systems, DTC has several advantages, including transparency to programmers, flexibility in conflict analysis, high degree of piecewise execution, and adaptability to dynamic partition schemes. We implement our DTC technique and conduct experiments to examine the correctness of DTC and evaluate its performance. The experiment results show that our DTC technique can achieve much more piecewise execution than the existing chopping approach does, and reduce execution time obviously.},
+	booktitle = {2016 {IEEE} 35th {Symposium} on {Reliable} {Distributed} {Systems} ({SRDS})},
+	author = {Huang, Ning and Wu, Lihui and Wu, Weigang},
+	month = sep,
+	year = {2016},
+	note = {ISSN: 1060-9857},
+	keywords = {Concurrency control, transaction processing, Choppers (circuits), computer centres, conflict analysis, conflict detection, data partition, data replication, data storage, Databases, datacenter, DTC, dynamic partition, dynamic transaction chopping, geo-distributed datacenters, geo-replicated storage systems, geo-replication, Heuristic algorithms, Memory, replicated databases, Safety, Servers, storage management, strong consistency, transaction chopping, Web applications},
+	pages = {137--146},
+	file = {DTC - A Dynamic Transaction Chopping Technique for Geo-replicated Storage Systems2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\DTC - A Dynamic Transaction Chopping Technique for Geo-replicated Storage Systems2016_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\WCIEUZSV\\7794338.html:text/html}
+}
+
+@inproceedings{hasenburg_towards_2020,
+	address = {Brno Czech Republic},
+	title = {Towards a replication service for data-intensive fog applications},
+	isbn = {978-1-4503-6866-7},
+	url = {https://dl.acm.org/doi/10.1145/3341105.3374060},
+	doi = {10.1145/3341105.3374060},
+	abstract = {The combination of edge and cloud in the fog computing paradigm enables a new breed of data-intensive applications. These applications, however, have to face a number of fog-specific challenges which developers have to repetitively address for every single application. In this paper, we derive a set of requirements for a replication service that aims to simplify the development of data-intensive fog applications which are caused by the highly distributed and heterogeneous operation environment. Furthermore, we propose the design for such a service which addresses our requirements.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {Proceedings of the 35th {Annual} {ACM} {Symposium} on {Applied} {Computing}},
+	publisher = {ACM},
+	author = {Hasenburg, Jonathan and Grambow, Martin and Bermbach, David},
+	month = mar,
+	year = {2020},
+	pages = {267--270},
+	file = {Towards a replication service for data-intensive fog applications2020_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Towards a replication service for data-intensive fog applications2020_.pdf:application/pdf}
+}
+
+@inproceedings{gomez_impact_2017,
+	title = {On the impact of indirect {WAN} routing on geo-replicated storage},
+	doi = {10.1109/LANMAN.2017.7972171},
+	abstract = {Micro-clouds infrastructures allow supporting applications on local and energy-efficient resources. Communication between micro-clouds takes place on shared and non-dedicated Internet links. Network control and optimization can only happen at the edge. For availability and persistence, the storage of application data must be geo-replicated. Maintaining strong data consistency under concurrent accesses requires delay-sensitive coherence protocols, linking the performance of the storage to that of the network between micro-clouds. We evaluate if the use of network control at the edge of a European-wide multi-site testbed, together with appropriate network monitoring, can allow improving the performance of ZooKeeper, a strongly-consistent replicated store. Our approach leverages the indirect routing of coherence protocol traffic in the presence of network triangle equality violations. We analyze the impact on storage of variations in WAN performance, and show how the use of traffic redirection can help reducing it.},
+	booktitle = {2017 {IEEE} {International} {Symposium} on {Local} and {Metropolitan} {Area} {Networks} ({LANMAN})},
+	author = {Gómez, Raziel Carvajal and Luchian, Eduard and Ivanciu, Iustin-Alexandru and Taut, Adrian and Dobrota, Virgil and Rivière, Etienne},
+	month = jun,
+	year = {2017},
+	note = {ISSN: 1944-0375},
+	keywords = {Routing, Wide area networks, Servers, application data, Cloud computing, Cloud storage, Coherence, coherence protocol traffic, delay-sensitive coherence protocols, Delays, energy conservation, energy-efficient resources, European-wide multi-site testbed, Evaluation, geo-replicated storage, Geo-replicated storage, Indirect routing, indirect WAN routing, microclouds infrastructures, Monitoring, network control, network monitoring, network triangle equality violations, nondedicated Internet links, optimization, Performance, strong data consistency, strongly-consistent replicated store, traffic redirection, WAN performance, wide area networks, ZooKeeper},
+	pages = {1--6},
+	file = {IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\VMMEHDQH\\7972171.html:text/html;On the impact of indirect WAN routing on geo-replicated storage2017_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\On the impact of indirect WAN routing on geo-replicated storage2017_.pdf:application/pdf}
+}
+
+@article{schuldt_genehmigt_nodate,
+	title = {Genehmigt von der {Philosophisch}-{Naturwissenschaftlichen} {Fakultät} auf {Antrag} von:},
+	language = {de},
+	author = {Schuldt, Dr Heiko and Breitbart, Dr Yuri},
+	pages = {187},
+	file = {Genehmigt von der Philosophisch-Naturwissenschaftlichen Fakultät auf Antrag von.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Genehmigt von der Philosophisch-Naturwissenschaftlichen Fakultät auf Antrag von.pdf:application/pdf}
+}
+
+@inproceedings{nawab_challenges_2016,
+	address = {San Francisco, California, USA},
+	title = {The {Challenges} of {Global}-scale {Data} {Management}},
+	isbn = {978-1-4503-3531-7},
+	url = {http://dl.acm.org/citation.cfm?doid=2882903.2912571}, 
+	doi = {10.1145/2882903.2912571},
+	abstract = {Global-scale data management (GSDM) empowers systems by providing higher levels of fault-tolerance, read availability, and efﬁciency in utilizing cloud resources. This has led to the emergence of global-scale data management and event processing. However, the Wide-Area Network (WAN) latency separating data is orders of magnitude larger than conventional network latencies, and this requires a reevaluation of many of the traditional design trade-offs of data management systems. Therefore, data management problems must be revisited to account for the new design space. In this tutorial we survey recent developments in GSDM focusing on identifying fundamental challenges and advancements in addition to open research opportunities.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {Proceedings of the 2016 {International} {Conference} on {Management} of {Data} - {SIGMOD} '16},
+	publisher = {ACM Press},
+	author = {Nawab, Faisal and Agrawal, Divyakant and El Abbadi, Amr},
+	year = {2016},
+	pages = {2223--2227},
+	file = {The Challenges of Global-scale Data Management2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\The Challenges of Global-scale Data Management2016_.pdf:application/pdf}
+}
+
+@inproceedings{repantis_consistent_2011,
+	title = {Consistent replication in distributed multi-tier architectures},
+	doi = {10.4108/icst.collaboratecom.2011.247116},
+	abstract = {Replication is commonly used to address the scalability and availability requirements of collaborative web applications in domains such as computer supported cooperative work, social networking, e-commerce and e-banking. While providing substantial benefits, replication also introduces the overhead of maintaining data consistent among the replicated servers. In this work we study the performance of common replication approaches with various consistency guarantees and argue for the feasibility of strong consistency. We propose an efficient, distributed, strong consistency protocol and reveal experimentally that its overhead is not prohibitive. We have implemented a replication middleware that offers different consistency protocols, including our strong consistency protocol. We use the TPC-W transactional web commerce benchmark to provide a comprehensive performance comparison of the different replication approaches under a variety of workload mixes.},
+	booktitle = {7th {International} {Conference} on {Collaborative} {Computing}: {Networking}, {Applications} and {Worksharing} ({CollaborateCom})},
+	author = {Repantis, Thomas and Iyengar, Arun and Kalogeraki, Vana and Rouvellou, Isabelle},
+	month = oct,
+	year = {2011},
+	keywords = {Distributed databases, protocols, Internet, availability requirements, collaborative Web applications, Consistency, consistency protocol, consistent replication, data consistency maintenance, data integrity, distributed multitier architectures, electronic commerce, groupware, middleware, Multi-Tier Architectures, Receivers, Replication, replication middleware, scalability requirements, TPC-W transactional Web commerce benchmark},
+	pages = {105--114},
+	file = {Consistent replication in distributed multi-tier architectures2011_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Consistent replication in distributed multi-tier architectures2011_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\U76LVRPF\\6144794.html:text/html}
+}
+
+@inproceedings{nawab_challenges_2016-1,
+	address = {San Francisco, California, USA},
+	title = {The {Challenges} of {Global}-scale {Data} {Management}},
+	isbn = {978-1-4503-3531-7},
+	url = {http://dl.acm.org/citation.cfm?doid=2882903.2912571},
+	doi = {10.1145/2882903.2912571},
+	abstract = {Global-scale data management (GSDM) empowers systems by providing higher levels of fault-tolerance, read availability, and efﬁciency in utilizing cloud resources. This has led to the emergence of global-scale data management and event processing. However, the Wide-Area Network (WAN) latency separating data is orders of magnitude larger than conventional network latencies, and this requires a reevaluation of many of the traditional design trade-offs of data management systems. Therefore, data management problems must be revisited to account for the new design space. In this tutorial we survey recent developments in GSDM focusing on identifying fundamental challenges and advancements in addition to open research opportunities.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {Proceedings of the 2016 {International} {Conference} on {Management} of {Data} - {SIGMOD} '16},
+	publisher = {ACM Press},
+	author = {Nawab, Faisal and Agrawal, Divyakant and El Abbadi, Amr},
+	year = {2016},
+	pages = {2223--2227},
+	file = {The Challenges of Global-scale Data Management2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\The Challenges of Global-scale Data Management2016_2.pdf:application/pdf}
+}
+
+@inproceedings{saxena_edgex_2015,
+	title = {{EdgeX}: {Edge} {Replication} for {Web} {Applications}},
+	shorttitle = {{EdgeX}},
+	doi = {10.1109/CLOUD.2015.147},
+	abstract = {Global Web applications face the problem of high network latency due to their need to communicate with distant data centers. Many applications use edge networks for caching images, CSS, java script, and other static content in order to avoid some of this network latency. However, for updates and for anything other than static content, communication with the data center is still required, and can dominate application request latencies. One way to address this problem is to push more of the web application, as well the database on which it depends, from the remote data center towards the edge of the network. In this paper, we present preliminary work in this direction. Specifically, we present an edge-aware dynamic data replication architecture for relational database systems supporting Web applications. Our objective is to allow dynamic content to be served from the edge of the network, with low latency.},
+	booktitle = {2015 {IEEE} 8th {International} {Conference} on {Cloud} {Computing}},
+	author = {Saxena, Hemant and Salem, Kenneth},
+	month = jun,
+	year = {2015},
+	note = {ISSN: 2159-6190},
+	keywords = {computer centres, application request latencies, Cascading style sheets, client-server systems, Content distribution networks, CSS, data centers, Data partitioning, dynamic content, edge networks, Edge Networks, edge replication, edge-aware dynamic data replication architecture, EdgeX, global Web applications, image caching, Image edge detection, javascript, network latency, Prototypes, relational database systems, relational databases, Relational databases, remote data center, static content},
+	pages = {1041--1044},
+	file = {EdgeX - Edge Replication for Web Applications2015_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\EdgeX - Edge Replication for Web Applications2015_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\6E8J4UJU\\7214158.html:text/html}
+}
+
+@inproceedings{padhye_transaction_2014,
+	title = {Transaction {Management} {Using} {Causal} {Snapshot} {Isolation} in {Partially} {Replicated} {Databases}},
+	doi = {10.1109/SRDS.2014.30},
+	abstract = {We present here a transaction management protocol using causal snapshot isolation in partially replicated multi-version databases. We consider here replicated databases consisting of multiple disjoint data partitions. A partition is not required to be replicated at all database sites, and a site may contain replicas for any number of partitions. Transactions can execute at any site and read or write data from any subset of the partitions, and its updates are propagated asynchronously to other sites. The protocol ensures that the snapshot observed by a transaction contains data versions that are causally consistent. The protocol requires propagating updates only to the sites replicating the updated items. In developing this protocol, we address the issues that are unique in supporting transactions with causal consistency together with the snapshot isolation model in partially replicated databases. Through experimental evaluations, we demonstrate the scalability of this model and its performance benefits over full replication models.},
+	booktitle = {2014 {IEEE} 33rd {International} {Symposium} on {Reliable} {Distributed} {Systems}},
+	author = {Padhye, Vinit and Rajappan, Gowtham and Tripathi, Anand},
+	month = oct,
+	year = {2014},
+	note = {ISSN: 1060-9857},
+	keywords = {Data models, Protocols, Databases, replicated databases, Atomic clocks, causal snapshot isolation, Data Replication, disjoint data partitions, Distributed Systems, partially replicated multiversion databases, Partitioning algorithms, Snapshot Isolation, Transaction Management, transaction management protocol, Vectors},
+	pages = {105--114},
+	file = {IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\7R4PSVPX\\6983385.html:text/html;Transaction Management Using Causal Snapshot Isolation in Partially Replicated2014_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Transaction Management Using Causal Snapshot Isolation in Partially Replicated2014_.pdf:application/pdf}
+}
+
+@inproceedings{karim_extending_2016,
+	title = {Extending {Cloud} {Resources} to the {Edge}: {Possible} {Scenarios}, {Challenges}, and {Experiments}},
+	shorttitle = {Extending {Cloud} {Resources} to the {Edge}},
+	doi = {10.1109/ICCCRI.2016.20},
+	abstract = {Cloud Computing and IoT have been around for quite some time. The use of Cloud Computing to compute or to store IoT data is useful as Cloud can offer such an effective and cheap solution to access resources from the edge. However, extensively use such resources may face degradation since the data and applications are processed in the cloud where every bit of data is transferred over the network from the edge. In this paper, we describe our work on extending our Cloud Computing infrastructure to the edge environment by exploiting the use of Docker containers as a mean of virtualization that run at the edge. Possible scenarios of cyber infrastructure to support IoT services that may take advantage of edge computing concept are described. Next, we describe the edge requirement and discuss the challenges that are arisen for those scenarios. Experiment sets to see the potentiality of Docker container as a mean ofvirtualization for the edge environment are also described and discussed. Finally, we summarize our work and discuss the future work.},
+	booktitle = {2016 {International} {Conference} on {Cloud} {Computing} {Research} and {Innovations} ({ICCCRI})},
+	author = {Karim, Mohd Bazli Ab and Ismail, Bukhary Ikhwan and Tat, Wong Ming and Goortani, Ehsan Mostajeran and Setapa, Sharipah and Luke, Jing Yuan and Ong, Hong},
+	month = may,
+	year = {2016},
+	keywords = {edge computing, cloud computing, cloud computing infrastructure, Cloud for Smart Nation/Cities, cloud resources, cyber infrastructure, data transfer, Docker containers, Edge Cloud, Edge Computing, Internet of Things, Internet of Things(IoT), IoT data, resource access, resource allocation, virtualisation, virtualization},
+	pages = {78--85},
+	file = {Extending Cloud Resources to the Edge - Possible Scenarios, Challenges, and2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Extending Cloud Resources to the Edge - Possible Scenarios, Challenges, and2016_.pdf:application/pdf;IEEE Xplore Abstract Record:C\:\\Users\\micha\\Zotero\\storage\\R88PCAF7\\7600181.html:text/html}
+}
+
+@inproceedings{nawab_minimizing_2015,
+	address = {Melbourne, Victoria, Australia},
+	title = {Minimizing {Commit} {Latency} of {Transactions} in {Geo}-{Replicated} {Data} {Stores}},
+	isbn = {978-1-4503-2758-9},
+	url = {http://dl.acm.org/citation.cfm?doid=2723372.2723729},
+	doi = {10.1145/2723372.2723729},
+	abstract = {Cross datacenter replication is increasingly being deployed to bring data closer to the user and to overcome datacenter outages. The extent of the inﬂuence of wide-area communication on serializable transactions is not yet clear. In this work, we derive a lower-bound on commit latency. The sum of the commit latency of any two datacenters is at least the Round-Trip Time (RTT) between them. We use the insights and lessons learned while deriving the lower-bound to develop a commit protocol, called Helios, that achieves low commit latencies. Helios actively exchanges transaction logs (history) between datacenters. The received logs are used to decide whether a transaction can commit or not. The earliest point in the received logs that is needed to commit a transaction is decided by Helios to ensure a low commit latency. As we show in the paper, Helios is theoretically able to achieve the lower-bound commit latency. Also, in a realworld deployment on ﬁve datacenters, Helios has a commit latency that is close to the optimal.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {Proceedings of the 2015 {ACM} {SIGMOD} {International} {Conference} on {Management} of {Data} - {SIGMOD} '15},
+	publisher = {ACM Press},
+	author = {Nawab, Faisal and Arora, Vaibhav and Agrawal, Divyakant and El Abbadi, Amr},
+	year = {2015},
+	pages = {1279--1294},
+	file = {Minimizing Commit Latency of Transactions in Geo-Replicated Data Stores2015_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Minimizing Commit Latency of Transactions in Geo-Replicated Data Stores2015_.pdf:application/pdf}
+}
+
+@inproceedings{tripathi_scalable_2016,
+	address = {San Francisco, CA, USA},
+	title = {Scalable {Transaction} {Management} for {Partially} {Replicated} {Data} in {Cloud} {Computing} {Environments}},
+	isbn = {978-1-5090-2619-7},
+	url = {http://ieeexplore.ieee.org/document/7820280/},
+	doi = {10.1109/CLOUD.2016.0043},
+	abstract = {We present here a scalable protocol for transaction management in key-value based multi-version data storage systems supporting partial replication of data in cloud and cluster computing environments. We consider here systems in which the database is sharded into partitions, a partition is replicated only at a subset of the nodes in the system, and no node contains all partitions. The protocol presented here is based on the Partitioned Causal Snapshot Isolation (PCSI) model and it enhances the scalability of that model. The PCSI protocol is scalable for update transactions which involve updating of only local partitions. However, it faces scalability limitations when transactions update non-local partitions. This limitation stems from the scheme used for obtaining update timestamps for remote partitions, causing vector clocks to grow with the system conﬁguration size. We present here a new protocol based on the notion of sequence number escrow and address the underlying technical problems. Our experimental evaluations show that this protocol scales out almost linearly when workloads involve transactions with remote partition updates. We present here the performance of this protocol for three different workloads with varying mix of transaction characteristics.},
+	language = {en},
+	urldate = {2020-04-24},
+	booktitle = {2016 {IEEE} 9th {International} {Conference} on {Cloud} {Computing} ({CLOUD})},
+	publisher = {IEEE},
+	author = {Tripathi, Anand and Rajappan, Gowtham},
+	month = jun,
+	year = {2016},
+	pages = {260--267},
+	file = {Scalable Transaction Management for Partially Replicated Data in Cloud2016_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Scalable Transaction Management for Partially Replicated Data in Cloud2016_.pdf:application/pdf}
+}
+
+@article{tripathi_scalable_nodate,
+	title = {Scalable {Transactions} in {Partially} {Replicated} {Data} {Systems} using {Causal} {Snapshot} {Isolation}},
+	abstract = {We present here a transaction management protocol, which enhances the Partitioned Causal Snapshot Isolation (PCSI) protocol, to support scalable transactions with non-local partition writes in a partially replicated multi-version database. The PCSI protocol is scalable for update transactions that involve local read and writes. However, it faces scalability limitations with non-local partition writes, when partitions are updated from any of the sites. In PCSI, to support non-local partition writes, a ghost replica of that partition is created at the transaction execution site. It is used primarily for assigning update sequence numbers to the local transactions and does not store any data. We present here an alternate approach for supporting non-local partition writes. The update sequence number for a non-local partition update is obtained from one of the remote sites that stores a replica of that partition. This approach raises several problems in regard to stalling of transactions at the remote replica’s site. We develop here a protocol based on the notion of sequence number escrow to address these problems. Through experimental evaluations, we show that this approach for supporting non-local partition updates scales almost linearly.},
+	language = {en},
+	author = {Tripathi, Anand and Rajappan, Gowtham and Padhye, Vinit},
+	pages = {12},
+	file = {Scalable Transactions in Partially Replicated Data Systems using Causal.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Scalable Transactions in Partially Replicated Data Systems using Causal.pdf:application/pdf}
+}
+
+@article{li_edge-oriented_2018,
+	title = {Edge-{Oriented} {Computing} {Paradigms}: {A} {Survey} on {Architecture} {Design} and {System} {Management}},
+	volume = {51},
+	issn = {0360-0300, 1557-7341},
+	shorttitle = {Edge-{Oriented} {Computing} {Paradigms}},
+	url = {https://dl.acm.org/doi/10.1145/3154815},
+	doi = {10.1145/3154815},
+	language = {en},
+	number = {2},
+	urldate = {2020-04-24},
+	journal = {ACM Comput. Surv.},
+	author = {Li, Chao and Xue, Yushu and Wang, Jing and Zhang, Weigong and Li, Tao},
+	month = jun,
+	year = {2018},
+	pages = {1--34},
+	file = {Edge-Oriented Computing Paradigms - A Survey on Architecture Design and System2018_.pdf:C\:\\Users\\micha\\Google 云端硬盘\\Zotero\\Transaction\\Edge\\Edge-Oriented Computing Paradigms - A Survey on Architecture Design and System2018_.pdf:application/pdf}
+}
+
+@article{chen_tpc-e_2011,
+	title = {{TPC}-{E} vs. {TPC}-{C}: characterizing the new {TPC}-{E} benchmark via an {I}/{O} comparison study},
+	volume = {39},
+	issn = {0163-5808},
+	shorttitle = {{TPC}-{E} vs. {TPC}-{C}},
+	url = {https://dl.acm.org/doi/10.1145/1942776.1942778},
+	doi = {10.1145/1942776.1942778},
+	abstract = {TPC-E is a new OLTP benchmark recently approved by the Transaction Processing Performance Council (TPC). In this paper, we compare TPC-E with the familiar TPCC benchmark in order to understand the behavior of the new TPC-E benchmark. In particular, we compare the I/O access patterns of the two benchmarks by analyzing two OLTP disk traces. We ﬁnd that (i) TPC-E is more read intensive with a 9.7:1 I/O read to write ratio, while TPC-C sees a 1.9:1 read-to-write ratio; and (ii) although TPC-E uses pseudo-realistic data, TPC-E’s I/O access pattern is as random as TPC-C. The latter suggests that like TPC-C, TPC-E can beneﬁt from SSDs, which have superior random I/O support. To verify this, we replay both disk traces on an Intel X25-E SSD and see dramatic improvements for both TPC-C and TPC-E.},
+	language = {en},
+	number = {3},
+	urldate = {2020-05-13},
+	journal = {SIGMOD Rec.},
+	author = {Chen, Shimin and Ailamaki, Anastasia and Athanassoulis, Manos and Gibbons, Phillip B. and Johnson, Ryan and Pandis, Ippokratis and Stoica, Radu},
+	month = feb,
+	year = {2011},
+	pages = {5--10},
+	file = {Chen et al. - 2011 - TPC-E vs. TPC-C characterizing the new TPC-E benc.pdf:C\:\\Users\\micha\\Zotero\\storage\\7ZL26CI4\\Chen et al. - 2011 - TPC-E vs. TPC-C characterizing the new TPC-E benc.pdf:application/pdf}
+}
+
+@article{wei_deconstructing_nodate,
+	title = {Deconstructing {RDMA}-enabled {Distributed} {Transactions}: {Hybrid} is {Better}!},
+	abstract = {There is currently an active debate on which RDMA primitive (i.e., one-sided or two-sided) is optimal for distributed transactions. Such a debate has led to a number of optimizations based on one RDMA primitive, which was shown with better performance than the other.},
+	language = {en},
+	author = {Wei, Xingda and Dong, Zhiyuan and Chen, Rong and Chen, Haibo},
+	pages = {20},
+	file = {Wei et al. - Deconstructing RDMA-enabled Distributed Transactio.pdf:C\:\\Users\\micha\\Zotero\\storage\\LQFX5S2W\\Wei et al. - Deconstructing RDMA-enabled Distributed Transactio.pdf:application/pdf}
+}
+
+@article{lameter_numa_2013,
+	title = {{NUMA} ({Non}-{Uniform} {Memory} {Access}): {An} {Overview}},
+	volume = {11},
+	issn = {15427730},
+	shorttitle = {{NUMA} ({Non}-{Uniform} {Memory} {Access})},
+	url = {http://dl.acm.org/citation.cfm?doid=2508834.2513149},
+	doi = {10.1145/2508834.2513149},
+	language = {en},
+	number = {7},
+	urldate = {2020-06-02},
+	journal = {Queue},
+	author = {Lameter, Christoph},
+	month = jul,
+	year = {2013},
+	pages = {40},
+	file = {Lameter - 2013 - NUMA (Non-Uniform Memory Access) An Overview.pdf:C\:\\Users\\micha\\Zotero\\storage\\TX6HHHDR\\Lameter - 2013 - NUMA (Non-Uniform Memory Access) An Overview.pdf:application/pdf}
+}
+
+@inproceedings{kim_ermia_2016,
+	address = {San Francisco, California, USA},
+	title = {{ERMIA}: {Fast} {Memory}-{Optimized} {Database} {System} for {Heterogeneous} {Workloads}},
+	isbn = {978-1-4503-3531-7},
+	shorttitle = {{ERMIA}},
+	url = {http://dl.acm.org/citation.cfm?doid=2882903.2882905},
+	doi = {10.1145/2882903.2882905},
+	abstract = {Large main memories and massively parallel processors have triggered not only a resurgence of high-performance transaction processing systems optimized for large main-memory and massively parallel processors, but also an increasing demand for processing heterogeneous workloads that include read-mostly transactions. Many modern transaction processing systems adopt a lightweight optimistic concurrency control (OCC) scheme to leverage its low overhead in low contention workloads. However, we observe that the lightweight OCC is not suitable for heterogeneous workloads, causing signiﬁcant starvation of read-mostly transactions and overall performance degradation. In this paper, we present ERMIA, a memory-optimized database system built from scratch to cater the need of handling heterogeneous workloads. ERMIA adopts snapshot isolation concurrency control to coordinate heterogeneous transactions and provides serializability when desired. Its physical layer supports the concurrency control schemes in a scalable way. Experimental results show that ERMIA delivers comparable or superior performance and nearlinear scalability in a variety of workloads, compared to a recent lightweight OCC-based system. At the same time, ERMIA maintains high throughput on read-mostly transactions when the performance of the OCC-based system drops by orders of magnitude.},
+	language = {en},
+	urldate = {2020-06-15},
+	booktitle = {Proceedings of the 2016 {International} {Conference} on {Management} of {Data} - {SIGMOD} '16},
+	publisher = {ACM Press},
+	author = {Kim, Kangnyeon and Wang, Tianzheng and Johnson, Ryan and Pandis, Ippokratis},
+	year = {2016},
+	pages = {1675--1687},
+	file = {Kim et al. - 2016 - ERMIA Fast Memory-Optimized Database System for H.pdf:C\:\\Users\\micha\\Zotero\\storage\\HSG58MQJ\\Kim et al. - 2016 - ERMIA Fast Memory-Optimized Database System for H.pdf:application/pdf}
+}
+
+@inproceedings{janus:osdi16,
+  title={Consolidating concurrency control and consensus for commits under conflicts},
+  author={Mu, Shuai and Nelson, Lamont and Lloyd, Wyatt and Li, Jinyang},
+  booktitle={12th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 16)},
+  pages={517--532},
+  year={2016}
+}
+
+@inproceedings {rococo:osdi14,
+author = {Shuai Mu and Yang Cui and Yang Zhang and Wyatt Lloyd and Jinyang Li},
+title = {Extracting More Concurrency from Distributed Transactions},
+booktitle = {11th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 14)},
+year = {2014},
+isbn = { 978-1-931971-16-4},
+address = {Broomfield, CO},
+pages = {479--494},
+url = {https://www.usenix.org/conference/osdi14/technical-sessions/presentation/mu},
+publisher = {{USENIX} Association},
+month = oct,
+}
+
+@article{slog:vldb19, 
+  title={SLOG: serializable, low-latency, geo-replicated transactions},
+  author={Ren, Kun and Li, Dennis and Abadi, Daniel J},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  pages={1747--1761},
+  year={2019},
+  publisher={VLDB Endowment}
+}
+
+@article{ov:vldb19,
+  title={Ocean vista: gossip-based visibility control for speedy geo-distributed transactions},
+  author={Fan, Hua and Golab, Wojciech},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  pages={1471--1484},
+  year={2019},
+  publisher={VLDB Endowment}
+}
+
+
+@inproceedings{dpaxos,
+  title={Dpaxos: Managing data closer to users for low-latency and mobile applications},
+  author={Nawab, Faisal and Agrawal, Divyakant and El Abbadi, Amr},
+  booktitle={Proceedings of the 2018 International Conference on Management of Data},
+  pages={1221--1236},
+  year={2018}
+}
+
+@article{wpaxos,
+  title={WPaxos: Wide area network flexible consensus},
+  author={Ailijiang, Ailidani and Charapko, Aleksey and Demirbas, Murat and Kosar, Tevfik},
+  journal={IEEE Transactions on Parallel and Distributed Systems},
+  volume={31},
+  number={1},
+  pages={211--223},
+  year={2019},
+  publisher={IEEE}
+}
+@article{huang2018impact,
+  title={The Impact of Timestamp Granularity in Optimistic Concurrency Control},
+  author={Huang, Yihe and Bai, Hao and Kohler, Eddie and Liskov, Barbara and Shrira, Liuba},
+  journal={arXiv preprint arXiv:1811.04967},
+  year={2018}
+}
+
+@INPROCEEDINGS{clockrsm,
+  author={J. {Du} and D. {Sciascia} and S. {Elnikety} and W. {Zwaenepoel} and F. {Pedone}},
+  booktitle={2014 44th Annual IEEE/IFIP International Conference on Dependable Systems and Networks}, 
+  title={Clock-RSM: Low-Latency Inter-datacenter State Machine Replication Using Loosely Synchronized Physical Clocks}, 
+  year={2014},
+  volume={},
+  number={},
+  pages={343-354},
+}
+
+@book{moustafa2009vehicular,
+  title={Vehicular networks: techniques, standards, and applications},
+  author={Moustafa, Hassnaa and Zhang, Yan},
+  year={2009},
+  publisher={Auerbach publications}
+}
+
+@book{olariu2009vehicular,
+  title={Vehicular networks: from theory to practice},
+  author={Olariu, Stephan and Weigle, Michele C},
+  year={2009},
+  publisher={Crc Press}
+}
+
+@article{wang2018enabling,
+  title={Enabling collaborative edge computing for software defined vehicular networks},
+  author={Wang, Kai and Yin, Hao and Quan, Wei and Min, Geyong},
+  journal={IEEE Network},
+  volume={32},
+  number={5},
+  pages={112--117},
+  year={2018},
+  publisher={IEEE}
+}
+
+@inproceedings{li2017novel,
+  title={A novel mobile edge computing-based architecture for future cellular vehicular networks},
+  author={Li, Liang and Li, Yunzhou and Hou, Ronghui},
+  booktitle={2017 IEEE Wireless Communications and Networking Conference (WCNC)},
+  pages={1--6},
+  year={2017},
+  organization={IEEE}
+}
+
+@article{satyanarayanan2017emergence,
+  title={The emergence of edge computing},
+  author={Satyanarayanan, Mahadev},
+  journal={Computer},
+  volume={50},
+  number={1},
+  pages={30--39},
+  year={2017},
+  publisher={IEEE}
+}
+
+@misc{polan2009method,
+  title={Method and apparatus for presenting navigable data center information in virtual reality using leading edge rendering engines},
+  author={Polan, Michael George},
+  year={2009},
+  month=mar # "~17",
+  publisher={Google Patents},
+  note={US Patent 7,506,264}
+}
+
+@misc{weak:error1,
+  title={Correctness Anomalies Under Serializable Isolation},
+  author={Abadi, Daniel},
+  howpublished = "\url{http://dbmsmusings.blogspot.com/2019/06/correctness-anomalies-under.html}"
+}
+
+@misc{transportation1,
+  title={How Alaska outsmarts Mother Nature in the cloud},
+  howpublished = "\url{https://customers.microsoft.com/en-us/story/alaskadotpf-government-azure-iot.}"
+}
+
+@misc{transportation2,
+  title={Internet Of Aircraft Things: An Industry Set To Be Transformed},
+  howpublished = "\url{https://aviationweek.com/connected-aerospace/internet-aircraft-things-industry-set-betransformed.}"
+}
+
+
+@misc{cockroach:consistency,
+  title={CockroachDB's Consistency Model},
+  author={Andrei Matei},
+  year ={2019},
+  howpublished = "\url{https://www.cockroachlabs.com/blog/consistency-model/}"
+}
+
+@misc{linux:tc,
+  author = "Bert Hubert",
+  title={tc(8), Linux manual page},
+  howpublished = "\url{https://man7.org/linux/man-pages/man8/tc.8.html}"
+}
+
+@misc{weak:error2,
+  title={Serializability vs Strict Serializability: The Dirty Secret of Database Isolation Levels},
+  author={Abadi, Daniel and Freels, Matt},
+  howpublished = "\url{https://fauna.com/blog/serializability-vs-strict-serializability\
+  -the-dirty-secret-of-database-isolation\ 
+  -levels}"
+}
+@inproceedings{daudjee2006lazy,
+  title={Lazy database replication with snapshot isolation},
+  author={Daudjee, Khuzaima and Salem, Kenneth},
+  booktitle={Proceedings of the 32nd international conference on Very large data bases},
+  pages={715--726},
+  year={2006}
+}
+
+@article{papadimitriou1979serializability,
+  title={The serializability of concurrent database updates},
+  author={Papadimitriou, Christos H},
+  journal={Journal of the ACM (JACM)},
+  volume={26},
+  number={4},
+  pages={631--653},
+  year={1979},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{chen2021achieving,
+  title={Achieving low tail-latency and high scalability for serializable transactions in edge computing},
+  author={Chen, Xusheng and Song, Haoze and Jiang, Jianyu and Ruan, Chaoyi and Li, Cheng and Wang, Sen and Zhang, Gong and Cheng, Reynold and Cui, Heming},
+  booktitle={Proceedings of the Sixteenth European Conference on Computer Systems},
+  pages={210--227},
+  year={2021}
+}
+
+@article{zhang2023redt,
+  title={Efficient Distributed Transaction Processing in Heterogeneous Networks},
+  author={Zhang, Qian and Li, Jingyao and Zhao, Hongyao and Xu, Quanqing and Lu, Wei and Xiao, Jinliang and Han, Fusheng and Yang, Chuanhui and Du, Xiaoyong},
+  journal={Proceedings of the VLDB Endowment},
+  volume={16},
+  number={6},
+  pages={1372--1385},
+  year={2023},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{taft2020cockroachdb,
+  title={Cockroachdb: The resilient geo-distributed sql database},
+  author={Taft, Rebecca and Sharif, Irfan and Matei, Andrei and VanBenschoten, Nathan and Lewis, Jordan and Grieger, Tobias and Niemi, Kai and Woods, Andy and Birzin, Anne and Poss, Raphael and others},
+  booktitle={Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+  pages={1493--1509},
+  year={2020}
+}
+
+
+@article{nguyen2023detock,
+  title={Detock: High Performance Multi-region Transactions at Scale},
+  author={Nguyen, Cuong DT and Miller, Johann K and Abadi, Daniel J},
+  journal={Proceedings of the ACM on Management of Data},
+  volume={1},
+  number={2},
+  pages={1--27},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
+
+@misc{aws:region,
+ title = "{Regions, Availability Zones, and Local Zones}",
+ author={AWS},
+ howpublished = "\url{https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html}"
+}
+
+@misc{huawei:region,
+ title = "{HUAWEI CLOUD Regions and Service Endpoints}",
+ author={Huawei Cloud},
+ howpublished = "\url{https://developer.huaweicloud.com/intl/en-us/endpoint}"
+}
+
+
+@misc{azure:region,
+ title = "{Regions and availability zones}",
+ author={Azure},
+ howpublished = "\url{https://docs.microsoft.com/en-us/azure/availability-zones/az-overview}"
+}
+
+@misc{azure:edge, 
+ author = "Microsoft Azure.",
+ title = "{Azure IoT Edge}",
+ howpublished = "\url{https://azure.microsoft.com/en-gb/services/iot-edge/}"
+}
+@misc{google:edge, 
+ author = "Google Cloud.",
+ title = "{Google Cloud IoT Core}",
+ howpublished = "\url{https://cloud.google.com/iot-core/}"
+}
+
+@misc{brpc,
+ title = "{apache/incubator-brpc}",
+ howpublished = "\url{https://github.com/apache/incubator-brpc}"
+}
+
+
+@misc{grpc,
+ title = "{gRPC: A high-performance, open source universial RPC framework}",
+ howpublished = "\url{https://grpc.io/}"
+}
+
+@misc{thrift,
+ title = "{Apache Thrift}",
+ howpublished = "\url{http://thrift.apache.org/}"
+}
+
+@misc{janus:github,
+ title = "{Github: NYU-NEWS/Janus}",
+ howpublished = "\url{https://github.com/NYU-NEWS/janus}"
+}
+
+@misc{janus:commit,
+ author = "Mu, Shuai and Nelson, Lamont and Lloyd, Wyatt and Li, Jinyang", 
+ title = "{Github: a stable commit of NYU-NEWS/Janus}",
+ howpublished = "\url{https://github.com/NYU-NEWS/janus/tree/3c1b60cd965551b4bd3b1f3c475e16fdde2e4c2b}"
+}
+
+
+@misc{tapir:github,
+ title = "{Github: UWSysLab/tapir}",
+ howpublished = "\url{https://github.com/UWSysLab/tapir}"
+}
+
+@misc{slog:github,
+ title = "{Github: ctring/SLOG}",
+ howpublished = "\url{https://github.com/ctring/slog}"
+}
+
+@article{bernstein1979formal,
+  title={Formal aspects of serializability in database concurrency control},
+  author={Bernstein, Philip A. and Shipman, David W. and Wong, Wing S.},
+  journal={IEEE Transactions on Software Engineering},
+  number={3},
+  pages={203--216},
+  year={1979},
+  publisher={IEEE}
+}
+
+@incollection{breitbart2010overview,
+  title={Overview of multidatabase transaction management},
+  author={Breitbart, Yuri and Garcia-Molina, Hector and Silberschatz, Avi},
+  booktitle={CASCON First Decade High Impact Papers},
+  pages={93--126},
+  year={2010}
+}
+
+@article{herlihy1990linearizability,
+  title={Linearizability: A correctness condition for concurrent objects},
+  author={Herlihy, Maurice P and Wing, Jeannette M},
+  journal={ACM Transactions on Programming Languages and Systems (TOPLAS)},
+  volume={12},
+  number={3},
+  pages={463--492},
+  year={1990},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{helios:sigmod15,
+  title={Minimizing commit latency of transactions in geo-replicated data stores},
+  author={Nawab, Faisal and Arora, Vaibhav and Agrawal, Divyakant and El Abbadi, Amr},
+  booktitle={Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data},
+  pages={1279--1294},
+  year={2015}
+}
+@article{lu2023ncc,
+  title={NCC: Natural Concurrency Control for Strictly Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall},
+  author={Lu, Haonan and Mu, Shuai and Sen, Siddhartha and Lloyd, Wyatt},
+  journal={arXiv preprint arXiv:2305.14270},
+  year={2023}
+}
+@inproceedings{mdcc:eurosys13,
+  title={MDCC: Multi-data center consistency},
+  author={Kraska, Tim and Pang, Gene and Franklin, Michael J and Madden, Samuel and Fekete, Alan},
+  booktitle={Proceedings of the 8th ACM European Conference on Computer Systems},
+  pages={113--126},
+  year={2013}
+}
+
+@inproceedings{carousel:sigmod18,
+  title={Carousel: Low-latency transaction processing for globally-distributed data},
+  author={Yan, Xinan and Yang, Linguan and Zhang, Hongbo and Lin, Xiayue Charles and Wong, Bernard and Salem, Kenneth and Brecht, Tim},
+  booktitle={Proceedings of the 2018 International Conference on Management of Data},
+  pages={231--243},
+  year={2018}
+}
+
+@article{kung1981optimistic,
+  title={On optimistic methods for concurrency control},
+  author={Kung, Hsiang-Tsung and Robinson, John T},
+  journal={ACM Transactions on Database Systems (TODS)},
+  volume={6},
+  number={2},
+  pages={213--226},
+  year={1981},
+  publisher={ACM New York, NY, USA}
+}
+
+@misc{ntp, 
+ title = "{IEN173:Time Synchronization in DCNET Hosts}",
+ author = {Mills, D.L.},
+ howpublished = "\url{https://web.archive.org/web/19961230073104/http://www.cis.ohio-state.edu/htbin/ien/ien173.html}", 
+ year = {1981}
+}
+
+@inproceedings{ptp,
+  title={IEEE-1588™ Standard for a precision clock synchronization protocol for networked measurement and control systems},
+  author={Eidson, John C and Fischer, Mike and White, Joe},
+  booktitle={Proceedings of the 34th Annual Precise Time and Time Interval Systems and Applications Meeting},
+  pages={243--254},
+  year={2002}
+}
+
+@misc{retwis,
+ title = "{Spring Data Redis - Retwis-J}",
+ author = {Leau, Costin},
+ howpublished = "\url{https://https://docs.spring.io/spring-data/data-keyvalue/examples/retwisj/current/}"
+}
+
+@misc{sp:benefits,
+ title = "{Advantages of Stored Procedures}",
+ author = {Orcale},
+ howpublished = "\url{https://docs.oracle.com/cd/F49540_01/DOC/java.815/a64686/01_intr3.htm}"
+}
+
+@article{thomson2010case,
+  title={The case for determinism in database systems},
+  author={Thomson, Alexander and Abadi, Daniel J},
+  journal={Proceedings of the VLDB Endowment},
+  volume={3},
+  number={1-2},
+  pages={70--80},
+  year={2010},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{jin2018netchain,
+  title={Netchain: Scale-free sub-rtt coordination},
+  author={Jin, Xin and Li, Xiaozhou and Zhang, Haoyu and Foster, Nate and Lee, Jeongkeun and Soul{\'e}, Robert and Kim, Changhoon and Stoica, Ion},
+  booktitle={15th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 18)},
+  pages={35--49},
+  year={2018}
+}
+
+
+
+
+@inproceedings{seq:srds07,
+  title={Enhancing edge computing with database replication},
+  author={Lin, Yi and Kemme, Bettina and Patino-Martinez, Marta and Jimenez-Peris, Ricardo},
+  booktitle={2007 26th IEEE International Symposium on Reliable Distributed Systems (SRDS 2007)},
+  pages={45--54},
+  year={2007},
+  organization={IEEE}
+}
+
+@inproceedings{tcahche:icdcs15,
+  title={Cache serializability: Reducing inconsistency in edge transactions},
+  author={Eyal, Ittay and Birman, Ken and van Renesse, Robbert},
+  booktitle={2015 IEEE 35th International Conference on Distributed Computing Systems},
+  pages={686--695},
+  year={2015},
+  organization={IEEE}
+}
+
+
+@inproceedings{haibo:nsdi21,
+  title={Unifying Timestamp with Transaction Ordering for MVCC with Decentralized Scalar Timestamp},
+  author={Wei, Xingda and Chen, Rong and Chen, Haibo and Wang, Zhaoguo and Gong, Zhenhan and Zhang, Binyu},
+  booktitle={18th USENIX Symposium on Networked Systems Design and Implementation (NSDI 2021}
+}
+
+@book{bernstein1987concurrency,
+  title={Concurrency control and recovery in database systems},
+  author={Bernstein, Philip A and Hadzilacos, Vassos and Goodman, Nathan},
+  volume={370},
+  year={1987},
+  publisher={Addison-wesley Reading}
+}
+
+@article{hstore,
+  title={H-store: a high-performance, distributed main memory transaction processing system},
+  author={Kallman, Robert and Kimura, Hideaki and Natkins, Jonathan and Pavlo, Andrew and Rasin, Alexander and Zdonik, Stanley and Jones, Evan PC and Madden, Samuel and Stonebraker, Michael and Zhang, Yang and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={1},
+  number={2},
+  pages={1496--1499},
+  year={2008},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{wei2006preventing,
+  title={Preventing SQL injection attacks in stored procedures},
+  author={Wei, Kei and Muthuprasanna, Muthusrinivasan and Kothari, Suraj},
+  booktitle={Australian Software Engineering Conference (ASWEC'06)},
+  pages={8--pp},
+  year={2006},
+  organization={IEEE}
+}
+
+@misc{gupta2015database,
+  title={Database Management-Inline Queries vs. Stored Procedures--An Extended Analysis},
+  author={Gupta, Er Shobhit and others},
+  year={2015},
+  publisher={Citeseer}
+}
+
+@article{garcia1992main,
+  title={Main memory database systems: An overview},
+  author={Garcia-Molina, Hector and Salem, Kenneth},
+  journal={IEEE Transactions on knowledge and data engineering},
+  volume={4},
+  number={6},
+  pages={509--516},
+  year={1992},
+  publisher={IEEE}
+}
+
+@article{garcia1984massive,
+  title={A massive memory machine},
+  author={Garcia-Molina, Hector and Lipton, Richard J. and Valdes, Jacobo},
+  journal={IEEE Transactions on Computers},
+  number={5},
+  pages={391--399},
+  year={1984},
+  publisher={IEEE}
+}
+
+@inproceedings{li2000multiprocessor,
+  title={Multiprocessor main memory transaction processing},
+  author={Li, Kai and Naughton, Jeffrey F},
+  booktitle={Proceedings of the first international symposium on Databases in parallel and distributed systems},
+  pages={177--187},
+  year={2000}
+}
+
+@incollection{stonebraker2018end,
+  title={The end of an architectural era: It's time for a complete rewrite},
+  author={Stonebraker, Michael and Madden, Samuel and Abadi, Daniel J and Harizopoulos, Stavros and Hachem, Nabil and Helland, Pat},
+  booktitle={Making Databases Work: the Pragmatic Wisdom of Michael Stonebraker},
+  pages={463--489},
+  year={2018}
+}
+
+@inproceedings{tu2013speedy,
+  title={Speedy transactions in multicore in-memory databases},
+  author={Tu, Stephen and Zheng, Wenting and Kohler, Eddie and Liskov, Barbara and Madden, Samuel},
+  booktitle={Proceedings of the Twenty-Fourth ACM Symposium on Operating Systems Principles},
+  pages={18--32},
+  year={2013}
+}
+@misc{whitney1997high,
+  title={High volume transaction processing without concurrency control, two phase commit, SQL or C++},
+  author={Whitney, Arthur and Shasha, Dennis and Apter, Stevan},
+  year={1997},
+  publisher={HPTS}
+}
+
+@article{vertical:rep,
+  title={Vertical partitioning algorithms for database design},
+  author={Navathe, Shamkant and Ceri, Stefano and Wiederhold, Gio and Dou, Jinglie},
+  journal={ACM Transactions on Database Systems (TODS)},
+  volume={9},
+number={4},
+  pages={680--710},
+  year={1984},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{kapoor2012chronos,
+  title={Chronos: Predictable low latency for data center applications},
+  author={Kapoor, Rishi and Porter, George and Tewari, Malveeka and Voelker, Geoffrey M and Vahdat, Amin},
+  booktitle={Proceedings of the Third ACM Symposium on Cloud Computing},
+  pages={1--14},
+  year={2012}
+}
+
+@inproceedings{suresh2015c3,
+  title={C3: Cutting tail latency in cloud data stores via adaptive replica selection},
+  author={Suresh, Lalith and Canini, Marco and Schmid, Stefan and Feldmann, Anja},
+  booktitle={12th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 15)},
+  pages={513--527},
+  year={2015}
+}
+
+@article{delimitrou2018amdahl,
+  title={Amdahl's law for tail latency},
+  author={Delimitrou, Christina and Kozyrakis, Christos},
+  journal={Communications of the ACM},
+  volume={61},
+  number={8},
+  pages={65--72},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{kaffes2019shinjuku,
+  title={Shinjuku: Preemptive scheduling for $\mu$second-scale tail latency},
+  author={Kaffes, Kostis and Chong, Timothy and Humphries, Jack Tigar and Belay, Adam and Mazi{\`e}res, David and Kozyrakis, Christos},
+  booktitle={16th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 19)},
+  pages={345--360},
+  year={2019}
+}
+
+@inproceedings{yang2016elfen,
+  title={Elfen scheduling: Fine-grain principled borrowing from latency-critical workloads using simultaneous multithreading},
+  author={Yang, Xi and Blackburn, Stephen M and McKinley, Kathryn S},
+  booktitle={2016 {USENIX} Annual Technical Conference ({USENIX}{ATC} 16)},
+  pages={309--322},
+  year={2016}
+}
+
+@article{snapshot,
+  title={A critique of ANSI SQL isolation levels},
+  author={Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
+  journal={ACM SIGMOD Record},
+  volume={24},
+  number={2},
+  pages={1--10},
+  year={1995},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{ycsbt,
+  title={YCSB+ T: Benchmarking web-scale transactional databases},
+  author={Dey, Akon and Fekete, Alan and Nambiar, Raghunath and R{\"o}hm, Uwe},
+  booktitle={2014 IEEE 30th International Conference on Data Engineering Workshops},
+  pages={223--230},
+  year={2014},
+  organization={IEEE}
+}
+
+@article{slee2007thrift,
+  title={Thrift: Scalable cross-language services implementation},
+  author={Slee, Mark and Agarwal, Aditya and Kwiatkowski, Marc},
+  journal={Facebook White Paper},
+  volume={5},
+  number={8},
+  year={2007}
+}
+
+@inproceedings{zelesko1996specializing,
+  title={Specializing object-oriented RPC for functionality and performance},
+  author={Zelesko, Matthew J and Cheriton, David R},
+  booktitle={Proceedings of 16th International Conference on Distributed Computing Systems},
+  pages={175--187},
+  year={1996},
+  organization={IEEE}
+}
+
+@inproceedings{jeong2014mtcp,
+  title={mtcp: a highly scalable user-level {TCP} stack for multicore systems},
+  author={Jeong, EunYoung and Wood, Shinae and Jamshed, Muhammad and Jeong, Haewon and Ihm, Sunghwan and Han, Dongsu and Park, KyoungSoo},
+  booktitle={11th {USENIX} Symposium on Networked Systems Design and Implementation ({NSDI} 14)},
+  pages={489--502},
+  year={2014}
+}
+
+@inproceedings{thongprasit2015toward,
+  title={Toward fast and scalable key-value stores based on user space tcp/ip stack},
+  author={Thongprasit, Supachai and Visoottiviseth, Vasaka and Takano, Ryousei},
+  booktitle={Proceedings of the Asian Internet Engineering Conference},
+  pages={40--47},
+  year={2015}
+}
+
+@inproceedings{singla2014internet,
+  title={The internet at the speed of light},
+  author={Singla, Ankit and Chandrasekaran, Balakrishnan and Godfrey, P Brighten and Maggs, Bruce},
+  booktitle={Proceedings of the 13th ACM Workshop on Hot Topics in Networks},
+  pages={1--7},
+  year={2014}
+}
+
+@article{yu2017survey,
+  title={A survey on the edge computing for the Internet of Things},
+  author={Yu, Wei and Liang, Fan and He, Xiaofei and Hatcher, William Grant and Lu, Chao and Lin, Jie and Yang, Xinyu},
+  journal={IEEE access},
+  volume={6},
+  pages={6900--6919},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{ning2019deep,
+  title={Deep reinforcement learning for vehicular edge computing: An intelligent offloading system},
+  author={Ning, Zhaolong and Dong, Peiran and Wang, Xiaojie and Rodrigues, Joel JPC and Xia, Feng},
+  journal={ACM Transactions on Intelligent Systems and Technology (TIST)},
+  volume={10},
+  number={6},
+  pages={1--24},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{liu2019edge,
+  title={Edge computing for autonomous driving: Opportunities and challenges},
+  author={Liu, Shaoshan and Liu, Liangkai and Tang, Jie and Yu, Bo and Wang, Yifan and Shi, Weisong},
+  journal={Proceedings of the IEEE},
+  volume={107},
+  number={8},
+  pages={1697--1716},
+  year={2019},
+  publisher={IEEE}
+}
+
+@article{shi2016edge,
+  title={Edge computing: Vision and challenges},
+  author={Shi, Weisong and Cao, Jie and Zhang, Quan and Li, Youhuizi and Xu, Lanyu},
+  journal={IEEE internet of things journal},
+  volume={3},
+  number={5},
+  pages={637--646},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{pathan2007taxonomy,
+  title={A taxonomy and survey of content delivery networks},
+  author={Pathan, Al-Mukaddim Khan and Buyya, Rajkumar},
+  journal={Grid Computing and Distributed Systems Laboratory, University of Melbourne, Technical Report},
+  volume={4},
+  pages={70},
+  year={2007}
+}
+
+@article{gupta2015survey,
+  title={A survey of 5G network: Architecture and emerging technologies},
+  author={Gupta, Akhil and Jha, Rakesh Kumar},
+  journal={IEEE access},
+  volume={3},
+  pages={1206--1232},
+  year={2015},
+  publisher={IEEE}
+}
+
+@article{vanet:latency,
+  title={A scalable and quick-response software defined vehicular network assisted by mobile edge computing},
+  author={Liu, Jianqi and Wan, Jiafu and Zeng, Bi and Wang, Qinruo and Song, Houbing and Qiu, Meikang},
+  journal={IEEE Communications Magazine},
+  volume={55},
+  number={7},
+  pages={94--100},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{deng2017latency,
+  title={Latency control in software-defined mobile-edge vehicular networking},
+  author={Deng, Der-Jiunn and Lien, Shao-Yu and Lin, Chun-Cheng and Hung, Shao-Chou and Chen, Wei-Bo},
+  journal={IEEE Communications Magazine},
+  volume={55},
+  number={8},
+  pages={87--93},
+  year={2017},
+  publisher={IEEE}
+}
+
+@inproceedings{mangharam2007bounded,
+  title={Bounded-latency alerts in vehicular networks},
+  author={Mangharam, Rahul and Rajkumar, Raj and Hamilton, Mark and Mudaliget, Priyantha and Bait, Fan},
+  booktitle={2007 Mobile Networking for Vehicular Environments},
+  pages={55--60},
+  year={2007},
+  organization={IEEE}
+}
+
+@article{smartcity:edge1,
+  title={An edge-based platform for dynamic smart city applications},
+  author={Cicirelli, Franco and Guerrieri, Antonio and Spezzano, Giandomenico and Vinci, Andrea},
+  journal={Future Generation Computer Systems},
+  volume={76},
+  pages={106--118},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{li2018delay,
+  title={Delay-tolerant data traffic to software-defined vehicular networks with mobile edge computing in smart city},
+  author={Li, Meng and Si, Pengbo and Zhang, Yanhua},
+  journal={IEEE Transactions on Vehicular Technology},
+  volume={67},
+  number={10},
+  pages={9073--9086},
+  year={2018},
+  publisher={IEEE}
+}
+@misc{moon2013multi,
+  title={Multi-tenant database management for service level agreement (SLA) profit maximization},
+  author={Moon, Hyun Jin and Tatemura, Junichi and Hacigumus, Vahit Hakan and Guirguis, Shenoda and Chi, Yun},
+  year={2013},
+  month=feb # "~19",
+  publisher={Google Patents},
+  note={US Patent 8,380,557}
+}
+
+@misc{li2010sla,
+  title={SLA-Compliant Placement of Multi-Tenant Database Applications},
+  author={Li, Wen-Syan and Xu, Jian},
+  year={2010},
+  month=dec # "~23",
+  publisher={Google Patents},
+  note={US Patent App. 12/758,597}
+}
+
+@inproceedings{dang2019towards,
+  title={Towards scaling blockchain systems via sharding},
+  author={Dang, Hung and Dinh, Tien Tuan Anh and Loghin, Dumitrel and Chang, Ee-Chien and Lin, Qian and Ooi, Beng Chin},
+  booktitle={Proceedings of the 2019 international conference on management of data},
+  pages={123--140},
+  year={2019}
+}
+
+@article{ren2019federated,
+  title={Federated learning-based computation offloading optimization in edge computing-supported internet of things},
+  author={Ren, Jianji and Wang, Haichao and Hou, Tingting and Zheng, Shuai and Tang, Chaosheng},
+  journal={IEEE Access},
+  volume={7},
+  pages={69194--69201},
+  year={2019},
+  publisher={IEEE}
+}
+
+@article{tao2014iot,
+  title={IoT-based intelligent perception and access of manufacturing resource toward cloud manufacturing},
+  author={Tao, Fei and Zuo, Ying and Da Xu, Li and Zhang, Lin},
+  journal={IEEE Transactions on Industrial Informatics},
+  volume={10},
+  number={2},
+  pages={1547--1557},
+  year={2014},
+  publisher={IEEE}
+}
+
+@article{cheng2018industrial,
+  title={Industrial IoT in 5G environment towards smart manufacturing},
+  author={Cheng, Jiangfeng and Chen, Weihai and Tao, Fei and Lin, Chun-Liang},
+  journal={Journal of Industrial Information Integration},
+  volume={10},
+  pages={10--19},
+  year={2018},
+  publisher={Elsevier}
+}
+
+@article{pease1980reaching,
+  title={Reaching agreement in the presence of faults},
+  author={Pease, Marshall and Shostak, Robert and Lamport, Leslie},
+  journal={Journal of the ACM (JACM)},
+  volume={27},
+  number={2},
+  pages={228--234},
+  year={1980},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{zhou2019secure,
+  title={Secure and efficient vehicle-to-grid energy trading in cyber physical systems: Integration of blockchain and edge computing},
+  author={Zhou, Zhenyu and Wang, Bingchen and Dong, Mianxiong and Ota, Kaoru},
+  journal={IEEE Transactions on Systems, Man, and Cybernetics: Systems},
+  volume={50},
+  number={1},
+  pages={43--57},
+  year={2019},
+  publisher={IEEE}
+}
+
+@book{loo2016mobile,
+  title={Mobile ad hoc networks: current status and future trends},
+  author={Loo, Jonathan and Mauri, Jaime Lloret and Ortiz, Jesus Hamilton},
+  year={2016},
+  publisher={CRC Press}
+}
+@article{liu2017information,
+  title={Information-centric mobile ad hoc networks and content routing: a survey},
+  author={Liu, Xuan and Li, Zhuo and Yang, Peng and Dong, Yongqiang},
+  journal={Ad Hoc Networks},
+  volume={58},
+  pages={255--268},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@article{5g:iot,
+  title={The Disruptions of 5G on Data-driven Technologies and Applications},
+  author={Loghin, Dumitrel and Cai, Shaofeng and Chen, Gang and Dinh, Tien Tuan Anh and Fan, Feiyi and Lin, Qian and Ng, Janice and Ooi, Beng Chin and Sun, Xutao and Ta, Quang-Trung and others},
+  journal={arXiv preprint arXiv:1909.08096},
+  year={2019}
+}
+@inproceedings{shang2017next,
+  title={Next Generation Consistency Enforcement.},
+  author={Shang, Zechao},
+  booktitle={CIDR},
+  year={2017}
+}
+
+@article{lu12star,
+  title={STAR: Scaling Transactions through Asymmetric Replication},
+  author={Lu, Yi and Yu, Xiangyao and Madden, Samuel},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={11}
+}
+
+@article{lu2019scar,
+  title={SCAR: Strong Consistency using Asynchronous Replication with Minimal Coordination},
+  author={Lu, Yi and Yu, Xiangyao and Madden, Samuel},
+  journal={arXiv preprint arXiv:1903.00424},
+  year={2019}
+}
+
+@phdthesis{wang2018fast,
+  title={Fast and Robust Transaction Processing on Emerging Hardware},
+  author={Wang, Tianzheng},
+  year={2018}
+}
+
+@article{wang2016mostly,
+  title={Mostly-optimistic concurrency control for highly contended dynamic workloads on a thousand cores},
+  author={Wang, Tianzheng and Kimura, Hideaki},
+  journal={Proceedings of the VLDB Endowment},
+  volume={10},
+  number={2},
+  pages={49--60},
+  year={2016},
+  publisher={VLDB Endowment}
+}
+@article{nguyen2019using,
+  title={Using weaker consistency models with monitoring and recovery for improving performance of key-value stores},
+  author={Nguyen, Duong and Charapko, Aleksey and Kulkarni, Sandeep S and Demirbas, Murat},
+  journal={Journal of the Brazilian Computer Society},
+  volume={25},
+  number={1},
+  pages={10},
+  year={2019},
+  publisher={Springer}
+}
+
+@inproceedings{qadah2020q,
+  title={Q-Store: Distributed, Multi-partition Transactions via Queue-oriented Execution and Communication.},
+  author={Qadah, Thamir and Gupta, Suyash and Sadoghi, Mohammad},
+  booktitle={EDBT},
+  pages={73--84},
+  year={2020}
+}
+
+@article{gupta2020resilientdb,
+  title={Resilientdb: Global scale resilient blockchain fabric},
+  author={Gupta, Suyash and Rahnama, Sajjad and Hellings, Jelle and Sadoghi, Mohammad},
+  journal={arXiv preprint arXiv:2002.00160},
+  year={2020}
+}
+
+@inproceedings{ruan2020transactional,
+  title={A Transactional Perspective on Execute-order-validate Blockchains},
+  author={Ruan, Pingcheng and Loghin, Dumitrel and Ta, Quang-Trung and Zhang, Meihui and Chen, Gang and Ooi, Beng Chin},
+  booktitle={Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+  pages={543--557},
+  year={2020}
+}
+
+@article{agrawal2015taxonomy,
+  title={A Taxonomy of Partitioned Replicated Cloud-based Database Systems.},
+  author={Agrawal, Divy and El Abbadi, Amr and Salem, Kenneth},
+  journal={IEEE Data Eng. Bull.},
+  volume={38},
+  number={1},
+  pages={4--9},
+  year={2015}
+}
+
+@inproceedings{korkmaz2018workload,
+  title={Workload-aware cpu performance scaling for transactional database systems},
+  author={Korkmaz, Mustafa and Karsten, Martin and Salem, Kenneth and Salihoglu, Semih},
+  booktitle={Proceedings of the 2018 International Conference on Management of Data},
+  pages={291--306},
+  year={2018}
+}
+
+@article{huang2019yugong,
+  title={Yugong: Geo-Distributed data and job placement at scale},
+  author={Huang, Yuzhen and Shi, Yingjie and Zhong, Zheng and Feng, Yihui and Cheng, James and Li, Jiwei and Fan, Haochuan and Li, Chao and Guan, Tao and Zhou, Jingren},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={12},
+  pages={2155--2169},
+  year={2019},
+  publisher={VLDB Endowment}
+}
+
+@article{taft2014store,
+  title={E-store: Fine-grained elastic partitioning for distributed transaction processing systems},
+  author={Taft, Rebecca and Mansour, Essam and Serafini, Marco and Duggan, Jennie and Elmore, Aaron J and Aboulnaga, Ashraf and Pavlo, Andrew and Stonebraker, Michael},
+  journal={Proceedings of the VLDB Endowment},
+  volume={8},
+  number={3},
+  pages={245--256},
+  year={2014},
+  publisher={VLDB Endowment}
+}
+
+@article{barthels2019strong,
+  title={Strong consistency is not hard to get: Two-Phase Locking and Two-Phase Commit on Thousands of Cores},
+  author={Barthels, Claude and M{\"u}ller, Ingo and Taranov, Konstantin and Alonso, Gustavo and Hoefler, Torsten},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={13},
+  pages={2325--2338},
+  year={2019},
+  publisher={VLDB Endowment}
+}
+
+
+
+@article{yao2016exploiting,
+  title={Exploiting single-threaded model in multi-core in-memory systems},
+  author={Yao, Chang and Agrawal, Divyakant and Chen, Gang and Lin, Qian and Ooi, Beng Chin and Wong, Weng-Fai and Zhang, Meihui},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={28},
+  number={10},
+  pages={2635--2650},
+  year={2016},
+  publisher={IEEE}
+}
+
+@inproceedings{nerone2020efficient,
+  title={Efficient Hard Real-Time Transaction Processing-Unachievable in Software.},
+  author={Nerone, Matheus and Manegold, Stefan and Pirk, Holger},
+  booktitle={CIDR},
+  year={2020}
+}
+
+@inproceedings{cowling2012granola,
+  title={Granola: low-overhead distributed transaction coordination},
+  author={Cowling, James and Liskov, Barbara},
+  booktitle={Presented as part of the 2012 {USENIX} Annual Technical Conference ({USENIX} {ATC} 12)},
+  pages={223--235},
+  year={2012}
+}
+
+@techreport{li2017speculative,
+  title={Speculative transaction processing in geo-replicated data stores},
+  author={Li, Zhongmiao and Van Roy, Peter and Romano, Paolo},
+  year={2017},
+  institution={Technical Report 2, INESC-ID}
+}
+
+@inproceedings{jimenez2002improving,
+  title={Improving the scalability of fault-tolerant database clusters},
+  author={Jim{\'e}nez-Peris, Ricardo and Pati{\~n}o-Mart{\'\i}nez, Marta and Kemme, Bettina and Alonso, Gustavo},
+  booktitle={Proceedings 22nd International Conference on Distributed Computing Systems},
+  pages={477--484},
+  year={2002},
+  organization={IEEE}
+}
+@inproceedings{kulkarni2014logical,
+  title={Logical physical clocks},
+  author={Kulkarni, Sandeep S and Demirbas, Murat and Madappa, Deepak and Avva, Bharadwaj and Leone, Marcelo},
+  booktitle={International Conference on Principles of Distributed Systems},
+  pages={17--32},
+  year={2014},
+  organization={Springer}
+}
+
+@article{scholl2001transactional,
+  title={Transactional information systems: theory, algorithms, and the practice of concurrency control and recovery},
+  author={Scholl, Marc H},
+  journal={ACM SIGMOD Record},
+  volume={30},
+  number={4},
+  pages={67--68},
+  year={2001},
+  publisher={ACM New York, NY, USA}
+}
+
+@incollection{lamport2019time,
+  title={Time, clocks, and the ordering of events in a distributed system},
+  author={Lamport, Leslie},
+  booktitle={Concurrency: the Works of Leslie Lamport},
+  pages={179--196},
+  year={2019}
+}
+
+@inproceedings{gunawardhana2017unobtrusive,
+  title={Unobtrusive deferred update stabilization for efficient geo-replication},
+  author={Gunawardhana, Chathuri and Bravo, Manuel and Rodrigues, Luis},
+  booktitle={2017 {USENIX} Annual Technical Conference ({USENIX}{ATC} 17)},
+  pages={83--95},
+  year={2017}
+}
+
+
+@article{bernstein1987proof,
+  title={A proof technique for concurrency control and recovery algorithms for replicated databases},
+  author={Bernstein, Philip A and Goodman, Nathan},
+  journal={Distributed Computing},
+  volume={2},
+  number={1},
+  pages={32--44},
+  year={1987},
+  publisher={Springer}
+}
+
+@inproceedings{luo2008transaction,
+  title={Transaction reordering with application to synchronized scans},
+  author={Luo, Gang and Naughton, Jeffrey F and Ellmann, Curt J and Watzke, Michael W},
+  booktitle={Proceedings of the ACM 11th international workshop on Data warehousing and OLAP},
+  pages={17--24},
+  year={2008}
+}
+
+@inproceedings{durner2019no,
+  title={No false negatives: Accepting all useful schedules in a fast serializable many-core system},
+  author={Durner, Dominik and Neumann, Thomas},
+  booktitle={2019 IEEE 35th International Conference on Data Engineering (ICDE)},
+  pages={734--745},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{ding2018improving,
+  title={Improving optimistic concurrency control through transaction batching and operation reordering},
+  author={Ding, Bailu and Kot, Lucja and Gehrke, Johannes},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={2},
+  pages={169--182},
+  year={2018},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{afonso2020combining,
+  title={Combining High Throughput and Low Migration Latency for Consistent Data Storage on the Edge},
+  author={Afonso, Nuno and Bravo, Manuel and Rodrigues, Lu{\'\i}s},
+  booktitle={2020 29th International Conference on Computer Communications and Networks (ICCCN)},
+  pages={1--11},
+  year={2020},
+  organization={IEEE}
+}
+
+@inproceedings{yan2020domino,
+  title={Domino: using network measurements to reduce state machine replication latency in WANs},
+  author={Yan, Xinan and Yang, Linguan and Wong, Bernard},
+  booktitle={Proceedings of the 16th International Conference on emerging Networking EXperiments and Technologies},
+  pages={351--363},
+  year={2020}
+}
+
+@inproceedings{sousa2002optimistic,
+  title={Optimistic total order in wide area networks},
+  author={Sousa, Ant{\'o}nio and Pereira, Jos{\'e} and Moura, Francisco and Oliveira, Rui},
+  booktitle={21st IEEE Symposium on Reliable Distributed Systems, 2002. Proceedings.},
+  pages={190--199},
+  year={2002},
+  organization={IEEE}
+}
+
+@inproceedings{du2013clock,
+  title={Clock-SI: Snapshot isolation for partitioned data stores using loosely synchronized clocks},
+  author={Du, Jiaqing and Elnikety, Sameh and Zwaenepoel, Willy},
+  booktitle={2013 IEEE 32nd International Symposium on Reliable Distributed Systems},
+  pages={173--184},
+  year={2013},
+  organization={IEEE}
+}
+
+@inproceedings{wiesmann2000database,
+  title={Database replication techniques: A three parameter classification},
+  author={Wiesmann, Matthias and Pedone, Fernando and Schiper, Andr{\'e} and Kemme, Bettina and Alonso, Gustavo},
+  booktitle={Proceedings 19th IEEE Symposium on Reliable Distributed Systems SRDS-2000},
+  pages={206--215},
+  year={2000},
+  organization={IEEE}
+}
+
+@article{tidb:vldb20,
+  title={TiDB: a Raft-based HTAP database},
+  author={Huang, Dongxu and Liu, Qi and Cui, Qiu and Fang, Zhuhe and Ma, Xiaoyu and Xu, Fei and Shen, Li and Tang, Liu and Zhou, Yuxing and Huang, Menglong and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={13},
+  number={12},
+  pages={3072--3084},
+  year={2020},
+  publisher={VLDB Endowment}
+}
+
+@article{janus:htap:tkde,
+  title={Janus: A hybrid scalable multi-representation cloud datastore},
+  author={Arora, Vaibhav and Nawab, Faisal and Agrawal, Divyakant and El Abbadi, Amr},
+  journal={IEEE Transactions on Knowledge and Data Engineering},
+  volume={30},
+  number={4},
+  pages={689--702},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{lightning:vldb20,
+  title={F1 Lightning: HTAP as a Service},
+  author={Yang, Jiacheng and Rae, Ian and Xu, Jun and Shute, Jeff and Yuan, Zhan and Lau, Kelvin and Zeng, Qiang and Zhao, Xi and Ma, Jun and Chen, Ziyang and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={13},
+  number={12},
+  pages={3313--3325},
+  year={2020},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{vegito:osdi21,
+  title={Retrofitting High Availability Mechanism to Tame Hybrid Transaction/Analytical Processing},
+  author={Shen, Sijie and Chen, Rong and Chen, Haibo and Zang, Binyu},
+  booktitle={15th USENIX Symposium on Operating Systems Design and Implementation (OSDI 21)(July 2021), USENIX Association},
+  year={2021}
+}
+
+@inproceedings{chbenchmark,
+  title={The mixed workload CH-benCHmark},
+  author={Cole, Richard and Funke, Florian and Giakoumakis, Leo and Guy, Wey and Kemper, Alfons and Krompass, Stefan and Kuno, Harumi and Nambiar, Raghunath and Neumann, Thomas and Poess, Meikel and others},
+  booktitle={Proceedings of the Fourth International Workshop on Testing Database Systems},
+  pages={1--6},
+  year={2011}
+}
+
+@article{memsql:vldb16,
+  title={The MemSQL Query Optimizer: A modern optimizer for real-time analytics in a distributed database},
+  author={Chen, Jack and Jindel, Samir and Walzer, Robert and Sen, Rajkumar and Jimsheleishvilli, Nika and Andrews, Michael},
+  journal={Proceedings of the VLDB Endowment},
+  volume={9},
+  number={13},
+  pages={1401--1412},
+  year={2016},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{hyperdb,
+  title={HyperDB: a PC-based database cluster system for efficient OLAP query processing},
+  author={Kim, Tae-Kyung and Jung, Seung-Hyun and Kim, Kyoung-Ran and Yoo, Jae-Soo and Cho, Wan-Sup},
+  booktitle={Proceedings of the 19th IASTED International Conference on Parallel and Distributed Computing and Systems},
+  pages={288--293},
+  year={2007}
+}
+
+@misc{tidb:code,
+  title={TiDB's github.},
+  author={TiDB authors.},
+  howpublished = "\url{https://github.com/pingcap/tidb}"
+}
+
+@article{ptree,
+  title={PTree: Mining Sequential Patterns Efficiently in Multiple Data Streams Environment.},
+  author={Lee, Guanling and Chen, Yi-Chun and Hung, Kuo-Che},
+  journal={Journal of Information Science \& Engineering},
+  volume={29},
+  number={6},
+  year={2013}
+}
+
+@article{sap:hana,
+  title={The SAP HANA Database--An Architecture Overview.},
+  author={F{\"a}rber, Franz and May, Norman and Lehner, Wolfgang and Gro{\ss}e, Philipp and M{\"u}ller, Ingo and Rauhe, Hannes and Dees, Jonathan},
+  journal={IEEE Data Eng. Bull.},
+  volume={35},
+  number={1},
+  pages={28--33},
+  year={2012}
+}
+
+@inproceedings{nocs:osdi20,
+  title={Performance-Optimal Read-Only Transactions},
+  author={Lu, Haonan and Sen, Siddhartha and Lloyd, Wyatt},
+  booktitle={14th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 20)},
+  pages={333--349},
+  year={2020}
+}
+
+@article{mvcc:vldb17,
+  title={An empirical evaluation of in-memory multi-version concurrency control},
+  author={Wu, Yingjun and Arulraj, Joy and Lin, Jiexi and Xian, Ran and Pavlo, Andrew},
+  journal={Proceedings of the VLDB Endowment},
+  volume={10},
+  number={7},
+  pages={781--792},
+  year={2017},
+  publisher={VLDB Endowment}
+}
+
+@article{lsm:tree,
+  title={The log-structured merge-tree (LSM-tree)},
+  author={O’Neil, Patrick and Cheng, Edward and Gawlick, Dieter and O’Neil, Elizabeth},
+  journal={Acta Informatica},
+  volume={33},
+  number={4},
+  pages={351--385},
+  year={1996},
+  publisher={Springer}
+}
+
+@article{choudhury2014real,
+  title={A real time clustering and SVM based price-volatility prediction for optimal trading strategy},
+  author={Choudhury, Subhabrata and Ghosh, Subhajyoti and Bhattacharya, Arnab and Fernandes, Kiran Jude and Tiwari, Manoj Kumar},
+  journal={Neurocomputing},
+  volume={131},
+  pages={419--426},
+  year={2014},
+  publisher={Elsevier}
+}
+
+@article{konana1999semantics,
+  title={Semantics-based transaction processing for real-time databases: The case of automated stock trading},
+  author={Konana, Prabhudev and Ram, Sudha},
+  journal={INFORMS Journal on Computing},
+  volume={11},
+  number={3},
+  pages={299--315},
+  year={1999},
+  publisher={INFORMS}
+}
+
+@inproceedings{dipippo2001real,
+  title={A real-time multi-agent system architecture for e-commerce applications},
+  author={DiPippo, L Cingiser and Fay-Wolfe, Victor and Nair, Lekshmi and Hodys, Ethan and Uvarov, Oleg},
+  booktitle={Proceedings 5th International Symposium on Autonomous Decentralized Systems},
+  pages={357--364},
+  year={2001},
+  organization={IEEE}
+}
+
+@inproceedings{xie2021explore,
+  title={Explore User Neighborhood for Real-time E-commerce Recommendation},
+  author={Xie, Xu and Sun, Fei and Yang, Xiaoyong and Yang, Zhao and Gao, Jinyang and Ou, Wenwu and Cui, Bin},
+  booktitle={2021 IEEE 37th International Conference on Data Engineering (ICDE)},
+  pages={2464--2475},
+  year={2021},
+  organization={IEEE}
+}
+
+
+@misc{davidavivciene2011measuring,
+  title={Measuring quality of e-commerce web sites: Case of Lithuania},
+  author={Davidavi{\v{c}}ien{\.e}, Vida and Tolvai{\v{s}}as, Jonas},
+  journal={Ekonomika ir vadyba},
+  number={16},
+  pages={723--729},
+  year={2011}
+}
+
+@article{corsi2006real,
+  title={The real-time global supply chain game: New educational tool for developing supply chain management professionals},
+  author={Corsi, Thomas M and Boyson, Sandor and Verbraeck, Alexander and Van Houten, Stijn-Pieter and Han, Chaodong and Macdonald, John R},
+  journal={Transportation Journal},
+  pages={61--73},
+  year={2006},
+  publisher={JSTOR}
+}
+
+@article{lechler2019real,
+  title={Real-time data processing in supply chain management: revealing the uncertainty dilemma},
+  author={Lechler, Sabrina and Canzaniello, Angelo and Ro{\ss}mann, Bernhard and Heiko, A and Hartmann, Evi},
+  journal={International Journal of Physical Distribution \& Logistics Management},
+  year={2019},
+  publisher={Emerald Publishing Limited}
+}
+
+@inproceedings{ozcan2017hybrid,
+  title={Hybrid transactional/analytical processing: A survey},
+  author={{\"O}zcan, Fatma and Tian, Yuanyuan and T{\"o}z{\"u}n, Pinar},
+  booktitle={Proceedings of the 2017 ACM International Conference on Management of Data},
+  pages={1771--1775},
+  year={2017}
+}
+
+@inproceedings{appuswamy2017case,
+  title={The case for heterogeneous HTAP},
+  author={Appuswamy, Raja and Karpathiotakis, Manos and Porobic, Danica and Ailamaki, Anastasia},
+  booktitle={8th Biennial Conference on Innovative Data Systems Research},
+  number={CONF},
+  year={2017}
+}
+
+@article{boroumand2021polynesia,
+  title={Polynesia: Enabling effective hybrid transactional/analytical databases with specialized hardware/software co-design},
+  author={Boroumand, Amirali and Ghose, Saugata and Oliveira, Geraldo F and Mutlu, Onur},
+  journal={arXiv preprint arXiv:2103.00798},
+  year={2021}
+}
+
+@article{sun2019supporting,
+  title={On supporting efficient snapshot isolation for hybrid workloads with multi-versioned indexes},
+  author={Sun, Yihan and Blelloch, Guy E and Lim, Wan Shen and Pavlo, Andrew},
+  journal={Proceedings of the VLDB Endowment},
+  volume={13},
+  number={2},
+  year={2019}
+
+}
+
+@inproceedings{lepers2020kvell+,
+  title={Kvell+: Snapshot Isolation without Snapshots},
+  author={Lepers, Baptiste and Balmau, Oana and Gupta, Karan and Zwaenepoel, Willy},
+  booktitle={14th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 20)},
+  pages={425--441},
+  year={2020}
+}
+
+@inproceedings{rde,
+author = {Raza, Aunn and Chrysogelos, Periklis and Anadiotis, Angelos Christos and Ailamaki, Anastasia},
+title = {Adaptive HTAP through Elastic Resource Scheduling},
+year = {2020},
+isbn = {9781450367356},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3318464.3389783},
+doi = {10.1145/3318464.3389783},
+abstract = {Modern Hybrid Transactional/Analytical Processing (HTAP) systems use an integrated
+data processing engine that performs analytics on fresh data, which are ingested from
+a transactional engine. HTAP systems typically consider data freshness at design time,
+and are optimized for a fixed range of freshness requirements, addressed at a performance
+cost for either OLTP or OLAP. The data freshness and the performance requirements
+of both engines, however, may vary with the workload. We approach HTAP as a scheduling
+problem, addressed at runtime through elastic resource management. We model an HTAP
+system as a set of three individual engines: an OLTP, an OLAP and a Resource and Data
+Exchange (RDE) engine. We devise a scheduling algorithm which traverses the HTAP design
+spectrum through elastic resource management, to meet the workload data freshness
+requirements. We propose an in-memory system design which is non-intrusive to the
+current state-of-art OLTP and OLAP engines, and we use it to evaluate the performance
+of our approach. Our evaluation shows that the performance benefit of our system for
+OLAP queries increases over time, reaching up to 50% compared to static schedules
+for 100 query sequences, while maintaining a small, and controlled, drop in the OLTP
+throughput.},
+booktitle = {Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+pages = {2043–2054},
+numpages = {12},
+keywords = {OLTP, HTAP, OLAP, DBMS},
+location = {Portland, OR, USA},
+series = {SIGMOD '20}
+}
+@article{bernstein1983multiversion,
+  title={Multiversion concurrency control—theory and algorithms},
+  author={Bernstein, Philip A and Goodman, Nathan},
+  journal={ACM Transactions on Database Systems (TODS)},
+  volume={8},
+  number={4},
+  pages={465--483},
+  year={1983},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{asympartition,
+author = {Lee, Juchang and Kim, Kyu Hwan and Lee, Hyejeong and Andrei, Mihnea and Ko, Seongyun and Keller, Friedrich and Han, Wook-Shin},
+title = {Asymmetric-Partition Replication for Highly Scalable Distributed Transaction Processing in Practice},
+year = {2020},
+issue_date = {August 2020},
+publisher = {VLDB Endowment},
+volume = {13},
+number = {12},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3415478.3415538},
+doi = {10.14778/3415478.3415538},
+abstract = {Database replication is widely known and used for high availability or load balancing
+in many practical database systems. In this paper, we show how a replication engine
+can be used for three important practical cases that have not previously been studied
+very well. The three practical use cases include: 1) scaling out OLTP/OLAP-mixed workloads
+with partitioned replicas, 2) efficiently maintaining a distributed secondary index
+for a partitioned table, and 3) efficiently implementing an online re-partitioning
+operation. All three use cases are crucial for enabling a high-performance shared-nothing
+distributed database system. To support the three use cases more efficiently, we propose
+the concept of asymmetric-partition replication, so that replicas of a table can be
+independently partitioned regardless of whether or how its primary copy is partitioned.
+In addition, we propose the optimistic synchronous commit protocol which avoids the
+expensive two-phase commit without sacrificing transactional consistency. The proposed
+asymmetric-partition replication and its optimized commit protocol are incorporated
+in the production versions of the SAP HANA in-memory database system. Through extensive
+experiments, we demonstrate the significant benefits that the proposed replication
+engine brings to the three use cases.},
+journal = {Proc. VLDB Endow.},
+month = aug,
+pages = {3112–3124},
+numpages = {13}
+}
+
+
+@misc{GeneralD60:online,
+author = {},
+title = {General Data Protection Regulation (GDPR) – Official Legal Text},
+howpublished = {\url{https://gdpr-info.eu/}},
+month = {},
+year = {},
+note = {(Accessed on 10/01/2021)}
+}
+@misc{PrivacyP13:online,
+author = {},
+title = {Privacy Policy — CPPC LOGISTIC GROUP},
+howpublished = {\url{https://www.cppcgroup.com/privacy-policy}},
+month = {},
+year = {},
+note = {(Accessed on 10/01/2021)}
+}
+@inproceedings{calvin,
+author = {Thomson, Alexander and Diamond, Thaddeus and Weng, Shu-Chun and Ren, Kun and Shao, Philip and Abadi, Daniel J.},
+title = {Calvin: Fast Distributed Transactions for Partitioned Database Systems},
+year = {2012},
+isbn = {9781450312479},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2213836.2213838},
+doi = {10.1145/2213836.2213838},
+abstract = {Many distributed storage systems achieve high data access throughput via partitioning
+and replication, each system with its own advantages and tradeoffs. In order to achieve
+high scalability, however, today's systems generally reduce transactional support,
+disallowing single transactions from spanning multiple partitions. Calvin is a practical
+transaction scheduling and data replication layer that uses a deterministic ordering
+guarantee to significantly reduce the normally prohibitive contention costs associated
+with distributed transactions. Unlike previous deterministic database system prototypes,
+Calvin supports disk-based storage, scales near-linearly on a cluster of commodity
+machines, and has no single point of failure. By replicating transaction inputs rather
+than effects, Calvin is also able to support multiple consistency levels---including
+Paxos-based strong consistency across geographically distant replicas---at no cost
+to transactional throughput.},
+booktitle = {Proceedings of the 2012 ACM SIGMOD International Conference on Management of Data},
+pages = {1–12},
+numpages = {12},
+keywords = {transaction processing, determinism, distributed database systems, replication},
+location = {Scottsdale, Arizona, USA},
+series = {SIGMOD '12}
+}
+
+@article{autodetec,
+author = {Faleiro, Jose M. and Abadi, Daniel J. and Hellerstein, Joseph M.},
+title = {High Performance Transactions via Early Write Visibility},
+year = {2017},
+issue_date = {January 2017},
+publisher = {VLDB Endowment},
+volume = {10},
+number = {5},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3055540.3055553},
+doi = {10.14778/3055540.3055553},
+abstract = {In order to guarantee recoverable transaction execution, database systems permit a
+transaction's writes to be observable only at the end of its execution. As a consequence,
+there is generally a delay between the time a transaction performs a write and the
+time later transactions are permitted to read it. This delayed write visibility can
+significantly impact the performance of serializable database systems by reducing
+concurrency among conflicting transactions.This paper makes the observation that delayed
+write visibility stems from the fact that database systems can arbitrarily abort transactions
+at any point during their execution. Accordingly, we make the case for database systems
+which only abort transactions under a restricted set of conditions, thereby enabling
+a new recoverability mechanism, early write visibility, which safely makes transactions'
+writes visible prior to the end of their execution. We design a new serializable concurrency
+control protocol, piece-wise visibility (PWV), with the explicit goal of enabling
+early write visibility. We evaluate PWV against state-of-the-art serializable protocols
+and a highly optimized implementation of read committed, and find that PWV can outperform
+serializable protocols by an order of magnitude and read committed by 3X on high contention
+workloads.},
+journal = {Proc. VLDB Endow.},
+month = jan,
+pages = {613–624},
+numpages = {12}
+}
+
+@misc{WhatisET14:online,
+author = {IBM Cloud Education.},
+title = {What is ETL (Extract, Transform, Load)? | IBM},
+howpublished = {\url{https://www.ibm.com/cloud/learn/etl}},
+month = {},
+year = {},
+note = {(Accessed on 10/02/2021)}
+}
+
+@inproceedings{chbenchmarkG,
+author = {Coelho, F\'{a}bio and Paulo, Jo\~{a}o and Vila\c{c}a, Ricardo and Pereira, Jos\'{e} and Oliveira, Rui},
+title = {HTAPBench: Hybrid Transactional and Analytical Processing Benchmark},
+year = {2017},
+isbn = {9781450344043},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3030207.3030228},
+doi = {10.1145/3030207.3030228},
+abstract = {The increasing demand for real-time analytics requires the fusion of Transactional
+(OLTP) and Analytical (OLAP) systems, eschewing ETL processes and introducing a plethora
+of proposals for the so-called Hybrid Analytical and Transactional Processing (HTAP)
+systems.Unfortunately, current benchmarking approaches are not able to comprehensively
+produce a unified metric from the assessment of an HTAP system. The evaluation of
+both engine types is done separately, leading to the use of disjoint sets of benchmarks
+such as TPC-C or TPC-H.In this paper we propose a new benchmark, HTAPBench, providing
+a unified metric for HTAP systems geared toward the execution of constantly increasing
+OLAP requests limited by an admissible impact on OLTP performance. To achieve this,
+a load balancer within HTAPBench regulates the coexistence of OLTP and OLAP workloads,
+proposing a method for the generation of both new data and requests, so that OLAP
+requests over freshly modified data are comparable across runs.We demonstrate the
+merit of our approach by validating it with different types of systems: OLTP, OLAP
+and HTAP; showing that the benchmark is able to highlight the differences between
+them, while producing queries with comparable complexity across experiments with negligible
+variability.},
+booktitle = {Proceedings of the 8th ACM/SPEC on International Conference on Performance Engineering},
+pages = {293–304},
+numpages = {12},
+keywords = {olap, benchmarking, oltp, htap},
+location = {L'Aquila, Italy},
+series = {ICPE '17}
+}
+
+@article{10.1145/2491245,
+author = {Corbett, James C. and Dean, Jeffrey and Epstein, Michael and Fikes, Andrew and Frost, Christopher and Furman, J. J. and Ghemawat, Sanjay and Gubarev, Andrey and Heiser, Christopher and Hochschild, Peter and Hsieh, Wilson and Kanthak, Sebastian and Kogan, Eugene and Li, Hongyi and Lloyd, Alexander and Melnik, Sergey and Mwaura, David and Nagle, David and Quinlan, Sean and Rao, Rajesh and Rolig, Lindsay and Saito, Yasushi and Szymaniak, Michal and Taylor, Christopher and Wang, Ruth and Woodford, Dale},
+title = {Spanner: Google’s Globally Distributed Database},
+year = {2013},
+issue_date = {August 2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {31},
+number = {3},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/2491245},
+doi = {10.1145/2491245},
+abstract = {Spanner is Google’s scalable, multiversion, globally distributed, and synchronously
+replicated database. It is the first system to distribute data at global scale and
+support externally-consistent distributed transactions. This article describes how
+Spanner is structured, its feature set, the rationale underlying various design decisions,
+and a novel time API that exposes clock uncertainty. This API and its implementation
+are critical to supporting external consistency and a variety of powerful features:
+nonblocking reads in the past, lock-free snapshot transactions, and atomic schema
+changes, across all of Spanner.},
+journal = {ACM Trans. Comput. Syst.},
+month = aug,
+articleno = {8},
+numpages = {22},
+keywords = {concurrency control, replication, Distributed databases, transactions, time management}
+}
+
+@article{adya1995efficient,
+  title={Efficient optimistic concurrency control using loosely synchronized clocks},
+  author={Adya, Atul and Gruber, Robert and Liskov, Barbara and Maheshwari, Umesh},
+  journal={ACM SIGMOD Record},
+  volume={24},
+  number={2},
+  pages={23--34},
+  year={1995},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{rss,
+  title={Regular Sequential Serializability and Regular Sequential Consistency},
+  author={Helt, Jeffrey and Burke, Matthew and Levy, Amit and Lloyd, Wyatt},
+  booktitle={Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles},
+  pages={163--179},
+  year={2021}
+}
+
+@article{hologres,
+  title={Alibaba hologres: a cloud-native service for hybrid serving/analytical processing},
+  author={Jiang, Xiaowei and Hu, Yuejun and Xiang, Yu and Jiang, Guangran and Jin, Xiaojun and Xia, Chen and Jiang, Weihua and Yu, Jun and Wang, Haitao and Jiang, Yuan and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={13},
+  number={12},
+  pages={3272--3284},
+  year={2020},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{batchdb,
+  title={BatchDB: Efficient isolated execution of hybrid OLTP+ OLAP workloads for interactive applications},
+  author={Makreshanski, Darko and Giceva, Jana and Barthels, Claude and Alonso, Gustavo},
+  booktitle={Proceedings of the 2017 ACM International Conference on Management of Data},
+  pages={37--50},
+  year={2017}
+}
+
+@misc{seqoiadb,
+ author = "SequoiaDB Authors.", 
+ title = "{SequoiaDB Enterprise-class Distributed Relational Database}",
+ howpublished = "\url{https://www.sequoiadb.com/en/}",
+}
+
+@inproceedings{pos,
+  title={Lazy database replication with ordering guarantees},
+  author={Daudjee, Khuzaima and Salem, Kenneth},
+  booktitle={Proceedings. 20th International Conference on Data Engineering},
+  pages={424--435},
+  year={2004},
+  organization={IEEE}
+}
+
+@inproceedings{snow:osdi16,
+  title={The $\{$SNOW$\}$ Theorem and Latency-Optimal Read-Only Transactions},
+  author={Lu, Haonan and Hodsdon, Christopher and Ngo, Khiem and Mu, Shuai and Lloyd, Wyatt},
+  booktitle={12th $\{$USENIX$\}$ Symposium on Operating Systems Design and Implementation ($\{$OSDI$\}$ 16)},
+  pages={135--150},
+  year={2016}
+}
+@article{sap:hana:decouple,
+  title={Parallel replication across formats in SAP HANA for scaling out mixed OLTP/OLAP workloads},
+  author={Lee, Juchang and Moon, SeungHyun and Kim, Kyu Hwan and Kim, Deok Hoe and Cha, Sang Kyun and Han, Wook-Shin},
+  journal={Proceedings of the VLDB Endowment},
+  volume={10},
+  number={12},
+  pages={1598--1609},
+  year={2017},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{lu2015existential,
+  title={Existential consistency: measuring and understanding consistency at facebook},
+  author={Lu, Haonan and Veeraraghavan, Kaushik and Ajoux, Philippe and Hunt, Jim and Song, Yee Jiun and Tobagus, Wendy and Kumar, Sanjeev and Lloyd, Wyatt},
+  booktitle={Proceedings of the 25th Symposium on Operating Systems Principles},
+  pages={295--310},
+  year={2015}
+}
+
+@inproceedings{lakshmi2015study,
+  title={A Study on Real-Time Business Intelligence and Big Data},
+  author={Lakshmi, Ms PRSM and SanthiSri, Ms K and Veeranjaneyulu, Mr N},
+  booktitle={Information Engineering},
+  volume={4},
+  pages={1--6},
+  year={2015},
+  organization={Science and Engineering Publishing Company}
+}
+
+@inproceedings{delen2018impact,
+  title={The impact of real-time business intelligence and advanced analytics on the behaviour of business decision makers},
+  author={Delen, Dursun and Moscato, Gregory and Toma, Inga Linda},
+  booktitle={2018 International Conference on Information Management and Processing (ICIMP)},
+  pages={49--53},
+  year={2018},
+  organization={IEEE}
+}
+
+@article{tank2015enable,
+  title={Enable Better and Timelier Decision-Making Using Real-Time Business Intelligence System.},
+  author={Tank, Darshan M},
+  journal={International Journal of Information Engineering \& Electronic Business},
+  volume={7},
+  number={1},
+  year={2015}
+}
+
+@article{machado2019dod,
+  title={DOD-ETL: distributed on-demand ETL for near real-time business intelligence},
+  author={Machado, Gustavo V and Cunha, {\'I}talo and Pereira, Adriano CM and Oliveira, Leonardo B},
+  journal={Journal of Internet Services and Applications},
+  volume={10},
+  number={1},
+  pages={1--15},
+  year={2019},
+  publisher={Springer}
+}
+
+@article{rezaei2017iot,
+  title={IoT-based framework for performance measurement: A real-time supply chain decision alignment},
+  author={Rezaei, Mahdi and Shirazi, Mohsen Akbarpour and Karimi, Behrooz},
+  journal={Industrial Management \& Data Systems},
+  year={2017},
+  publisher={Emerald Publishing Limited}
+}
+
+@article{guller2015simulation,
+  title={A simulation-based decision support framework for real-time supply chain risk management},
+  author={G{\"u}ller, Mustafa and Koc, Emre and Hegmanns, Tobias and Henke, Michael and Noche, Bernd},
+  journal={International Journal of Advanced Logistics},
+  volume={4},
+  number={1},
+  pages={17--26},
+  year={2015},
+  publisher={Taylor \& Francis}
+}
+
+@article{zhan2019analyticdb,
+  title={Analyticdb: Real-time olap database system at alibaba cloud},
+  author={Zhan, Chaoqun and Su, Maomeng and Wei, Chuangxian and Peng, Xiaoqiang and Lin, Liang and Wang, Sheng and Chen, Zhe and Li, Feifei and Pan, Yue and Zheng, Fang and others},
+  journal={Proceedings of the VLDB Endowment},
+  volume={12},
+  number={12},
+  pages={2059--2070},
+  year={2019},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{barber2019wiser,
+  title={Wiser: A highly available HTAP DBMS for iot applications},
+  author={Barber, Ronald and Garcia-Arellano, Christian and Grosman, Ronen and Lohman, Guy and Mohan, C and Muller, Rene and Pirahesh, Hamid and Raman, Vijayshankar and Sidle, Richard and Storm, Adam and others},
+  booktitle={2019 IEEE International Conference on Big Data (Big Data)},
+  pages={268--277},
+  year={2019},
+  organization={IEEE}
+}
+
+@article{cao2019titant,
+  title={Titant: Online real-time transaction fraud detection in ant financial},
+  author={Cao, Shaosheng and Yang, XinXing and Chen, Cen and Zhou, Jun and Li, Xiaolong and Qi, Yuan},
+  journal={arXiv preprint arXiv:1906.07407},
+  year={2019}
+}
+
+@misc{realtime:john,
+  title={Measuring real-time.},
+  author={JOHN PIEKOS.},
+  url={https://www. infoworld.com/article/3220430/measuringreal-time.html},
+  year={2017}
+}
+
+@article{larson2011high,
+  title={High-performance concurrency control mechanisms for main-memory databases},
+  author={Larson, Per-{\AA}ke and Blanas, Spyros and Diaconu, Cristian and Freedman, Craig and Patel, Jignesh M and Zwilling, Mike},
+  journal={arXiv preprint arXiv:1201.0228},
+  year={2011}
+}
+
+@misc{realtime:mary,
+  title={See real-time big data analytics in milliseconds with IMDG technology.},
+  author={MARY SHACKLETT.},
+  url={https://www.techrepublic.com/article/see-real-time-big-data-analytics-in-milliseconds-with-imdg-technology/},
+  year={2014}
+}
+
+@article{burger2015fast,
+  title={How fast is realtime? human perception and technology},
+  author={Burger, Thomas},
+  journal={PubNub, February},
+  year={2015}
+}
+
+@article{qiu2018real,
+  title={Real-time constrained cycle detection in large dynamic graphs},
+  author={Qiu, Xiafei and Cen, Wubin and Qian, Zhengping and Peng, You and Zhang, Ying and Lin, Xuemin and Zhou, Jingren},
+  journal={Proceedings of the VLDB Endowment},
+  volume={11},
+  number={12},
+  pages={1876--1888},
+  year={2018},
+  publisher={VLDB Endowment}
+}
+
+@article{quah2008real,
+  title={Real-time credit card fraud detection using computational intelligence},
+  author={Quah, Jon TS and Sriganesh, M},
+  journal={Expert systems with applications},
+  volume={35},
+  number={4},
+  pages={1721--1732},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@inproceedings{ramnarayan2016snappydata,
+  title={Snappydata: A hybrid transactional analytical store built on spark},
+  author={Ramnarayan, Jags and Mozafari, Barzan and Wale, Sumedh and Menon, Sudhir and Kumar, Neeraj and Bhanawat, Hemant and Chakraborty, Soubhik and Mahajan, Yogesh and Mishra, Rishitesh and Bachhav, Kishor},
+  booktitle={Proceedings of the 2016 International Conference on Management of Data},
+  pages={2153--2156},
+  year={2016}
+}
+
+@article{sahay2008real,
+  title={Real time business intelligence in supply chain analytics},
+  author={Sahay, BS and Ranjan, Jayanthi},
+  journal={Information Management \& Computer Security},
+  year={2008},
+  publisher={Emerald Group Publishing Limited}
+}
+
+@inproceedings{zhou2017kunpeng,
+  title={Kunpeng: Parameter server based distributed learning systems and its applications in alibaba and ant financial},
+  author={Zhou, Jun and Li, Xiaolong and Zhao, Peilin and Chen, Chaochao and Li, Longfei and Yang, Xinxing and Cui, Qing and Yu, Jin and Chen, Xu and Ding, Yi and others},
+  booktitle={Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  pages={1693--1702},
+  year={2017}
+}
+
+@misc{realtime:alicloud,
+  title={Double 11 Real-Time Monitoring
+System with Time Series Database.},
+  author={ALIBABA CLOUD.},
+  url={https://www.alibabacloud.com/blog/594855},
+  year={2019}
+}
+
+@incollection{stonebraker2018c,
+  title={C-store: a column-oriented DBMS},
+  author={Stonebraker, Mike and Abadi, Daniel J and Batkin, Adam and Chen, Xuedong and Cherniack, Mitch and Ferreira, Miguel and Lau, Edmond and Lin, Amerson and Madden, Sam and O'Neil, Elizabeth and others},
+  booktitle={Making Databases Work: the Pragmatic Wisdom of Michael Stonebraker},
+  publisher = {ACM Press},
+  pages={491--518},
+  year={2018}
+}
+
+@inproceedings{abadi2008column,
+  title={Column-stores vs. row-stores: how different are they really?},
+  author={Abadi, Daniel J and Madden, Samuel R and Hachem, Nabil},
+  booktitle={Proceedings of the 2008 ACM SIGMOD international conference on Management of data},
+  pages={967--980},
+  year={2008}
+}
+
+@inproceedings{plattner2009common,
+  title={A common database approach for OLTP and OLAP using an in-memory column database},
+  author={Plattner, Hasso},
+  booktitle={Proceedings of the 2009 ACM SIGMOD International Conference on Management of data},
+  pages={1--2},
+  year={2009}
+}
+
+@article{fekete2005making,
+  title={Making snapshot isolation serializable},
+  author={Fekete, Alan and Liarokapis, Dimitrios and O'Neil, Elizabeth and O'Neil, Patrick and Shasha, Dennis},
+  journal={ACM Transactions on Database Systems (TODS)},
+  volume={30},
+  number={2},
+  pages={492--528},
+  year={2005},
+  publisher={ACM New York, NY, USA}
+}
+@article{ye2023polaris,
+  title={Polaris: Enabling Transaction Priority in Optimistic Concurrency Control},
+  author={Ye, Chenhao and Hwang, Wuh-Chwen and Chen, Keren and Yu, Xiangyao},
+  journal={Proceedings of the ACM on Management of Data},
+  volume={1},
+  number={1},
+  pages={1--24},
+  year={2023},
+  publisher={ACM New York, NY, USA}
+}
+@article{shute2013f1,
+  title={F1: A distributed SQL database that scales},
+  author={Shute, Jeff and Vingralek, Radek and Samwel, Bart and Handy, Ben and Whipkey, Chad and Rollins, Eric and Oancea, Mircea and Littlefield, Kyle and Menestrina, David and Ellner, Stephan and others},
+  journal = {Proc. VLDB Endow.},
+  year={2013}
+}
+@inproceedings{lu2016snow,
+  title={The $\{$SNOW$\}$ Theorem and $\{$Latency-Optimal$\}$$\{$Read-Only$\}$ Transactions},
+  author={Lu, Haonan and Hodsdon, Christopher and Ngo, Khiem and Mu, Shuai and Lloyd, Wyatt},
+  booktitle={12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+  pages={135--150},
+  year={2016}
+}
+
+@inproceedings{daudjee2004lazy,
+  title={Lazy database replication with ordering guarantees},
+  author={Daudjee, Khuzaima and Salem, Kenneth},
+  booktitle={Proceedings. 20th International Conference on Data Engineering},
+  pages={424--435},
+  year={2004},
+  organization={IEEE}
+}
+
+@misc{azure:latency,
+author = {Microsoft Azure.},
+title = {Azure network round-trip latency statistics},
+howpublished = {\url{https://docs.microsoft.com/en-us/azure/networking/azure-network-latency}},
+month = {},
+year = {},
+}
+
+@inproceedings{qin2021caracal,
+  title={Caracal: Contention Management with Deterministic Concurrency Control},
+  author={Qin, Dai and Brown, Angela Demke and Goel, Ashvin},
+  booktitle={Proceedings of the ACM SIGOPS 28th Symposium on Operating Systems Principles},
+  pages={180--194},
+  year={2021}
+}
+
+
+@article{akidau2013millwheel,
+  title={Millwheel: Fault-tolerant stream processing at internet scale},
+  author={Akidau, Tyler and Balikov, Alex and Bekiro{\u{g}}lu, Kaya and Chernyak, Slava and Haberman, Josh and Lax, Reuven and McVeety, Sam and Mills, Daniel and Nordstrom, Paul and Whittle, Sam},
+  journal={Proceedings of the VLDB Endowment},
+  volume={6},
+  number={11},
+  pages={1033--1044},
+  year={2013},
+  publisher={VLDB Endowment}
+}
+
+@inproceedings{heintz2016trading,
+  title={Trading timeliness and accuracy in geo-distributed streaming analytics},
+  author={Heintz, Benjamin and Chandra, Abhishek and Sitaraman, Ramesh K},
+  booktitle={Proceedings of the Seventh ACM Symposium on Cloud Computing},
+  pages={361--373},
+  year={2016}
+}
+
+@inproceedings{gog2021falkirk,
+  title={Falkirk Wheel: Rollback Recovery for Dataflow Systems},
+  author={Gog, Ionel and Isard, Michael and Abadi, Mart{\'\i}n},
+  booktitle={Proceedings of the ACM Symposium on Cloud Computing},
+  pages={373--387},
+  year={2021}
+}
+
+@inproceedings{lin2016streamscope,
+  title={Streamscope: continuous reliable distributed processing of big data streams},
+  author={Lin, Wei and Qian, Zhengping and Xu, Junwei and Yang, Sen and Zhou, Jingren and Zhou, Lidong},
+  booktitle={13th $\{$USENIX$\}$ Symposium on Networked Systems Design and Implementation ($\{$NSDI$\}$ 16)},
+  pages={439--453},
+  year={2016}
+}
+
+@article{tatemura2012microsharding,
+  title={Microsharding: a declarative approach to support elastic OLTP workloads},
+  author={Tatemura, Junichi and Po, Oliver and Hacg{\"u}m{\"u}{\c{s}}, Hakan},
+  journal={ACM SIGOPS Operating Systems Review},
+  volume={46},
+  number={1},
+  pages={4--11},
+  year={2012},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{muhlbauer2013scyper,
+  title={ScyPer: Elastic OLAP throughput on transactional data},
+  author={M{\"u}hlbauer, Tobias and R{\"o}diger, Wolf and Reiser, Angelika and Kemper, Alfons and Neumann, Thomas},
+  booktitle={Proceedings of the Second Workshop on Data Analytics in the Cloud},
+  pages={11--15},
+  year={2013}
+}
+
+@misc{alibaba:order,
+  author = "Alibaba.",
+  title={Alibaba Group Announces December Quarter 2020 Results},
+  howpublished = "\url{https://www.alibabagroup.com/en/news/press_pdf/p210202.pdf}"
+}
+
+@inproceedings{raza2020adaptive,
+  title={Adaptive HTAP through elastic resource scheduling},
+  author={Raza, Aunn and Chrysogelos, Periklis and Anadiotis, Angelos Christos and Ailamaki, Anastasia},
+  booktitle={Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
+  pages={2043--2054},
+  year={2020}
+}
+
+@article{pu2015low,
+  title={Low latency geo-distributed data analytics},
+  author={Pu, Qifan and Ananthanarayanan, Ganesh and Bodik, Peter and Kandula, Srikanth and Akella, Aditya and Bahl, Paramvir and Stoica, Ion},
+  journal={ACM SIGCOMM Computer Communication Review},
+  volume={45},
+  number={4},
+  pages={421--434},
+  year={2015},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{lin2021blockchain,
+  title={A blockchain-based evidential and secure bulk-commodity supervisory system},
+  author={Lin, Junxiong and Xu, Yajing and Lu, Zhihui and Wu, Jie and Ye, Houhao and Huang, Wenbing and Chen, Xuzhao},
+  booktitle={2021 International Conference on Service Science (ICSS)},
+  pages={1--6},
+  year={2021},
+  organization={IEEE}
+}
+
+@article{wang2016hierarchical,
+  title={A hierarchical auction-based mechanism for real-time resource allocation in cloud robotic systems},
+  author={Wang, Lujia and Liu, Ming and Meng, Max Q-H},
+  journal={IEEE transactions on cybernetics},
+  volume={47},
+  number={2},
+  pages={473--484},
+  year={2016},
+  publisher={IEEE}
+}
+
+@article{difallah2013oltp,
+  title={Oltp-bench: An extensible testbed for benchmarking relational databases},
+  author={Difallah, Djellel Eddine and Pavlo, Andrew and Curino, Carlo and Cudre-Mauroux, Philippe},
+  journal={Proceedings of the VLDB Endowment},
+  volume={7},
+  number={4},
+  pages={277--288},
+  year={2013},
+  publisher={VLDB Endowment}
+}
+
+
+@misc{garter:interactive1,
+  author = "Gartner.",
+  title={Real-time Insights and Decision Making using Hybrid Streaming, In-Memory Computing Analytics and Transaction Processing.},
+  howpublished = "\url{https://www.gartner.com/imagesrv/media-products/pdf/Kx/KX-1-3CZ44RH.pdf}"
+}
+
+
+@misc{garter:interactive2,
+  author = "Gartner.",
+  title={In-Memory DBMS vs In-Memory Marketing.},
+  howpublished = "\url{https://blogs.gartner.com/donald-feinberg/2014/09/28/in-memory-dbms-vs-in-memory-marketing/?_ga=2.172848676.641528062.1639488442-337805139.1639488442}"
+}
+
+
+@article{yang2021much,
+  title={How much is financial advice worth? the transparency-revenue tension in social trading},
+  author={Yang, Mingwen and Zheng, Zhiqiang and Mookerjee, Vijay},
+  journal={Management Science},
+  year={2021},
+  publisher={INFORMS}
+}
+
+@article{pelster2017ll,
+  title={I'll Have What S/he's Having: A Case Study of a Social Trading Network},
+  author={Pelster, Matthias},
+  journal={ICIS 2017 Proceedings},
+  year={2017}
+}
+
+@misc{etoro, 
+ author = "eToro AUS Capital Limited.",
+ title = "{eToro}",
+ howpublished = "\url{https://www.etoro.com/}"
+}
+
+@misc{tdameritradeetoro, 
+ author = "Ameritrade.",
+ title = "{TD Ameritrade}",
+ howpublished = "\url{https://www.tdameritrade.com/}"
+}
+
+@misc{realtime:pricing, 
+ author = "Science Direct.",
+ title = "{Real-Time Pricing}",
+ howpublished = "\url{https://www.sciencedirect.com/topics/engineering/real-time-pricing}"
+}
+
+@article{kayikci2022data,
+  title={Data-driven optimal dynamic pricing strategy for reducing perishable food waste at retailers},
+  author={Kayikci, Yasanur and Demir, Sercan and Mangla, Sachin K and Subramanian, Nachiappan and Koc, Basar},
+  journal={Journal of Cleaner Production},
+  pages={131068},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@article{chen2016dynamic,
+  title={Dynamic pricing in a labor market: Surge pricing and flexible work on the Uber platform.},
+  author={Chen, M Keith and Sheldon, Michael},
+  journal={Ec},
+  volume={16},
+  pages={455},
+  year={2016}
+}
+
+@misc{amazonshop,
+ author = "Amazon.",
+ title = "{Amazon Shop}",
+ howpublished = "\url{https://www.amazon.com/}"
+}
+
+@misc{ebayshop,
+ author = "ebay inc.",
+ title = "{Shop eBay}",
+ howpublished = "\url{https://www.ebay.com/}"
+}
+
+@inproceedings{tomsic2018distributed,
+  title={Distributed transactional reads: the strong, the quick, the fresh \& the impossible},
+  author={Tomsic, Alejandro Z and Bravo, Manuel and Shapiro, Marc},
+  booktitle={Proceedings of the 19th International Middleware Conference},
+  pages={120--133},
+  year={2018}
+}
+
+@article{mandal2020pricing,
+  title={Pricing Strategies of Multinationals for Global Markets--Considerations and Initiatives: Pricing Strategies for Global Markets},
+  author={Mandal, Pratap Chandra},
+  journal={International Journal of Business Strategy and Automation (IJBSA)},
+  volume={1},
+  number={1},
+  pages={24--36},
+  year={2020},
+  publisher={IGI Global}
+}
+
+@article{teitz1989neighborhood,
+  title={Neighborhood economics: Local communities and regional markets},
+  author={Teitz, Michael B},
+  journal={Economic Development Quarterly},
+  volume={3},
+  number={2},
+  pages={111--122},
+  year={1989},
+  publisher={Sage Publications Sage CA: Thousand Oaks, CA}
+}
+
+@inproceedings{verbitski2017amazon,
+  title={Amazon aurora: Design considerations for high throughput cloud-native relational databases},
+  author={Verbitski, Alexandre and Gupta, Anurag and Saha, Debanjan and Brahmadesam, Murali and Gupta, Kamal and Mittal, Raman and Krishnamurthy, Sailesh and Maurice, Sandor and Kharatishvili, Tengiz and Bao, Xiaofeng},
+  booktitle={Proceedings of the 2017 ACM International Conference on Management of Data},
+  pages={1041--1052},
+  year={2017}
+}
+
+@inproceedings{wei2021unifying,
+  title={Unifying Timestamp with Transaction Ordering for $\{$MVCC$\}$ with Decentralized Scalar Timestamp},
+  author={Wei, Xingda and Chen, Rong and Chen, Haibo and Wang, Zhaoguo and Gong, Zhenhan and Zang, Binyu},
+  booktitle={18th USENIX Symposium on Networked Systems Design and Implementation (NSDI 21)},
+  pages={357--372},
+  year={2021}
+}
+
+@article{shioi2022serializable,
+  title={Serializable HTAP with Abort-/Wait-free Snapshot Read},
+  author={Shioi, Takamitsu and Kambayashi, Takashi and Arakawa, Suguru and Kurosawa, Ryoji and Hikida, Satoshi and Yokota, Haruo},
+  journal={arXiv preprint arXiv:2201.07993},
+  year={2022}
+}

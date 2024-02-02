@@ -1,0 +1,9 @@
+\vspace{10pt}
+\section{Conclusion}\label{sec:conclusion}
+This work uncovered fundamental bottlenecks in strictly serializable concurrency control algorithms used in multi-region deployments. As the consistency model inherently enforces these bottlenecks, many proposals turn to lift the restrictions by adopting weaker consistency. However, we found that all existing consistency models are inadequately designed for multi-region deployments: they are either overly stringent or have room for improvement without incurring significant performance penalties. 
+
+In response, we propose Region-Linearizable Serializability (RLS), the first consistency model meticulously tailored for multi-region deployment. Following the RLS methodology, we design, implement, and evaluate two practical system variations based on open-sourced codebases: Spanner-RLS and CRDB-RLS. The code of our stereotypes is available at {\color{darkred}{\url{https://github.com/vldb24p771/spanner_rls}}} and {\color{darkred}{\url{https://github.com/vldb24p771/crdb_rls}}}, respectively. 
+
+Our evaluation results demonstrate that RLS can significantly enhance the performance of Spanner (i.e., from $1.16\times$ to $89.01\times$ higher throughput) and further strengthen the consistency guarantees of CRDB without significant performance drop (i.e.,  $<15\%$). 
+
+\clearpage

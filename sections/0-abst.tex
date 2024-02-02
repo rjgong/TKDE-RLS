@@ -1,0 +1,10 @@
+Deploying databases across multiple regions has become the de facto choice for cloud-native applications that desire high availability, strong scalability, and efficient service localization. However, supporting serializable transactions in such databases presents a significant challenge. Coordinating cross-region transactions (CRTs) is inherently slow due to the extensive geographic distances. Even a few slow transactions can significantly degrade the performance of the entire system. 
+% This poor performance significantly limits the practicality of multi-region databases. 
+Despite various proposals introduced to optimize the performance by either eliminating CRTs or minimizing the cost of cross-region coordination, CRTs remain crucial for general workloads, with their costs still being dozens of times higher than those of intra-region transactions (IRTs).
+% These databases typically partition data into shards 
+
+This paper contends that existing serializable consistency models are not well-designed for multi-region deployments. The root cause is the strong heterogeneity in deployments: certain transactions (e.g., CRTs) experience significantly higher committing latency than others.
+% [TODO: add a sentence]
+To address this, we propose a new layered consistency model specifically tailored for multi-region deployments: region-linearizable serializability (RLS). Specifically, RLS ensures strict serializability (i.e., linearizability) for IRTs from the same region and provides regular serializability for CRTs.
+
+To demonstrate the efficiency and applicability of our new consistency model (i.e., RLS), we design, implement, and evaluate variations of two representative database systems: Spanner and CockroachDB. Our evaluation demonstrates that these variations can significantly enhance performance (e.g., $4.5\times$ throughput for Spanner on average) or provide better functionality without performance degradation (e.g., more consistency guarantees for CockroachDB). 

@@ -1,0 +1,56 @@
+\newcommand\mycommfont[1]{\footnotesize\sffamily\textcolor{red}{#1}}
+\SetCommentSty{mycommfont}
+\SetKwProg{Fn}{function}{:}{}
+
+\SetKwFunction{FMax}{max}
+\SetKwFunction{FNow}{now}
+\SetKwFunction{Coordcr}{CRDB-RLS Coordinator}
+\SetKwFunction{FGetFinTs}{GetFinishedTs}
+\SetKwFunction{FVerifyReads}{VerifyReads}
+\SetKwFunction{Leader}{GetShardLeader}
+\SetKwFunction{FSend}{send}
+\SetKwFunction{FKeyLeader}{keyLeader}
+
+\SetKwData{InFlightOps}{inflightOps}
+\SetKwData{TouchedR}{touchedRegions}
+\SetKwData{TxnTs}{txnTS}
+\SetKwData{DOp}{op}
+\SetKwData{DRegion}{r}
+\SetKwData{DResp}{resp}
+
+\begin{algorithm}[t]
+    \setstretch{1}
+    \small
+    % \LeftComment{Execute the transaction commands, which triggers the events:}
+    \Fn{\Coordcr}{
+      \InFlightOps $\gets \emptyset$   \Comment{Ongoing operations.} \\
+      \TouchedR $\gets \emptyset$  \Comment{Regions involved in the transaction.} \\
+      \TxnTs $\gets$ \FNow{}   \Comment{Timestamp of the transaction.} \\
+
+      \For{\DOp $\gets$ KV operation received from SQL layer}{
+        \uIf{\DOp.commit}{
+          \DOp.deps $\gets$ \InFlightOps \\
+          \FSend $\langle \texttt{commit}, \TxnTs \rangle$ to transaction managers \\
+          wait for all \texttt{ACK}s \\
+        }
+        \Else(){
+          % \tcp{New in \crdbxx}
+          \tikzmk{A}
+          \DRegion $\gets$ \DOp.key.region \\
+          \If{$\DRegion \notin \TouchedR$}{
+            \TxnTs $\gets$ \FMax{\TxnTs, \FGetFinTs{\DRegion}} \\
+            \FVerifyReads{\TxnTs} \\
+            \TouchedR $\gets$ \TouchedR $\cup$ \{\DRegion\} \\
+          }
+          \tikzmk{B} \boxit{blue}
+          % \tcp{Original algorithm of \crdb.}
+          \DOp.deps $\gets$ $\{ x \in$ \InFlightOps $| x.key = \DOp.key \}$ \\
+          \InFlightOps  $\gets$ (\InFlightOps - \DOp.deps) $\cup$ $\{ \DOp \}$
+     \DResp $\gets$ \FSend{\DOp, \FKeyLeader{\DOp.key}} \\
+          \TxnTs $\gets$ \FMax{\TxnTs, \FGetFinTs{\DRegion}} \\
+          \FVerifyReads{\TxnTs} \\
+        }
+      }    
+    }
+    \caption{Algorithm of \crdbxx Coordinator}\label{algo4}
+\end{algorithm}

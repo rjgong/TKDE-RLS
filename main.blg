@@ -1,0 +1,146 @@
+This is BibTeX, Version 0.99d (TeX Live 2021)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: bib/database.bib
+Database file #2: bib/biblio.bib
+Database file #3: bib/blockchain.bib
+Database file #4: bib/edge.bib
+Database file #5: bib/htap.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in GeneralD60:online
+Warning--no author, editor, organization, or key in GeneralD60:online
+Warning--to sort, need author or key in GeneralD60:online
+Warning--no key, author in tapir:github
+Warning--no author, editor, organization, or key in tapir:github
+Warning--to sort, need author or key in tapir:github
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Warning--no key, author in GeneralD60:online
+Warning--no key, author in GeneralD60:online
+Warning--no key, author in tapir:github
+Warning--no key, author in tapir:github
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no key, author in GeneralD60:online
+Warning--no author, editor, organization, or key in GeneralD60:online
+Warning--empty author in GeneralD60:online
+Warning--empty year in GeneralD60:online
+Warning--no key, author in tapir:github
+Warning--no author, editor, organization, or key in tapir:github
+Warning--empty author in tapir:github
+Warning--empty year in tapir:github
+Warning--empty publisher in abebe2020dynamast
+Warning--empty address in abebe2020dynamast
+Warning--empty publisher in anderson1998replication
+Warning--empty address in anderson1998replication
+Warning--empty year in aws:region
+Warning--empty year in azure:region
+Warning--empty year in azure:latency
+Warning--empty publisher in dast:eurosys21
+Warning--empty address in dast:eurosys21
+Warning--empty publisher in chen2021achieving
+Warning--empty address in chen2021achieving
+Warning--empty publisher in choi2023hydra
+Warning--empty address in choi2023hydra
+Warning--empty year in huawei:region
+Warning--empty publisher in spanner:osdi12
+Warning--empty address in spanner:osdi12
+Warning--page numbers missing in both pages and numpages fields in spanner:osdi12
+Warning--no journal in curino2010schism
+Warning--no number and no volume in curino2010schism
+Warning--page numbers missing in both pages and numpages fields in curino2010schism
+Warning--empty publisher in daudjee2004lazy
+Warning--empty address in daudjee2004lazy
+Warning--empty publisher in daudjee2006lazy
+Warning--empty address in daudjee2006lazy
+Warning--empty publisher in gao2003application
+Warning--empty address in gao2003application
+Warning--empty publisher in rss
+Warning--empty address in rss
+Warning--empty year in linux:tc
+Warning--empty publisher in mdcc:eurosys13
+Warning--empty address in mdcc:eurosys13
+Warning--empty publisher in lamport2019time
+Warning--empty address in lamport2019time
+Warning--empty publisher in li20211pipe
+Warning--empty address in li20211pipe
+Warning--empty publisher in li2012making
+Warning--empty address in li2012making
+Warning--empty publisher in li2018fine
+Warning--empty address in li2018fine
+Warning--empty publisher in lu2016snow
+Warning--empty address in lu2016snow
+Warning--no number and no volume in lu2023ncc
+Warning--page numbers missing in both pages and numpages fields in lu2023ncc
+Warning--empty publisher in epaxos:sosp13
+Warning--empty address in epaxos:sosp13
+Warning--page numbers missing in both pages and numpages fields in epaxos:sosp13
+Warning--empty publisher in janus:osdi16
+Warning--empty address in janus:osdi16
+Warning--empty publisher in pavlo2012skew
+Warning--empty address in pavlo2012skew
+Warning--empty publisher in bidl:sosp21
+Warning--empty address in bidl:sosp21
+Warning--page numbers missing in both pages and numpages fields in bidl:sosp21
+Warning--empty publisher in schiper2010p
+Warning--empty address in schiper2010p
+Warning--empty publisher in taft2020cockroachdb
+Warning--empty address in taft2020cockroachdb
+Warning--empty publisher in calvin:sigmod12
+Warning--empty address in calvin:sigmod12
+Warning--page numbers missing in both pages and numpages fields in calvin:sigmod12
+Warning--empty publisher in vanbenschoten2022enabling
+Warning--empty address in vanbenschoten2022enabling
+Warning--empty publisher in webb2011topology
+Warning--empty address in webb2011topology
+Warning--page numbers missing in both pages and numpages fields in webb2011topology
+Warning--empty publisher in yang2017hierarchical
+Warning--empty address in yang2017hierarchical
+Warning--empty publisher in zamanian2015locality
+Warning--empty address in zamanian2015locality
+You've used 52 entries,
+            5959 wiz_defined-function locations,
+            2194 strings with 50751 characters,
+and the built_in function-call counts, 65723 in all, are:
+= -- 7493
+> -- 2964
+< -- 0
++ -- 997
+- -- 988
+* -- 5038
+:= -- 6966
+add.period$ -- 255
+call.type$ -- 52
+change.case$ -- 435
+chr.to.int$ -- 49
+cite$ -- 147
+duplicate$ -- 5615
+empty$ -- 3949
+format.name$ -- 1153
+if$ -- 15570
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 200
+newline$ -- 439
+num.names$ -- 397
+pop$ -- 2450
+preamble$ -- 1
+purify$ -- 855
+quote$ -- 0
+skip$ -- 1968
+stack$ -- 0
+substring$ -- 4480
+swap$ -- 579
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1324
+warning$ -- 87
+while$ -- 361
+width$ -- 0
+write$ -- 905
+(There were 87 warnings)
